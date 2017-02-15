@@ -86,7 +86,6 @@ section.article-gradient-wrap{
 	.container{
 		width: 48vw;
 		margin: 0 auto;
-		@include transition(height 1s ease-in-out);
 		height: auto;
 
 		h3{
