@@ -1,0 +1,182 @@
+section.article-gradient-wrap{
+	display: inline-block;
+	vertical-align: top;
+	padding: 0;
+	margin:0;
+	width:100vw;
+	height:166vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-clip-path: polygon(0 38%, 100% 0%, 100% 63%, 0% 100%);
+	clip-path: polygon(0 38%, 100% 0%, 100% 63%, 0% 100%);
+
+	.bg-image{
+	  	width:100vw;
+	  	-webkit-clip-path: polygon(0 40%, 100% 0%, 100% 63%, 0% 100%);
+		clip-path: polygon(0 40%, 100% 0%, 100% 63%, 0% 100%);
+		opacity:0;
+	}
+	
+	div.absolute-center{
+		width:100%;
+	}
+	div.is-relative{
+		// border: 1px solid red;
+	    display: block;
+	    height: 63%;
+		
+		.article{
+			text-align: center;
+			width: 48vw;
+
+			h2.article-title{
+				display: block;
+			}
+
+			div.underline{
+				display: block;
+				width: 6.25vw;
+				height:1px;
+				background: $white;
+				margin: 30px auto;
+			}
+
+			p{
+				width: 85%;
+				margin: 0 auto;
+
+				&:first-of-type{
+					margin-top: 40px;
+				}
+			}
+
+			a.read-article-btn{
+				font-family: $xfsansMedium;
+				display: block;
+				margin-top: 10.75vh;
+				img.down-arrow{
+					width: 2.9vw;
+					display: block;
+					margin: 0 auto;
+					margin-top: 18px;
+				}
+			}
+		}
+
+	}
+
+	&#article1-heading{
+		background-image: url('../images/section-1-bg.jpg');
+		margin-top: -38%;
+		padding-top: 38%;
+	}
+
+	&#article2-heading{
+		background-image: url('../images/section-2-bg.jpg');
+	}
+	&#article3-heading{
+		background-image: url('../images/section-3-bg.jpg');
+	}
+	&#article4-heading{
+		background-image: url('../images/section-4-bg.jpg');
+	}
+}
+
+.article-container{
+	.container{
+		width: 48vw;
+		margin: 0 auto;
+		@include transition(height 1s ease-in-out);
+		height: auto;
+
+		h3{
+			color: $gray;
+			margin: 20px 0;
+		}
+
+		h4{
+			color: $gray;
+
+			&.letter-heading{
+				width: 32px;
+				padding-bottom: 6px;
+				margin-bottom: 20px;
+				border-bottom: 4px solid $gray;
+			}
+		}
+
+		p{
+			color: $ltgray;
+			margin-top: 20px;
+
+		}
+
+		a{
+			color: $gray;
+		}
+
+		ol{
+			margin-left: 14px;
+			li{
+				color: $ltgray;
+				margin-top: 20px;
+			}
+		}
+
+		.graph{
+			width: 80%;
+			margin-top: 40px;
+		}
+
+		div.divider{
+			width: 100%;
+			height: 1px;
+			margin: 40px 0;
+			background: $purple;
+		}
+
+		.answer{
+			margin-top: 40px;
+		}
+		sup{
+			line-height: 0;
+		}
+
+		div.callout{
+			margin-top: 20px;
+			.big-quotation{
+				display: inline-block;
+				width: 3%;
+				height: 26px;
+				margin-top: 5px;
+				margin-right: 10px;
+				vertical-align: top;
+				background-image: url('../images/quotation.png');
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+			p{
+				color: $purple;
+				width:80%;
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+
+		a.contact-link{
+			margin-top: 40px;
+			display: block;
+		}
+
+		div.reveal{
+			display: none;
+			@include transition(all 1s ease-in-out);
+		}
+	}
+}
+
+.article-container:not(#article-1){
+	div.animate-reveal{
+		margin-top: 40px;
+	}
+}

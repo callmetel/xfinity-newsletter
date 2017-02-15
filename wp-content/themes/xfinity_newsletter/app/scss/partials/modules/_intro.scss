@@ -1,0 +1,27 @@
+#intro{
+		background-image: url('../images/home-bg.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+
+	.xd-logo{
+		width: 20vw;
+		@include transition(all 1s $ease-in-out-quad);
+		opacity: 0;
+		@include transform(translate(-50%, -60%));
+
+		&.fade-up-in{
+			@include transition-delay(.75s);
+		}
+	}
+
+	.article{
+		opacity: 0;
+		@include transform(translate(-50%, -40%));
+		@include transition(all 1s $ease-in-out-quad);
+
+		&.fade-up-in{
+			@include transition-delay(.75s);
+		}
+	}
+
+}

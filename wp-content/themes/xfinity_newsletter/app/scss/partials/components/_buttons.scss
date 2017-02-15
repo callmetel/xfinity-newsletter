@@ -1,0 +1,19 @@
+button{
+	margin-top: 70px;
+	background: $blue;
+	color: $white;
+	width: 12.5vw;
+	height: 5.5vh;
+	display: block;
+	border-radius: 10vw;
+    outline: none;
+    -webkit-appearance: none;
+    border-style: none;
+    text-transform: uppercase;
+    cursor:pointer;
+
+    @include media($sm-mobile){
+    	width: 200px;
+    	height:45px;
+    }
+}

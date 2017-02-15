@@ -1,0 +1,30 @@
+#menu{
+	ul.absolute-right{
+		right: 14.6vw;
+		list-style: none;
+
+		li{
+			cursor: pointer;
+			margin-bottom: 30px;
+
+			.number{
+				color: $green;
+
+				&:after{
+					content:'';
+					display: inline-block;
+					width: 30px;
+					height: 30px;
+					background-image: url('../images/right-arrow.svg');
+					background-size: contain;
+					background-repeat: no-repeat;
+					margin-left: 25px;
+				}
+			}
+
+			p{
+				color: $gray;
+			}
+		}
+	}
+}

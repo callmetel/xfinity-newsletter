@@ -1,0 +1,122 @@
+#footer{
+	height: 100vh;
+	.absolute-bottom{
+		width: 100%;
+	}
+	.article{
+		width:100%;
+		padding-bottom: 8.25vh;
+		a.back-btn{
+			font-family: $xfsansMedium;
+			display: block;
+			margin-top: 10.75vh;
+			img.up-arrow{
+				@include transform(rotate(180deg));
+				width: 2.9vw;
+				display: block;
+				margin: 0 auto;
+				margin-top: 18px;
+			}
+		}	
+	}
+	.is-relative{
+		height: 100%;
+
+		.row{
+			display: block;
+			width: 95.32%;
+			margin: 0 auto;
+			
+			.left{
+				text-align: left;
+				display: inline-block;
+				width:50%;
+				vertical-align: bottom;
+
+				@include media($mobile){
+					display: block;
+					width: 100%;
+					text-align: center;
+				}
+
+				p{
+					text-align: left;
+					width: 100%;
+					&:last-of-type{
+						margin-top: 50px;
+					}
+				}
+
+				.print{
+
+					span{
+						display:inline-block;
+						vertical-align: middle;
+						font: $p;
+					}
+					img{
+						display:inline-block;
+						vertical-align: middle;
+						width: 1.5vw;
+						min-width: 20px;
+						margin-right:10px;
+					}
+				}
+				a{
+					margin-right: 30px;
+
+					&:nth-of-type(2), &:nth-of-type(3){
+						&:after{
+							content:'';
+							display: inline-block;
+							width: 20px;
+							height: 12px;
+							background-image: url('../images/down-arrow.svg');
+							background-size: contain;
+							background-repeat: no-repeat;
+							@include transform(rotate(-90deg));
+							margin-left:10px;
+						}
+					}
+				}
+			}
+			.right{
+				text-align: right;
+				display: inline-block;
+				width:49%;
+				vertical-align: bottom;
+				
+				@include media($mobile){
+					display: block;
+					width: 100%;
+					text-align: center;
+
+					h6{
+						text-align: left!important;
+					}
+				}
+
+				h6{
+					text-align: right;
+					text-transform: uppercase;
+				}
+
+				.logo{
+					display: block;
+					width: 11.9vw;
+					min-width: 80px;
+					text-align: right;
+					margin-right: 0;
+					margin-left: auto;
+					margin-top: 50px;
+
+					img{
+						display:block;
+					}
+				}
+			}
+		}
+	}
+		
+	
+}

@@ -1,0 +1,277 @@
+@import "fonts";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+div{
+	color: white;
+	font-style: normal;
+	margin: 0;
+}
+
+a > span {
+	font: $span;
+	// @include media($short-lg-desktop){
+	// 	font: $rg-heading!important;
+	// }
+	// @include media($xl-desktop){
+	// 	font: $lg-heading;
+	// }
+	// @include media($lg-desktop){
+	// 	font: $lg-heading;
+	// }
+	// @include media($md-desktop){
+	// 	font: $rg-heading;
+	// }
+	// @include media($lg-mobile){
+	// 	font: $rg-heading;
+	// }
+	// @include media($md-mobile){
+	// 	font: $md-heading;
+	// }
+	// @include media($mobile){
+	// 	font: $sm-heading;
+	// }
+	// @include media($sm-mobile){
+	// 	font: $md-heading;
+	// }
+	// @include media($xs-mobile){
+	// 	font: $sm-heading;
+	// }
+	// @include media($v-iphone-6-plus){
+	// 	font: $sm-heading;
+	// }
+}
+
+h2 {
+	font: $h2;
+	// @include media($short-lg-desktop){
+	// 	font: $rg-heading!important;
+	// }
+	// @include media($xl-desktop){
+	// 	font: $lg-heading;
+	// }
+	// @include media($lg-desktop){
+	// 	font: $lg-heading;
+	// }
+	// @include media($md-desktop){
+	// 	font: $rg-heading;
+	// }
+	// @include media($lg-mobile){
+	// 	font: $rg-heading;
+	// }
+	// @include media($md-mobile){
+	// 	font: $md-heading;
+	// }
+	// @include media($mobile){
+	// 	font: $sm-heading;
+	// }
+	// @include media($sm-mobile){
+	// 	font: $md-heading;
+	// }
+	// @include media($xs-mobile){
+	// 	font: $sm-heading;
+	// }
+	// @include media($v-iphone-6-plus){
+	// 	font: $sm-heading;
+	// }
+}
+
+h3 {
+	font: $h3;
+	// @include media($short-lg-desktop){
+	// 	font: $rg-heading!important;
+	// }
+	// @include media($xl-desktop){
+	// 	font: $lg-heading;
+	// }
+	// @include media($lg-desktop){
+	// 	font: $lg-heading;
+	// }
+	// @include media($md-desktop){
+	// 	font: $rg-heading;
+	// }
+	// @include media($lg-mobile){
+	// 	font: $rg-heading;
+	// }
+	// @include media($md-mobile){
+	// 	font: $md-heading;
+	// }
+	// @include media($mobile){
+	// 	font: $sm-heading;
+	// }
+	// @include media($sm-mobile){
+	// 	font: $md-heading;
+	// }
+	// @include media($xs-mobile){
+	// 	font: $sm-heading;
+	// }
+	// @include media($v-iphone-6-plus){
+	// 	font: $sm-heading;
+	// }
+}
+
+h4 {
+	font: $h4;
+	// @include media($short-lg-desktop){
+	// 	font: $rg-heading!important;
+	// }
+	// @include media($xl-desktop){
+	// 	font: $lg-heading;
+	// }
+	// @include media($lg-desktop){
+	// 	font: $lg-heading;
+	// }
+	// @include media($md-desktop){
+	// 	font: $rg-heading;
+	// }
+	// @include media($lg-mobile){
+	// 	font: $rg-heading;
+	// }
+	// @include media($md-mobile){
+	// 	font: $md-heading;
+	// }
+	// @include media($mobile){
+	// 	font: $sm-heading;
+	// }
+	// @include media($sm-mobile){
+	// 	font: $md-heading;
+	// }
+	// @include media($xs-mobile){
+	// 	font: $sm-heading;
+	// }
+	// @include media($v-iphone-6-plus){
+	// 	font: $sm-heading;
+	// }
+	&.letter-heading{
+		font-family: $xfsansMedium!important;
+	}
+}
+
+h6 {
+	font: $h6;
+	// @include media($short-lg-desktop){
+	// 	font: $rg-heading!important;
+	// }
+	// @include media($xl-desktop){
+	// 	font: $lg-heading;
+	// }
+	// @include media($lg-desktop){
+	// 	font: $lg-heading;
+	// }
+	// @include media($md-desktop){
+	// 	font: $rg-heading;
+	// }
+	// @include media($lg-mobile){
+	// 	font: $rg-heading;
+	// }
+	// @include media($md-mobile){
+	// 	font: $md-heading;
+	// }
+	// @include media($mobile){
+	// 	font: $sm-heading;
+	// }
+	// @include media($sm-mobile){
+	// 	font: $md-heading;
+	// }
+	// @include media($xs-mobile){
+	// 	font: $sm-heading;
+	// }
+	// @include media($v-iphone-6-plus){
+	// 	font: $sm-heading;
+	// }
+}
+
+p {
+	font: $p;
+	// @include media($short-lg-desktop){
+	// 	font: $rg-heading!important;
+	// }
+	// @include media($xl-desktop){
+	// 	font: $lg-heading;
+	// }
+	// @include media($lg-desktop){
+	// 	font: $lg-heading;
+	// }
+	// @include media($md-desktop){
+	// 	font: $rg-heading;
+	// }
+	// @include media($lg-mobile){
+	// 	font: $rg-heading;
+	// }
+	// @include media($md-mobile){
+	// 	font: $md-heading;
+	// }
+	// @include media($mobile){
+	// 	font: $sm-heading;
+	// }
+	// @include media($sm-mobile){
+	// 	font: $md-heading;
+	// }
+	// @include media($xs-mobile){
+	// 	font: $sm-heading;
+	// }
+	// @include media($v-iphone-6-plus){
+	// 	font: $sm-heading;
+	// }
+}
+
+a {
+	font: $a;
+	// @include media($short-lg-desktop){
+	// 	font: $rg-heading!important;
+	// }
+	// @include media($xl-desktop){
+	// 	font: $lg-heading;
+	// }
+	// @include media($lg-desktop){
+	// 	font: $lg-heading;
+	// }
+	// @include media($md-desktop){
+	// 	font: $rg-heading;
+	// }
+	// @include media($lg-mobile){
+	// 	font: $rg-heading;
+	// }
+	// @include media($md-mobile){
+	// 	font: $md-heading;
+	// }
+	// @include media($mobile){
+	// 	font: $sm-heading;
+	// }
+	// @include media($sm-mobile){
+	// 	font: $md-heading;
+	// }
+	// @include media($xs-mobile){
+	// 	font: $sm-heading;
+	// }
+	// @include media($v-iphone-6-plus){
+	// 	font: $sm-heading;
+	// }
+}
+
+#menu .number{
+	font: $number;
+}
+
+.number{
+	font: $xl-number;
+}
+
+.big-quotation{
+	font: $quot;
+}
+
+.footnote p{
+	font: $footnote;
+}
+
+ol{
+	li{
+		font: $span;
+	}
+}

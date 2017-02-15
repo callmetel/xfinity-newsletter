@@ -1,0 +1,12 @@
+.fade-up-in{
+	opacity: 1!important;
+	@include transform(translate(-50%, -50%)!important);
+}
+
+.animate-reveal{
+	@include animation(reveal 1s forwards $ease-in-out-quad);
+}
+
+.animate-reveal-back{
+	@include animation(revealback 1s forwards $ease-in-out-quad);
+}

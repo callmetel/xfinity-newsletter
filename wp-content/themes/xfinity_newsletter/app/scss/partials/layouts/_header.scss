@@ -1,0 +1,34 @@
+header{
+	width: 100%;
+	height: 7.375vh;
+	background: $gray;
+	display: block;
+
+	.logo{
+		display: block;
+		width: 11.9vw;
+		min-width: 80px;
+		left: 2.34vw;
+
+		img{
+			display:block;
+		}
+	}
+
+	.print{
+		display: block;
+		right: 2.34vw;
+
+		span{
+			display:inline-block;
+			vertical-align: middle;
+			margin-right:10px;
+		}
+		img{
+			display:inline-block;
+			vertical-align: middle;
+			width: 1.5vw;
+			min-width: 20px;
+		}
+	}
+}

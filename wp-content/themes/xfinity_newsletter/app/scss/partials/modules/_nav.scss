@@ -1,0 +1,10 @@
+nav{
+    z-index:1000;
+    @include position(absolute, 3.25vh null null 2.34vw);
+
+    a{
+        display: block;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+}
