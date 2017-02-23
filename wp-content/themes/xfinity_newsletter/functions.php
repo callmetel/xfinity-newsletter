@@ -13,7 +13,7 @@ add_action('init', 'modify_jquery');
 
 function xfinitynewsletter_script_enqueue() {
   wp_enqueue_style( 'customstyle', get_template_directory_uri() . '/app/css/app.css' , array(), '1.0.0', 'all' );
-  wp_enqueue_script( 'customjs', get_template_directory_uri() . '/app/js/lib/function.js' , array(), null, true );
+  wp_enqueue_script( 'customjs', get_template_directory_uri() . '/app/js/lib/script.js' , array(), null, true );
 }
 
 add_action( 'wp_enqueue_scripts' , 'xfinitynewsletter_script_enqueue');
@@ -24,10 +24,16 @@ add_action( 'wp_enqueue_scripts' , 'xfinitynewsletter_script_enqueue');
 function xfinitynewsletter_load_javascript_files() {
   // wp_register_script( 'submit', get_template_directory_uri() . '/app/js/lib/submit.js', array(), '1.0.0', true );
   wp_register_script( 'gsap',('https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'), array('jquery'), '1.0.0', true );
-  wp_register_script( 'mousewheel', ('https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js'), array('jquery'), '1.0.0', true );
+  wp_register_script( 'ScrollToPlugin', ('http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js'), array('jquery'), '2.0.5', true );
+  wp_register_script( 'scrollmagic', ('https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'), array('jquery'), '2.0.5', true );
+  wp_register_script( 'scrollmagic_gsap', ('https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js'), array('jquery'), '2.0.5', true );
+  wp_register_script( 'functions', get_template_directory_uri() . '/app/js/lib/function.js' , array(), null, true );
   // wp_enqueue_script( 'submit' );
   wp_enqueue_script( 'gsap' );
-  wp_enqueue_script( 'mousewheel' );
+  wp_enqueue_script( 'ScrollToPlugin' );
+  wp_enqueue_script( 'scrollmagic' );
+  wp_enqueue_script( 'scrollmagic_gsap' );
+  wp_enqueue_script( 'functions' );
 
 
 }

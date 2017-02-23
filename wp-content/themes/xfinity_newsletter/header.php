@@ -16,5 +16,6 @@
         .initial-hide {display: none; opacity: 0; z-index: -3000;}
     </style> -->
 	<?php wp_head(); ?>
+    <!-- <script src="http://localhost/wp-content/themes/xfinity_newsletter/app/js/lib/function.js"></script> -->
 </head>
 <body <?php body_class( $get_home_class ); ?>>

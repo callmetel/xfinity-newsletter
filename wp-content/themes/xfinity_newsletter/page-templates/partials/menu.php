@@ -1,5 +1,10 @@
 <section id="menu" class="gradient-wrap is-relative">
-<img src="http://localhost/wp-content/themes/xfinity_newsletter/app/images/remote.jpg" alt="" class="bg-image">
+<img src="http://localhost/wp-content/themes/xfinity_newsletter/app/images/remote.png" alt="" class="bg-image">
+<img src="http://localhost/wp-content/themes/xfinity_newsletter/app/images/old-remote.jpg" alt="" id="old-remote" class="absolute-top">
+<div id="new-remote" class="absolute-top">
+	<img src="http://localhost/wp-content/themes/xfinity_newsletter/app/images/new-remote.png" alt="" id="remote-off" class="absolute-top">
+	<img src="http://localhost/wp-content/themes/xfinity_newsletter/app/images/new-remote-on.png" alt="" id="remote-on" class="absolute-top">
+</div>
 	<div class="absolute-top">
 		<div class="is-relative">
 			<ul class="absolute-right">

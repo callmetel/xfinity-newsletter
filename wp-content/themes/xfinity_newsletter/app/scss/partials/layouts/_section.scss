@@ -40,8 +40,24 @@ section.gradient-wrap{
 			text-align: center;
 			width: 48vw;
 
+			@include media($sm-desktop){
+				width:70vw;
+			}
+			@include media($lg-mobile){
+				width:80vw;
+			}
+
 			h2.article-title{
 				display: block;
+
+				@include media($sm-desktop){
+					width:80%;
+					margin:0 auto;
+				}
+				@include media($lg-mobile){
+					width:85%;
+					margin:0 auto;
+				}
 			}
 
 			div.underline{

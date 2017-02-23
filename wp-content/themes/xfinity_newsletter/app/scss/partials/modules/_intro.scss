@@ -1,7 +1,15 @@
+#trigger{
+	width: 100vw;
+    height: 1px;
+    background: red;
+    // background: $gray;
+    @include position(absolute, 100vh 0 null 0);
+}
 #intro{
-		background-image: url('../images/home-bg.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;
+	background-image: url('../images/home-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: -1px;
 
 	.xd-logo{
 		width: 20vw;

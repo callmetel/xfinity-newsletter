@@ -62,99 +62,6 @@ $(document).ready(function() {
 		// 	}
 		// });
 
-	// Bind Page Function
-	
-		function bindPage(){
-			scrollstart=1;
-			checkClicked = false;
-
-			setTimeout(function(){
-				var status=0,
-					touchReg = false,
-					keypress = false;
-
-				if( isMobile.detectMobile() ){
-					var ts;
-			        $('body').bind('touchstart', function (event){
-			           ts = event.originalEvent.touches[0].clientY;
-			        });
-
-
-			        $('body').bind('touchmove', function (event){
-
-			           var te = event.originalEvent.changedTouches[0].clientY;
-
-			           if (touchReg == false && status === 0) {
-
-			                $(this).on('touchend touchcancel', function(){
-			                    touchReg = false;
-			                });
-
-			                if (ts > te+175){
-			                	
-
-			                    touchReg = true;
-			                    status = 1;
-			                    counterSlide = 1;
-
-
-			                    setTimeout(function(){
-			                        status=0;
-			                        scrollstart=0;
-			                    },850);
-
-			                } else if (ts < te-175) {
-
-			                  touchReg = true;
-			                  status = 1;
-
-			                  setTimeout(function(){
-			                    status=0;
-			                    scrollstart=0;
-			                  },850);
-
-			               }
-			            
-			            } else if (status > 0){
-			                //do nothing
-			                console.log('waiting');
-			            }
-			        });
-	            } else{
-	            	$('body').bind('mousewheel', function(e) {
-						console.log('working');
-
-	                    if (status === 0) {
-	                        
-	                        if(currentY < 0) {
-	                            console.log(e.deltaY);
-	                            status=1;
-	                            
-	                            setTimeout(function(){
-	                                status=0;
-	                            },2000);
-
-	                        } else if(e.deltaY > 0){
-
-	                            status = 1;
-	                           
-	                            setTimeout(function(){
-
-	                                status=0;
-	                            },2000);
-
-	                        }
-	                        return false;
-
-	                    } else if (status > 0){
-	                        //do nothing
-	                        // console.log('waiting');
-	                    }
-	            	});
-	            }
-			}, 500);
-		}
-
 	// Hide Pages from Aria
 		
 		function addAriaHiddenPages(){
@@ -167,20 +74,66 @@ $(document).ready(function() {
 		// 	$('*').removeClass('no-focus');
 	 //    });
 
+	var $window = $(window);
+    var scrollTime = 1.2;
+    var scrollDistance = 185;
 
-    $(this).scrollTop(0);
-
-
-    $(window).scroll(function () {
-    	if($(this).scrollTop() < 5){
-        	$('.xd-logo').addClass('fade-up-in');
-        	$('#intro .article').removeClass('fade-up-in');
-        }
-        else if($(this).scrollTop() > 5 && $(this).scrollTop() < $('#intro').height() + $('header').height() ){
-        	$('.xd-logo').removeClass('fade-up-in');
-        	$('#intro .article').addClass('fade-up-in');
-        }
+    $window.on("mousewheel DOMMouseScroll", function(event){
+        event.preventDefault(); 
+        var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+        var scrollTop = $window.scrollTop();
+        var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+        TweenMax.to($window, scrollTime, {
+            scrollTo : { y: finalScroll, autoKill:true },
+                ease: Power1.easeOut,
+                overwrite: 5                          
+            });
     });
+
+	//Page Function after the down button on a slide is pressed
+
+		$(window).resize(function (e) {
+			
+			var introHeight = $('#intro').height();
+			var headerHeight = $('header').height();
+			var introPinDuration = Math.round(introHeight/2);
+			//Begin ScrollMagic animation
+			
+			// Initialize ScrollMagic Controller
+			var scrollMagicController = new ScrollMagic.Controller();
+
+			var scene1A = new ScrollMagic.Scene({
+							duration: introPinDuration,
+							offset: headerHeight /* offset the trigger 150px below #scene's top */
+						})
+						.setPin("#intro-container");
+
+			var tween1B = TweenMax.set('.xd-logo', {className:'xd-logo absolute-center'});
+
+			var scene1B = new ScrollMagic.Scene({
+							duration: 0,
+							offset: 5 /* offset the trigger 150px below #scene's top */
+						})
+						.setTween(tween1B);
+
+			var tween1C = TweenMax.set('#intro .article', {className:'article absolute-center fade-up-in'});
+
+			var scene1C = new ScrollMagic.Scene({
+							duration: 0,
+							offset: 5 /* offset the trigger 150px below #scene's top */
+						})
+						.setTween(tween1C);
+
+			scrollMagicController.addScene([
+			  scene1A,
+			  scene1B,
+			  scene1C
+			]);
+
+		}).resize();
+
+			
+
 
     $('.show-more-btn').on('click',function(){
     	$(this).addClass('is-inactive');

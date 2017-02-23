@@ -1,3 +1,4 @@
+<div id="trigger"></div>
 <section id="intro" class="gradient-wrap is-relative">
 	<div class="absolute-top">
 		<div class="is-relative">
