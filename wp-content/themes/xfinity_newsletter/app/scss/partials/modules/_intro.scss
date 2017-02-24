@@ -24,7 +24,7 @@
 
 	.article{
 		opacity: 0;
-		@include transform(translate(-50%, -40%));
+		@include transform(translate(-50%, -60%));
 		@include transition(all 1s $ease-in-out-quad);
 
 		&.fade-up-in{

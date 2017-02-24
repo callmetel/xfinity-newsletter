@@ -1,5 +1,6 @@
 #footer{
 	height: 100vh;
+	margin-top: -10%;
 	.absolute-bottom{
 		width: 100%;
 	}
@@ -52,7 +53,6 @@
 					span{
 						display:inline-block;
 						vertical-align: middle;
-						font: $p;
 					}
 					img{
 						display:inline-block;
@@ -69,7 +69,7 @@
 						&:after{
 							content:'';
 							display: inline-block;
-							width: 20px;
+							width: 12px;
 							height: 12px;
 							background-image: url('../images/down-arrow.svg');
 							background-size: contain;

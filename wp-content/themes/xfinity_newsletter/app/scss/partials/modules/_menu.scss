@@ -1,4 +1,6 @@
 #menu{
+	margin-top: -10%!important;
+	overflow: hidden;
 	ul.absolute-right{
 		right: 14.6vw;
 		list-style: none;
@@ -25,6 +27,16 @@
 			p{
 				color: $gray;
 			}
+		}
+	}
+
+	.menu-title{
+		left: 14.6vw;
+		color: $gray;
+		@include transform(translateY(50%));
+
+		b{
+			color: $green;
 		}
 	}
 

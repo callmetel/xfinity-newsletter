@@ -14,105 +14,105 @@ div{
 }
 
 a > span {
-	font: $span;
-	// @include media($short-lg-desktop){
-	// 	font: $rg-heading!important;
-	// }
-	// @include media($xl-desktop){
-	// 	font: $lg-heading;
-	// }
-	// @include media($lg-desktop){
-	// 	font: $lg-heading;
-	// }
-	// @include media($md-desktop){
-	// 	font: $rg-heading;
-	// }
-	// @include media($lg-mobile){
-	// 	font: $rg-heading;
-	// }
-	// @include media($md-mobile){
-	// 	font: $md-heading;
-	// }
-	// @include media($mobile){
-	// 	font: $sm-heading;
-	// }
-	// @include media($sm-mobile){
-	// 	font: $md-heading;
-	// }
-	// @include media($xs-mobile){
-	// 	font: $sm-heading;
-	// }
-	// @include media($v-iphone-6-plus){
-	// 	font: $sm-heading;
-	// }
+	font: $md-span;
+	@include media($short-lg-desktop){
+		font: $span!important;
+	}
+	@include media($xl-desktop){
+		font: $xl-span;
+	}
+	@include media($lg-desktop){
+		font: $lg-span;
+	}
+	@include media($md-desktop){
+		font: $span;
+	}
+	@include media($lg-mobile){
+		font: $span;
+	}
+	@include media($md-mobile){
+		font: $md-span;
+	}
+	@include media($mobile){
+		font: $md-span;
+	}
+	@include media($sm-mobile){
+		font: $md-span;
+	}
+	@include media($xs-mobile){
+		font: $sm-span;
+	}
+	@include media($v-iphone-6-plus){
+		font: $sm-span;
+	}
 }
 
 h2 {
-	font: $h2;
-	// @include media($short-lg-desktop){
-	// 	font: $rg-heading!important;
-	// }
-	// @include media($xl-desktop){
-	// 	font: $lg-heading;
-	// }
-	// @include media($lg-desktop){
-	// 	font: $lg-heading;
-	// }
-	// @include media($md-desktop){
-	// 	font: $rg-heading;
-	// }
-	// @include media($lg-mobile){
-	// 	font: $rg-heading;
-	// }
-	// @include media($md-mobile){
-	// 	font: $md-heading;
-	// }
-	// @include media($mobile){
-	// 	font: $sm-heading;
-	// }
-	// @include media($sm-mobile){
-	// 	font: $md-heading;
-	// }
-	// @include media($xs-mobile){
-	// 	font: $sm-heading;
-	// }
-	// @include media($v-iphone-6-plus){
-	// 	font: $sm-heading;
-	// }
+	font: $md-h2;
+	@include media($short-lg-desktop){
+		font: $h2!important;
+	}
+	@include media($xl-desktop){
+		font: $xl-h2;
+	}
+	@include media($lg-desktop){
+		font: $lg-h2;
+	}
+	@include media($md-desktop){
+		font: $h2;
+	}
+	@include media($lg-mobile){
+		font: $h2;
+	}
+	@include media($md-mobile){
+		font: $md-h2;
+	}
+	@include media($mobile){
+		font: $md-h2;
+	}
+	@include media($sm-mobile){
+		font: $md-h2;
+	}
+	@include media($xs-mobile){
+		font: $sm-h2;
+	}
+	@include media($v-iphone-6-plus){
+		font: $sm-h2;
+	}
 }
 
 h3 {
-	font: $h3;
-	// @include media($short-lg-desktop){
-	// 	font: $rg-heading!important;
-	// }
-	// @include media($xl-desktop){
-	// 	font: $lg-heading;
-	// }
-	// @include media($lg-desktop){
-	// 	font: $lg-heading;
-	// }
-	// @include media($md-desktop){
-	// 	font: $rg-heading;
-	// }
-	// @include media($lg-mobile){
-	// 	font: $rg-heading;
-	// }
-	// @include media($md-mobile){
-	// 	font: $md-heading;
-	// }
-	// @include media($mobile){
-	// 	font: $sm-heading;
-	// }
-	// @include media($sm-mobile){
-	// 	font: $md-heading;
-	// }
-	// @include media($xs-mobile){
-	// 	font: $sm-heading;
-	// }
-	// @include media($v-iphone-6-plus){
-	// 	font: $sm-heading;
-	// }
+	font: $md-h3;
+	@include media($short-lg-desktop){
+		font: $h3!important;
+	}
+	@include media($xl-desktop){
+		font: $xl-h3;
+	}
+	@include media($lg-desktop){
+		font: $lg-h3;
+	}
+	@include media($md-desktop){
+		font: $h3;
+	}
+	@include media($lg-mobile){
+		font: $h3;
+	}
+	@include media($md-mobile){
+		font: $md-h3;
+	}
+	@include media($mobile){
+		font: $md-h3;
+	}
+	@include media($sm-mobile){
+		font: $md-h3;
+	}
+	@include media($xs-mobile){
+		font: $sm-h3;
+	}
+	@include media($v-iphone-6-plus){
+		font: $sm-h3;
+	}
 }
 
 h4 {
@@ -187,75 +187,139 @@ h6 {
 }
 
 p {
-	font: $p;
-	// @include media($short-lg-desktop){
-	// 	font: $rg-heading!important;
-	// }
-	// @include media($xl-desktop){
-	// 	font: $lg-heading;
-	// }
-	// @include media($lg-desktop){
-	// 	font: $lg-heading;
-	// }
-	// @include media($md-desktop){
-	// 	font: $rg-heading;
-	// }
-	// @include media($lg-mobile){
-	// 	font: $rg-heading;
-	// }
-	// @include media($md-mobile){
-	// 	font: $md-heading;
-	// }
-	// @include media($mobile){
-	// 	font: $sm-heading;
-	// }
-	// @include media($sm-mobile){
-	// 	font: $md-heading;
-	// }
-	// @include media($xs-mobile){
-	// 	font: $sm-heading;
-	// }
-	// @include media($v-iphone-6-plus){
-	// 	font: $sm-heading;
-	// }
+	font: $md-p;
+	@include media($short-lg-desktop){
+		font: $p!important;
+	}
+	@include media($xl-desktop){
+		font: $xl-p;
+	}
+	@include media($lg-desktop){
+		font: $lg-p;
+	}
+	@include media($md-desktop){
+		font: $p;
+	}
+	@include media($lg-mobile){
+		font: $p;
+	}
+	@include media($md-mobile){
+		font: $md-p;
+	}
+	@include media($mobile){
+		font: $md-p;
+	}
+	@include media($sm-mobile){
+		font: $md-p;
+	}
+	@include media($xs-mobile){
+		font: $sm-p;
+	}
+	@include media($v-iphone-6-plus){
+		font: $sm-p;
+	}
 }
 
 a {
-	font: $a;
-	// @include media($short-lg-desktop){
-	// 	font: $rg-heading!important;
-	// }
-	// @include media($xl-desktop){
-	// 	font: $lg-heading;
-	// }
-	// @include media($lg-desktop){
-	// 	font: $lg-heading;
-	// }
-	// @include media($md-desktop){
-	// 	font: $rg-heading;
-	// }
-	// @include media($lg-mobile){
-	// 	font: $rg-heading;
-	// }
-	// @include media($md-mobile){
-	// 	font: $md-heading;
-	// }
-	// @include media($mobile){
-	// 	font: $sm-heading;
-	// }
-	// @include media($sm-mobile){
-	// 	font: $md-heading;
-	// }
-	// @include media($xs-mobile){
-	// 	font: $sm-heading;
-	// }
-	// @include media($v-iphone-6-plus){
-	// 	font: $sm-heading;
-	// }
+	font: $md-a;
+	@include media($short-lg-desktop){
+		font: $a!important;
+	}
+	@include media($xl-desktop){
+		font: $xl-a;
+	}
+	@include media($lg-desktop){
+		font: $lg-a;
+	}
+	@include media($md-desktop){
+		font: $a;
+	}
+	@include media($lg-mobile){
+		font: $a;
+	}
+	@include media($md-mobile){
+		font: $md-a;
+	}
+	@include media($mobile){
+		font: $md-a;
+	}
+	@include media($sm-mobile){
+		font: $md-a;
+	}
+	@include media($xs-mobile){
+		font: $sm-a;
+	}
+	@include media($v-iphone-6-plus){
+		font: $sm-a;
+	}
+}
+
+nav a {
+	font: $md-nav-a;
+	@include media($short-lg-desktop){
+		font: $nav-a!important;
+	}
+	@include media($xl-desktop){
+		font: $xl-nav-a;
+	}
+	@include media($lg-desktop){
+		font: $lg-nav-a;
+	}
+	@include media($md-desktop){
+		font: $nav-a;
+	}
+	@include media($lg-mobile){
+		font: $a;
+	}
+	@include media($md-mobile){
+		font: $md-nav-a;
+	}
+	@include media($mobile){
+		font: $md-nav-a;
+	}
+	@include media($sm-mobile){
+		font: $md-nav-a;
+	}
+	@include media($xs-mobile){
+		font: $sm-nav-a;
+	}
+	@include media($v-iphone-6-plus){
+		font: $sm-nav-a;
+	}
 }
 
 #menu .number{
-	font: $number;
+	font: $md-number;
+	@include media($short-lg-desktop){
+		font: $number!important;
+	}
+	@include media($xl-desktop){
+		font: $xl-number;
+	}
+	@include media($lg-desktop){
+		font: $lg-number;
+	}
+	@include media($md-desktop){
+		font: $number;
+	}
+	@include media($lg-mobile){
+		font: $number;
+	}
+	@include media($md-mobile){
+		font: $md-number;
+	}
+	@include media($mobile){
+		font: $md-number;
+	}
+	@include media($sm-mobile){
+		font: $md-number;
+	}
+	@include media($xs-mobile){
+		font: $sm-number;
+	}
+	@include media($v-iphone-6-plus){
+		font: $sm-number;
+	}
 }
 
 .number{
@@ -273,5 +337,75 @@ a {
 ol{
 	li{
 		font: $span;
+	}
+}
+
+.read-article-btn{
+	font: $md-cta;
+	letter-spacing: 0.1em;
+	@include media($short-lg-desktop){
+		font: $cta!important;
+	}
+	@include media($xl-desktop){
+		font: $xl-cta;
+	}
+	@include media($lg-desktop){
+		font: $lg-cta;
+	}
+	@include media($md-desktop){
+		font: $cta;
+	}
+	@include media($lg-mobile){
+		font: $cta;
+	}
+	@include media($md-mobile){
+		font: $md-cta;
+	}
+	@include media($mobile){
+		font: $md-cta;
+	}
+	@include media($sm-mobile){
+		font: $md-cta;
+	}
+	@include media($xs-mobile){
+		font: $sm-cta;
+	}
+	@include media($v-iphone-6-plus){
+		font: $sm-cta;
+	}
+}
+
+.menu-title{
+	font: $md-title;
+	
+	@include media($short-lg-desktop){
+		font: $title!important;
+	}
+	@include media($xl-desktop){
+		font: $xl-title;
+	}
+	@include media($lg-desktop){
+		font: $lg-title;
+	}
+	@include media($md-desktop){
+		font: $title;
+	}
+	@include media($lg-mobile){
+		font: $title;
+	}
+	@include media($md-mobile){
+		font: $md-title;
+	}
+	@include media($mobile){
+		font: $md-title;
+	}
+	@include media($sm-mobile){
+		font: $md-title;
+	}
+	@include media($xs-mobile){
+		font: $sm-title;
+	}
+	@include media($v-iphone-6-plus){
+		font: $sm-title;
 	}
 }

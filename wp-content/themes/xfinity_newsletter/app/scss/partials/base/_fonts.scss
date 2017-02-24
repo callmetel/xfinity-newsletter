@@ -74,7 +74,7 @@
 
 // Declare Gotham font families
 
-$xfsansBo: 'xfinity_sans_regbold';
+$xfsansBold: 'xfinity_sans_regbold';
 // $xfsansConBo: 'xfinity_sansbold_condensed';
 // $xfsansExLight: 'xfinity_sansextra_light';
 $xfsansLight: 'xfinity_sanslight';
@@ -85,23 +85,66 @@ $xfsansThin: 'xfinity_sansthin';
 
 // Font Sizes
 
-$span: normal normal 300 14px/16.8px $xfsansLight;
+$sm-span: normal normal 300 10.5px/12.6px $xfsansLight;
+$md-span: normal normal 300 14px/16.8px $xfsansLight;
+$span: normal normal 300 16.8px/20.16px $xfsansLight;
+$lg-span: normal normal 300 19.6px/23.52px $xfsansLight;
+$xl-span: normal normal 300 22.4px/26.88px $xfsansLight;
 
-$h2: normal normal 300 50px/60px $xfsansLight;
+$sm-h2: normal normal 300 37.5px/41.5px $xfsansLight;
+$md-h2: normal normal 300 50px/54px $xfsansLight;
+$h2: normal normal 300 60px/64px $xfsansLight;
+$lg-h2: normal normal 300 70px/74px $xfsansLight;
+$xl-h2: normal normal 300 80px/84px $xfsansLight;
 
-$h3: normal normal 300 22px/26.4px $xfsansLight;
+$sm-h3: normal normal 300 16.5px/19.8px $xfsansThin;
+$md-h3: normal normal 300 22px/26.4px $xfsansThin;
+$h3: normal normal 300 26.4px/31.68px $xfsansThin;
+$lg-h3: normal normal 300 30.8px/36.96px $xfsansThin;
+$xl-h3: normal normal 300 35.2px/42.24px $xfsansThin;
 
 $h4: normal normal 300 32px/38.4px $xfsansThin;
 
 $h6: normal normal 400 36px/54px $xfsans;
 
-$p: normal normal 300 18px/26px $xfsansLight;
+$sm-p: normal normal 300 15px/21px $xfsansLight;
+$md-p: normal normal 300 20px/26px $xfsansLight;
+$p: normal normal 300 24px/30px $xfsansLight;
+$lg-p: normal normal 300 28px/34px $xfsansLight;
+$xl-p: normal normal 300 32px/38px $xfsansLight;
 
-$a: normal normal 400 18px/26px $xfsans;
+$sm-a: normal normal 300 15px/21px $xfsans;
+$md-a: normal normal 300 20px/26px $xfsans;
+$a: normal normal 300 24px/30px $xfsans;
+$lg-a: normal normal 300 28px/34px $xfsans;
+$xl-a: normal normal 300 32px/38px $xfsans;
+
+$sm-nav-a: normal normal 300 11.25px/12.25px $xfsans;
+$md-nav-a: normal normal 300 15px/16px $xfsans;
+$nav-a: normal normal 300 18px/19px $xfsans;
+$lg-nav-a: normal normal 300 21px/22px $xfsans;
+$xl-nav-a: normal normal 300 24px/25px $xfsans;
 
 $footnote: normal normal 400 15px/18px $xfsans;
 
-$number: normal normal 700 44px/52.8px $xfsansMedium;
+$sm-number: normal normal 700 33px/39.6px $xfsansMedium;
+$md-number: normal normal 700 44px/52.8px $xfsansMedium;
+$number: normal normal 700 52.8px/63.36px $xfsansMedium;
+$lg-number: normal normal 700 61.6px/73.92px $xfsansMedium;
+$xl-number: normal normal 700 70.4px/84.48px $xfsansMedium;
+
 $xl-number: normal normal 700 50px/60px $xfsansMedium;
 
 $quot: normal normal 300 60px/50px $xfsansMedium;
+
+$sm-cta: normal normal 300 9.75px/32.75px $xfsansMedium;
+$md-cta: normal normal 300 13px/36px $xfsansMedium;
+$cta: normal normal 300 15.6px/38.6px $xfsansMedium;
+$lg-cta: normal normal 300 18.2px/41.2px $xfsansMedium;
+$xl-cta: normal normal 300 20.8px/43.8px $xfsansMedium;
+
+$sm-title: normal normal 300 52.5px/56.5px $xfsansThin;
+$md-title: normal normal 300 70px/74px $xfsansThin;
+$title: normal normal 300 84px/88px $xfsansThin;
+$lg-title: normal normal 300 98px/102px $xfsansThin;
+$xl-title: normal normal 300 112px/116px $xfsansThin;

@@ -6,11 +6,11 @@
 				<div class="row">
 					<div class="left">
 						<p>Have questions or comments about this quarter’s newsletter?</p>
-						<p>Share your feedback at: <a href="mailto:xdquarterly@comcast.com" class="no-decoration">xdquarterly@comcast.com</a></p>
+						<p>Share your feedback at: <a href="mailto:xdquarterly@comcast.com" class="no-decoration is-bolder">xdquarterly@comcast.com</a></p>
 						<p>
-							<a href="javascript:window.print()" class="print no-decoration"><img src="http://localhost/wp-content/themes/xfinity_newsletter/app/images/print-icon.png" alt="print icon" class="print-logo"><span class="is-bold">Print</span></a>
-							<a href="javascript:window.print()" class="print no-decoration"><span class="is-bold">Comcast Experience Design</span></a>
-							<a href="javascript:window.print()" class="print no-decoration"><span class="is-bold">XFINITY Style Guide</span></a>
+							<a href="javascript:window.print()" class="print no-decoration"><img src="http://localhost/wp-content/themes/xfinity_newsletter/app/images/print-icon.png" alt="print icon" class="print-logo"><span class="is-bolder">Print</span></a>
+							<a href="javascript:window.print()" class="print no-decoration"><span class="is-bolder">Comcast Experience Design</span></a>
+							<a href="javascript:window.print()" class="print no-decoration"><span class="is-bolder">XFINITY Style Guide</span></a>
 					</div>
 					<div class="right">
 						<h6>Creating Powerful<br>Experiences for<br>Millions of People</h6>

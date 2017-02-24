@@ -38,7 +38,7 @@ section.gradient-wrap{
 		
 		.article{
 			text-align: center;
-			width: 48vw;
+			width: 52vw;
 
 			@include media($sm-desktop){
 				width:70vw;
@@ -49,14 +49,14 @@ section.gradient-wrap{
 
 			h2.article-title{
 				display: block;
+				width:80%;
+				margin:0 auto;
 
 				@include media($sm-desktop){
 					width:80%;
-					margin:0 auto;
 				}
 				@include media($lg-mobile){
 					width:85%;
-					margin:0 auto;
 				}
 			}
 
@@ -69,7 +69,7 @@ section.gradient-wrap{
 			}
 
 			p{
-				width: 85%;
+				width: 100%;
 				margin: 0 auto;
 
 				&:first-of-type{

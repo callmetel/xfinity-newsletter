@@ -73,10 +73,12 @@ $(document).ready(function() {
 		// $("body").on("keydown", function(event) {
 		// 	$('*').removeClass('no-focus');
 	 //    });
+	 //    
+	var elementOffset = Math.round($('#old-remote').offset().top *1.25);
 
 	var $window = $(window);
     var scrollTime = 1.2;
-    var scrollDistance = 185;
+    var scrollDistance = 200;
 
     $window.on("mousewheel DOMMouseScroll", function(event){
         event.preventDefault(); 
@@ -90,13 +92,21 @@ $(document).ready(function() {
             });
     });
 
+    TweenMax.set('#remote-on', {alpha:0});
+
 	//Page Function after the down button on a slide is pressed
 
 		$(window).resize(function (e) {
-			
-			var introHeight = $('#intro').height();
+		
+			location.reload();
+		});
+
+		var introHeight = $('#intro').height();
 			var headerHeight = $('header').height();
-			var introPinDuration = Math.round(introHeight/2);
+			var introPinDuration = Math.round(introHeight/4);
+			var remoteDuration = Math.round($('#menu').height()/2);
+			
+			
 			//Begin ScrollMagic animation
 			
 			// Initialize ScrollMagic Controller
@@ -104,7 +114,7 @@ $(document).ready(function() {
 
 			var scene1A = new ScrollMagic.Scene({
 							duration: introPinDuration,
-							offset: headerHeight /* offset the trigger 150px below #scene's top */
+							offset: 0 /* offset the trigger 150px below #scene's top */
 						})
 						.setPin("#intro-container");
 
@@ -116,7 +126,7 @@ $(document).ready(function() {
 						})
 						.setTween(tween1B);
 
-			var tween1C = TweenMax.set('#intro .article', {className:'article absolute-center fade-up-in'});
+			var tween1C = TweenMax.set('#intro .article', {className:'article absolute-center fade-up-in-2', delay:.5});
 
 			var scene1C = new ScrollMagic.Scene({
 							duration: 0,
@@ -124,13 +134,45 @@ $(document).ready(function() {
 						})
 						.setTween(tween1C);
 
+			var scene2A = new ScrollMagic.Scene({
+							duration: remoteDuration,
+							offset: elementOffset /* offset the trigger 150px below #scene's top */
+						})
+						.setPin("#menu");
+
+			var tween2B = TweenMax.fromTo('#old-remote', 1, {y:'10%'}, {y:'-100%', alpha:0});
+
+			var scene2B = new ScrollMagic.Scene({
+							duration: remoteDuration,
+							offset: elementOffset /* offset the trigger 150px below #scene's top */
+						})
+						.setTween(tween2B);
+
+			var tween2C = TweenMax.fromTo('#new-remote', 1, {y:'0', alpha:0}, {y:'-20%', alpha:1});
+
+			var scene2C = new ScrollMagic.Scene({
+							duration: remoteDuration/2,
+							offset: elementOffset + 100 /* offset the trigger 150px below #scene's top */
+						})
+						.setTween(tween2C);
+
+			var tween2D = TweenMax.fromTo('#remote-on', 1, {alpha:0}, {alpha:1});
+
+			var scene2D = new ScrollMagic.Scene({
+							duration: 50,
+							offset: elementOffset + remoteDuration/1.5 /* offset the trigger 150px below #scene's top */
+						})
+						.setTween(tween2D);
+
 			scrollMagicController.addScene([
 			  scene1A,
 			  scene1B,
-			  scene1C
+			  scene1C,
+			  scene2A,
+			  scene2B,
+			  scene2C,
+			  scene2D
 			]);
-
-		}).resize();
 
 			
 

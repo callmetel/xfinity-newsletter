@@ -19,6 +19,10 @@ section.article-gradient-wrap{
 	
 	div.absolute-center{
 		width:100%;
+
+		@include media($lg-desktop) {
+			@include transform(translate(-50%,-40%));
+		}
 	}
 	div.is-relative{
 		// border: 1px solid red;
@@ -27,7 +31,7 @@ section.article-gradient-wrap{
 		
 		.article{
 			text-align: center;
-			width: 48vw;
+			width: 52vw;
 
 			h2.article-title{
 				display: block;
@@ -42,7 +46,7 @@ section.article-gradient-wrap{
 			}
 
 			p{
-				width: 85%;
+				width: 90%;
 				margin: 0 auto;
 
 				&:first-of-type{
@@ -73,12 +77,15 @@ section.article-gradient-wrap{
 
 	&#article2-heading{
 		background-image: url('../images/section-2-bg.jpg');
+		margin-top: -10%;
 	}
 	&#article3-heading{
 		background-image: url('../images/section-3-bg.jpg');
+		margin-top: -10%;
 	}
 	&#article4-heading{
 		background-image: url('../images/section-4-bg.jpg');
+		margin-top: -10%;
 	}
 }
 
@@ -107,7 +114,12 @@ section.article-gradient-wrap{
 		p{
 			color: $ltgray;
 			margin-top: 20px;
-
+			
+			&.highlight{
+				color: $purple;
+				border-left: 6px solid $purple;
+				padding-left: 30px;
+			}
 		}
 
 		a{
@@ -154,11 +166,16 @@ section.article-gradient-wrap{
 				background-size: contain;
 				background-repeat: no-repeat;
 			}
-			p{
-				color: $purple;
+			p{	
+				color: $gray;
 				width:80%;
 				display: inline-block;
 				vertical-align: top;
+				margin-top: 0;
+
+				span{
+					color: $purple;
+				}
 			}
 		}
 
@@ -177,5 +194,11 @@ section.article-gradient-wrap{
 .article-container:not(#article-1){
 	div.animate-reveal{
 		margin-top: 40px;
+	}
+}
+
+#article-3{
+	.question{
+		margin-top:30px;
 	}
 }

@@ -1,12 +1,12 @@
 <section id="menu" class="gradient-wrap is-relative">
-<img src="http://localhost/wp-content/themes/xfinity_newsletter/app/images/remote.png" alt="" class="bg-image">
-<img src="http://localhost/wp-content/themes/xfinity_newsletter/app/images/old-remote.jpg" alt="" id="old-remote" class="absolute-top">
-<div id="new-remote" class="absolute-top">
-	<img src="http://localhost/wp-content/themes/xfinity_newsletter/app/images/new-remote.png" alt="" id="remote-off" class="absolute-top">
-	<img src="http://localhost/wp-content/themes/xfinity_newsletter/app/images/new-remote-on.png" alt="" id="remote-on" class="absolute-top">
-</div>
+	<img src="http://localhost/wp-content/themes/xfinity_newsletter/app/images/old-remote.png" alt="" id="old-remote" class="absolute-top">
+	<div id="new-remote" class="absolute-top">
+		<img src="http://localhost/wp-content/themes/xfinity_newsletter/app/images/new-remote.png" alt="" id="remote-off" class="absolute-top">
+		<img src="http://localhost/wp-content/themes/xfinity_newsletter/app/images/new-remote-on.png" alt="" id="remote-on" class="absolute-top">
+	</div>
 	<div class="absolute-top">
 		<div class="is-relative">
+			<div class="menu-title absolute-left">ALL<br>ABOUT<br><b class="is-bolder">VOICE</b></div>
 			<ul class="absolute-right">
 				<li>
 					<a href="#article1-heading" class="no-decoration">
