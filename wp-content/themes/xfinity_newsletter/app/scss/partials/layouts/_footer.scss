@@ -20,6 +20,9 @@
 			}
 		}	
 	}
+	.back-btn{
+		text-align: center;
+	}
 	.is-relative{
 		height: 100%;
 
@@ -31,7 +34,7 @@
 			.left{
 				text-align: left;
 				display: inline-block;
-				width:50%;
+				width:60%;
 				vertical-align: bottom;
 
 				@include media($mobile){
@@ -83,7 +86,7 @@
 			.right{
 				text-align: right;
 				display: inline-block;
-				width:49%;
+				width:39%;
 				vertical-align: bottom;
 				
 				@include media($mobile){

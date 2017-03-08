@@ -1,4 +1,4 @@
-<article id="article-4" class="article-container">
+<article id="article-4" class="article-container section">
 	<div class="container">
 		<p>As the list of voice-enabled devices grows, the segmentation among them can be clearly defined into three types of experiences:</p>
 
@@ -17,7 +17,7 @@
 			<p>Think about it. Today’s experiences are based on sound logic where users are guided through a pre-determined flow to get an expected result. Tomorrow’s interfaces will have to deal with the unpredictable. This is a conversation with our users that we haven’t had before, a conversation that’s no longer one way in nature. What we learn from customer conversations will inform how we react, what we suggest and ultimately, how well we meet their expectations.</p>
 			<p>Our approach to every new experience can’t be waterfall process, where product makes a requirement, design gives a presentation, and dev builds something. Instead, we need to be nimble and reactive, building tangible and testable devices that improve and delight with each iteration. The only thing we can predict here is unpredictability.</p>
 			<p>It’s clear that voice integration is becoming table stakes of the future. And while no one is nearing the artificial intelligence of KITT from Knight Rider, our continued focus on how voice can best serve our customers will help us get there sooner.</p>
-			<a href="mailto:Neil_Epstein@comcast.com" class="no-decoration contact-link"><div class="mail-icon dark-icon"></div> Neil_Epstein@comcast.com</a>
+			<a href="mailto:Neil_Epstein@comcast.com" class="no-decoration contact-link"><div class="mail-icon dark-icon read-article-btn"></div> EMAIL NEIL</a>
 		</div>
 		
 		<button class="is-bold show-less-btn is-inactive">SHOW LESS</button>	

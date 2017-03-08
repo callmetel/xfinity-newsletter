@@ -10,28 +10,68 @@ section.article-gradient-wrap{
 	-webkit-clip-path: polygon(0 38%, 100% 0%, 100% 63%, 0% 100%);
 	clip-path: polygon(0 38%, 100% 0%, 100% 63%, 0% 100%);
 
+	@include media($xs-mobile){
+		-webkit-clip-path: none;
+		clip-path: none;
+		height:100vh;
+	}
+	@include media($v-iphone-6-plus){
+		-webkit-clip-path: none;
+		clip-path: none;
+		height:100vh;
+	}
+
 	.bg-image{
 	  	width:100vw;
 	  	-webkit-clip-path: polygon(0 40%, 100% 0%, 100% 63%, 0% 100%);
 		clip-path: polygon(0 40%, 100% 0%, 100% 63%, 0% 100%);
 		opacity:0;
+
+		@include media($xs-mobile){
+			-webkit-clip-path: polygon(0 10%, 100% 0%, 100% 93%, 0% 100%);
+			clip-path: polygon(0 10%, 100% 0%, 100% 93%, 0% 100%);
+		}
+		@include media($v-iphone-6-plus){
+			-webkit-clip-path: polygon(0 10%, 100% 0%, 100% 93%, 0% 100%);
+			clip-path: polygon(0 10%, 100% 0%, 100% 93%, 0% 100%);
+		}
 	}
 	
 	div.absolute-center{
 		width:100%;
-
+		@include transform(translate(-50%,-40%));
 		@include media($lg-desktop) {
 			@include transform(translate(-50%,-40%));
+		}
+		@include media($xs-mobile) {
+			@include transform(translate(-50%,-65%));
+		}
+		@include media($v-iphone-6-plus) {
+			@include transform(translate(-50%,-65%));
 		}
 	}
 	div.is-relative{
 		// border: 1px solid red;
 	    display: block;
 	    height: 63%;
+
+	    @include media($xs-mobile) {
+			height: auto;
+		}
+		@include media($v-iphone-6-plus) {
+			height: auto;
+		}
 		
 		.article{
-			text-align: center;
+			text-align: left;
 			width: 52vw;
+
+			@include media($xs-mobile){
+				width: 85vw;
+			}
+			@include media($v-iphone-6-plus){
+				width: 85vw;
+			}
 
 			h2.article-title{
 				display: block;
@@ -42,12 +82,12 @@ section.article-gradient-wrap{
 				width: 6.25vw;
 				height:1px;
 				background: $white;
-				margin: 30px auto;
+				margin: 30px 0;
 			}
 
 			p{
 				width: 90%;
-				margin: 0 auto;
+				margin: 0;
 
 				&:first-of-type{
 					margin-top: 40px;
@@ -57,12 +97,12 @@ section.article-gradient-wrap{
 			a.read-article-btn{
 				font-family: $xfsansMedium;
 				display: block;
-				margin-top: 10.75vh;
+				margin-top: 8.5vh;
 				img.down-arrow{
-					width: 2.9vw;
-					display: block;
-					margin: 0 auto;
-					margin-top: 18px;
+					width: 2.2vw;
+					display: inline-block;
+					margin: 0;
+					margin-right: 10px;
 				}
 			}
 		}
@@ -70,30 +110,65 @@ section.article-gradient-wrap{
 	}
 
 	&#article1-heading{
-		background-image: url('../images/section-1-bg.jpg');
+		background: #000000 url("../images/section-1-bg.jpg") no-repeat;
 		margin-top: -38%;
 		padding-top: 38%;
+		@include media($xs-mobile){
+			margin-top:0;
+			padding-top: 0;
+		}
+		@include media($v-iphone-6-plus){
+			margin-top:0;
+			padding-top: 0;
+		}
 	}
 
 	&#article2-heading{
-		background-image: url('../images/section-2-bg.jpg');
+		background: #000000 url("../images/section-2-bg.jpg") no-repeat;
 		margin-top: -10%;
+		@include media($xs-mobile){
+			margin-top:0;
+		}
+		@include media($v-iphone-6-plus){
+			margin-top:0;
+		}
 	}
 	&#article3-heading{
-		background-image: url('../images/section-3-bg.jpg');
+		background: #000000 url("../images/section-3-bg.jpg") no-repeat;
 		margin-top: -10%;
+		@include media($xs-mobile){
+			margin-top:0;
+		}
+		@include media($v-iphone-6-plus){
+			margin-top:0;
+		}
 	}
 	&#article4-heading{
-		background-image: url('../images/section-4-bg.jpg');
+		background: #000000 url("../images/section-4-bg.jpg") no-repeat;
 		margin-top: -10%;
+		@include media($xs-mobile){
+			margin-top:0;
+		}
+		@include media($v-iphone-6-plus){
+			margin-top:0;
+		}
 	}
 }
 
 .article-container{
+
 	.container{
 		width: 48vw;
 		margin: 0 auto;
 		height: auto;
+
+		@include media($xs-mobile) {
+			width: 75vw;
+			padding: 50px 0;
+		}
+		@include media($v-iphone-6-plus) {
+			padding: 50px 0;
+		}
 
 		h3{
 			color: $gray;
@@ -185,8 +260,12 @@ section.article-gradient-wrap{
 		}
 
 		div.reveal{
-			display: none;
+			height:0;
+			opacity:0;
 			@include transition(all 1s ease-in-out);
+			p,div,h3,h4,a{
+				display: none;
+			}
 		}
 	}
 }

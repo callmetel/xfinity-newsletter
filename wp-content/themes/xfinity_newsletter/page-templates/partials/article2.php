@@ -1,4 +1,4 @@
-<article id="article-2" class="article-container">
+<article id="article-2" class="article-container section">
 	<div class="container">
 		<div class="question">
 			<h4 class="letter-heading">Q:</h4>
@@ -17,7 +17,7 @@
 			<p class="highlight is-bold">The move to humanize this device, and personalize the experience, helps our customers grow more comfortable, gain confidence and be more likely to embrace new technology live voice controls.</p>
 			<p>They won’t just add hardware, but they’ll expand and improve connectivity throughout their entire home. By tackling the hardest problems, the most daunting technical and customer experience challenges, we have the opportunity to establish our own footprint in the emerging digital home.</p>
 
-			<a href="mailto:Steve_Leardi@comcast.com" class="no-decoration contact-link"><div class="mail-icon dark-icon"></div> Steve_Leardi@comcast.com</a>
+			<a href="mailto:Steve_Leardi@comcast.com" class="no-decoration contact-link"><div class="mail-icon dark-icon read-article-btn"></div> EMAIL STEVE</a>
 		</div>
 		<button class="is-bold show-less-btn is-inactive">SHOW LESS</button>	
 	</div>

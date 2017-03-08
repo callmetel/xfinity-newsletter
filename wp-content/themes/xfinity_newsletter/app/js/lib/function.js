@@ -80,31 +80,26 @@ $(document).ready(function() {
     var scrollTime = 1.2;
     var scrollDistance = 200;
 
-    $window.on("mousewheel DOMMouseScroll", function(event){
-        event.preventDefault(); 
-        var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
-        var scrollTop = $window.scrollTop();
-        var finalScroll = scrollTop - parseInt(delta*scrollDistance);
-        TweenMax.to($window, scrollTime, {
-            scrollTo : { y: finalScroll, autoKill:true },
-                ease: Power1.easeOut,
-                overwrite: 5                          
-            });
-    });
-
     TweenMax.set('#remote-on', {alpha:0});
 
 	//Page Function after the down button on a slide is pressed
 
 		$(window).resize(function (e) {
-		
-			location.reload();
+			if(!isMobile.detectMobile()){
+				location.reload();
+			};
 		});
 
 		var introHeight = $('#intro').height();
-			var headerHeight = $('header').height();
-			var introPinDuration = Math.round(introHeight/4);
-			var remoteDuration = Math.round($('#menu').height()/2);
+		var headerHeight = $('header').height();
+		var introPinDuration = Math.round(introHeight/4);
+		var remoteDuration = Math.round($('#menu').height()/2);
+
+		var article1Location = Math.round($('#article1-heading').offset().top *1.25);
+		var article2Location = Math.round($('#article2-heading').offset().top *1.125);
+		var article3Location = Math.round($('#article3-heading').offset().top *1.09);
+		var article4Location = Math.round($('#article4-heading').offset().top *1.07);
+
 			
 			
 			//Begin ScrollMagic animation
@@ -174,8 +169,51 @@ $(document).ready(function() {
 			  scene2D
 			]);
 
+		$window.on("mousewheel DOMMouseScroll", function(event){
+	        event.preventDefault(); 
+	        var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+	        var scrollTop = $window.scrollTop();
+	        var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+	        TweenMax.to($window, scrollTime, {
+	            scrollTo : { y: finalScroll, autoKill:true },
+	                ease: Power1.easeOut,
+	                overwrite: 5                          
+	            });
+	        if(Math.round($('body').scrollTop() - $('#article-3').offset().top) > 0 && Math.round($('body').scrollTop() - $('#article-3').offset().top) < Math.round($('#article4-heading').offset().top)){
+	        	TweenLite.set('.nav-link', {color: '#65d0a7'});
+	        }
+	        // else if($('body').scrollTop() >= article2Location + remoteDuration){
+	        // 	TweenLite.to('.nav-link', .5, {color: '#65d0a7', ease:Power1.easeInOut});
+	        // }
+	        else{
+	        	TweenLite.set('.nav-link', {color: '#ffffff'});
+	        }
+	    });
+
 			
 
+	// Nav Links
+
+		$('.nav-link:eq(0), #menu ul a:eq(0)').on('click', function(e){
+			e.preventDefault();
+			TweenLite.to($window, 2, {scrollTo:article1Location + remoteDuration});
+		});
+		$('.nav-link:eq(1), #menu ul a:eq(1)').on('click', function(e){
+			e.preventDefault();
+			TweenLite.to($window, 2, {scrollTo:article2Location + remoteDuration});
+		});
+		$('.nav-link:eq(2), #menu ul a:eq(2)').on('click', function(e){
+			e.preventDefault();
+			TweenLite.to($window, 2, {scrollTo:article3Location + remoteDuration});
+		});
+		$('.nav-link:eq(3), #menu ul a:eq(3)').on('click', function(e){
+			e.preventDefault();
+			TweenLite.to($window, 2, {scrollTo:article4Location + remoteDuration});
+		});
+		$('.back-btn').on('click', function(e){
+			e.preventDefault();
+			TweenLite.to($window, 2, {scrollTo:0});
+		});
 
     $('.show-more-btn').on('click',function(){
     	$(this).addClass('is-inactive');
@@ -185,14 +223,22 @@ $(document).ready(function() {
 
     $('.show-less-btn').on('click',function(){
     	var animRev = $(this).siblings('.animate-reveal');
+    	var revHeight = $(this).siblings('.animate-reveal').height();
 
     	$(this).addClass('is-inactive');
     	$(this).siblings('.show-more-btn').removeClass('is-inactive');
     	animRev.addClass('animate-reveal-back').removeClass('animate-reveal');
 
+    	// var article = $(this).closest('.article-gradient-wrap').offset().top;
+
+
+	    	$('html,body').animate({
+	        scrollTop: $(window).scrollTop() - revHeight},
+	        'slow');
+
     	setTimeout(function(){
     		animRev.addClass('reveal');
-    	},850);
+    	},1200);
     });
 
     $('#menu li:eq(0)').on('click', function(){
@@ -207,6 +253,11 @@ $(document).ready(function() {
     $('#menu li:eq(3)').on('click', function(){
     	$('nav a:eq(3)').trigger('click');
     });
+
+    // Change Nav link Color on Scroll
+    
+
+		    
 
 });
 

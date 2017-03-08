@@ -8,14 +8,43 @@ section.gradient-wrap{
 	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 63%, 0% 100%);
 	clip-path: polygon(0 0, 100% 0%, 100% 63%, 0% 100%);
 
+	@include media($xs-mobile){
+		-webkit-clip-path: none;
+		clip-path: none;
+		height: 125vh;
+	}
+	@include media($v-iphone-6-plus){
+		-webkit-clip-path: none;
+		clip-path: none;
+		height: 125vh;
+	}
+
 	&#footer{
 		-webkit-clip-path: polygon(0 63%, 100% 0, 100% 100%, 0% 100%);
 		clip-path: polygon(0 63%, 100% 0, 100% 100%, 0% 100%);
+
+		@include media($xs-mobile){
+			-webkit-clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
+			clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
+		}
+		@include media($v-iphone-6-plus){
+			-webkit-clip-path: polygon(0 93%, 100% 0, 100% 100%, 0% 100%);
+			clip-path: polygon(0 93%, 100% 0, 100% 100%, 0% 100%);
+		}
 
 		.bg-image{
 		  	width:100vw;
 		  	-webkit-clip-path: polygon(0 63%, 100% 0, 100% 100%, 0% 100%);
 			clip-path: polygon(0 63%, 100% 0, 100% 100%, 0% 100%);
+
+			@include media($xs-mobile){
+				-webkit-clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
+				clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
+			}
+			@include media($v-iphone-6-plus){
+				-webkit-clip-path: polygon(0 93%, 100% 0, 100% 100%, 0% 100%);
+				clip-path: polygon(0 93%, 100% 0, 100% 100%, 0% 100%);
+			}
 		}
 		background-image:url('../images/footer-bg.jpg');
 		background-size: cover;
@@ -26,6 +55,15 @@ section.gradient-wrap{
 	  	width:100vw;
 	  	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 63%, 0% 100%);
 		clip-path: polygon(0 0, 100% 0%, 100% 63%, 0% 100%);
+
+		@include media($xs-mobile){
+			-webkit-clip-path: polygon(0 0, 100% 0%, 100% 93%, 0% 100%);
+			clip-path: polygon(0 0, 100% 0%, 100% 93%, 0% 100%);
+		}
+		@include media($v-iphone-6-plus){
+			-webkit-clip-path: polygon(0 0, 100% 0%, 100% 93%, 0% 100%);
+			clip-path: polygon(0 0, 100% 0%, 100% 93%, 0% 100%);
+		}
 	}
 	div.absolute-top{
 		width:100%;
@@ -37,7 +75,7 @@ section.gradient-wrap{
 	    height: 63%;
 		
 		.article{
-			text-align: center;
+			text-align: left;
 			width: 52vw;
 
 			@include media($sm-desktop){
@@ -46,11 +84,15 @@ section.gradient-wrap{
 			@include media($lg-mobile){
 				width:80vw;
 			}
+			@include media($v-iphone-6-plus){
+				width: 85vw;
+			}
 
 			h2.article-title{
 				display: block;
 				width:80%;
-				margin:0 auto;
+				// margin:0 auto;
+				margin:0;
 
 				@include media($sm-desktop){
 					width:80%;
@@ -65,7 +107,7 @@ section.gradient-wrap{
 				width: 6.25vw;
 				height:1px;
 				background: $white;
-				margin: 30px auto;
+				margin: 30px 0;
 			}
 
 			p{
@@ -84,4 +126,8 @@ section.gradient-wrap{
 		}
 	}
 	
+}
+
+.article-container{
+	background: $offwhite;
 }

@@ -2,7 +2,7 @@
 	<div class="absolute-bottom">
 		<div class="is-relative">
 			<div class="article absolute-bottom">
-				<a href="#intro" class="back-btn no-decoration">BACK TO TOP <img src="http://localhost/wp-content/themes/xfinity_newsletter/app/images/down-arrow.svg" alt="" class="up-arrow"></a>
+				<a href="#intro" class="back-btn no-decoration read-article-btn"><img src="http://localhost/wp-content/themes/xfinity_newsletter/app/images/down-arrow.svg" alt="" class="up-arrow"> BACK TO TOP</a>
 				<div class="row">
 					<div class="left">
 						<p>Have questions or comments about this quarter’s newsletter?</p>
@@ -11,6 +11,7 @@
 							<a href="javascript:window.print()" class="print no-decoration"><img src="http://localhost/wp-content/themes/xfinity_newsletter/app/images/print-icon.png" alt="print icon" class="print-logo"><span class="is-bolder">Print</span></a>
 							<a href="javascript:window.print()" class="print no-decoration"><span class="is-bolder">Comcast Experience Design</span></a>
 							<a href="javascript:window.print()" class="print no-decoration"><span class="is-bolder">XFINITY Style Guide</span></a>
+							<a href="javascript:window.print()" class="print no-decoration"><span class="is-bolder">Research Site</span></a>
 					</div>
 					<div class="right">
 						<h6>Creating Powerful<br>Experiences for<br>Millions of People</h6>

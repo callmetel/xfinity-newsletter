@@ -17,6 +17,10 @@
 		opacity: 0;
 		@include transform(translate(-50%, -60%));
 
+		@include media($xs-mobile) {
+			width: 40vw;
+		}
+
 		&.fade-up-in{
 			@include transition-delay(.75s);
 		}

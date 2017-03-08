@@ -42,17 +42,22 @@
 
 @include keyframes (reveal) {
     0%{
-        display: none;
         opacity:0;
+        height:0;
         @include transform(translateY(-20px));
     }
     1%{
-        display: block;
         opacity:0;
+        height:0;
         @include transform(translateY(-20px));
     }
+    99%{
+        height:100%;
+        opacity:1;
+        @include transform(translateY(0)); 
+    }
     100% {
-        display: block;
+        height:auto;
         opacity:1;
         @include transform(translateY(0));
     }
@@ -60,18 +65,13 @@
 
 @include keyframes (revealback) {
     0% {
-        display: block;
         opacity:1;
+        height:150%;
         @include transform(translateY(0));
     }
-    99%{
-        display: block;
-        opacity:0;
-        @include transform(translateY(-20px));
-    }
     100%{
-        display: none;
         opacity:0;
+        height:0;
         @include transform(translateY(-20px));
     }
 }

@@ -1,4 +1,4 @@
-<article id="article-1" class="article-container">
+<article id="article-1" class="article-container section">
 	<div class="container">
 		<div class="question">
 			<h4 class="letter-heading">Q:</h4>
@@ -67,7 +67,7 @@
 					<li>“Voice Command Competitive Usability Testing, 6/2014. XR-18 Prototype Evaluation and Voice Control Discovery Research, 10/2016 </li>
 				</ol>
 			</div>
-			<a href="mailto:Kyree_Holmes@comcast.com" class="no-decoration contact-link"><div class="mail-icon dark-icon"></div> Kyree_Holmes@comcast.com</a>
+			<a href="mailto:Kyree_Holmes@comcast.com" class="no-decoration contact-link read-article-btn"><div class="mail-icon dark-icon"></div> EMAIL KYREE</a>
 		</div>
 		<button class="is-bold show-less-btn is-inactive">SHOW LESS</button>	
 	</div>

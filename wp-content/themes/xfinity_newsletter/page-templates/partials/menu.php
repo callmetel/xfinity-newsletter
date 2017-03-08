@@ -1,4 +1,4 @@
-<section id="menu" class="gradient-wrap is-relative">
+<section id="menu" class="gradient-wrap is-relative section">
 	<img src="http://localhost/wp-content/themes/xfinity_newsletter/app/images/old-remote.png" alt="" id="old-remote" class="absolute-top">
 	<div id="new-remote" class="absolute-top">
 		<img src="http://localhost/wp-content/themes/xfinity_newsletter/app/images/new-remote.png" alt="" id="remote-off" class="absolute-top">

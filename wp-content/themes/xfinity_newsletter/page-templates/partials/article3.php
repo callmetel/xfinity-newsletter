@@ -1,4 +1,4 @@
-<article id="article-3" class="article-container">
+<article id="article-3" class="article-container section">
 	<div class="container">
 		<h4>This is what we work toward every day; new ways to use voice as a means to make homes smarter, safer, and easier to manage.</h4>
 		<p>“OK Google. Find a hotspot near me.”</p>
@@ -24,7 +24,7 @@
 			<p>As we extend our Digital First efforts to more customer touch points&mdash;including call centers, tech and retail&mdash;we’re now, more than ever, committed to delivering a best-in-class experience you have to say to believe. </p>
 			<p>“Hey X1, show me more.”</p>
 			
-			<a href="mailto:Heather_Hollis@comcast.com" class="no-decoration contact-link"><div class="mail-icon dark-icon"></div> Heather_Hollis@comcast.com</a>
+			<a href="mailto:Heather_Hollis@comcast.com" class="no-decoration contact-link"><div class="mail-icon dark-icon read-article-btn"></div> EMAIL HEATHER</a>
 		</div>
 		<button class="is-bold show-less-btn is-inactive">SHOW LESS</button>	
 	</div>
