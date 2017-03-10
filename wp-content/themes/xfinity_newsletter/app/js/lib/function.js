@@ -48,6 +48,32 @@ $(document).ready(function() {
                 return navigator.userAgent.match(/Mobi/i);
             }
         };
+
+        if(isMobile.detectMobile()){
+        	$('#old-remote').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/mobile-old-remote.png');
+        	$('#remote-off').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/mobile-new-remote.png');
+        	$('#remote-on').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/mobile-new-remote-on.png');
+        } else{
+        	$('#old-remote').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/old-remote.png');
+        	$('#remote-off').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/new-remote.png');
+        	$('#remote-on').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/new-remote-on.png');
+        }
+
+        function printPDF()
+		{
+		  var pdfFrame = window.frames["pdf"];
+		  pdfFrame.focus();
+		  pdfFrame.print();
+		}
+
+		$('.print-pdf').on('click', function(e){
+			e.preventDefault();
+			console.log('clicked');
+			printPDF();
+		});
+
+		// $('nav').midnight();
+
 	
 	// Remove Focus On Click For Tab Index 
 		
@@ -86,7 +112,10 @@ $(document).ready(function() {
 
 		$(window).resize(function (e) {
 			if(!isMobile.detectMobile()){
-				location.reload();
+				setTimeout(function(){
+					location.reload();	
+				}, 2000);
+				
 			};
 		});
 
@@ -168,28 +197,6 @@ $(document).ready(function() {
 			  scene2C,
 			  scene2D
 			]);
-
-		$window.on("mousewheel DOMMouseScroll", function(event){
-	        event.preventDefault(); 
-	        var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
-	        var scrollTop = $window.scrollTop();
-	        var finalScroll = scrollTop - parseInt(delta*scrollDistance);
-	        TweenMax.to($window, scrollTime, {
-	            scrollTo : { y: finalScroll, autoKill:true },
-	                ease: Power1.easeOut,
-	                overwrite: 5                          
-	            });
-	        if(Math.round($('body').scrollTop() - $('#article-3').offset().top) > 0 && Math.round($('body').scrollTop() - $('#article-3').offset().top) < Math.round($('#article4-heading').offset().top)){
-	        	TweenLite.set('.nav-link', {color: '#65d0a7'});
-	        }
-	        // else if($('body').scrollTop() >= article2Location + remoteDuration){
-	        // 	TweenLite.to('.nav-link', .5, {color: '#65d0a7', ease:Power1.easeInOut});
-	        // }
-	        else{
-	        	TweenLite.set('.nav-link', {color: '#ffffff'});
-	        }
-	    });
-
 			
 
 	// Nav Links
@@ -213,6 +220,20 @@ $(document).ready(function() {
 		$('.back-btn').on('click', function(e){
 			e.preventDefault();
 			TweenLite.to($window, 2, {scrollTo:0});
+		});
+
+	// Mobile Nav 
+		
+		$('#burger').on('click', function(){
+			$('nav').addClass('is-active');
+		});
+
+		$('#close').on('click', function(){
+			$('nav').removeClass('is-active');
+		});
+
+		$('.mobile-nav .nav-link').on('click', function(){
+			$('nav').removeClass('is-active');
 		});
 
     $('.show-more-btn').on('click',function(){
@@ -256,8 +277,6 @@ $(document).ready(function() {
 
     // Change Nav link Color on Scroll
     
-
-		    
 
 });
 

@@ -18,18 +18,37 @@ section.gradient-wrap{
 		clip-path: none;
 		height: 125vh;
 	}
+	@include media($h-iphone){
+		-webkit-clip-path: none;
+		clip-path: none;
+		height: 200vh;
+	}
+	@include media($v-iphone-5){
+		-webkit-clip-path: none;
+		clip-path: none;
+		height:300vh;
+	}
 
 	&#footer{
 		-webkit-clip-path: polygon(0 63%, 100% 0, 100% 100%, 0% 100%);
 		clip-path: polygon(0 63%, 100% 0, 100% 100%, 0% 100%);
 
+		@include media($sm-desktop){
+			height:100vh;
+			-webkit-clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%);
+			clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%);
+		}
 		@include media($xs-mobile){
-			-webkit-clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
-			clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
+			-webkit-clip-path: none;
+			clip-path: none;
 		}
 		@include media($v-iphone-6-plus){
-			-webkit-clip-path: polygon(0 93%, 100% 0, 100% 100%, 0% 100%);
-			clip-path: polygon(0 93%, 100% 0, 100% 100%, 0% 100%);
+			-webkit-clip-path: none;
+			clip-path: none;
+		}
+		@include media($h-iphone){
+			-webkit-clip-path: none;
+			clip-path: none;
 		}
 
 		.bg-image{
@@ -42,6 +61,10 @@ section.gradient-wrap{
 				clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
 			}
 			@include media($v-iphone-6-plus){
+				-webkit-clip-path: polygon(0 93%, 100% 0, 100% 100%, 0% 100%);
+				clip-path: polygon(0 93%, 100% 0, 100% 100%, 0% 100%);
+			}
+			@include media($h-iphone){
 				-webkit-clip-path: polygon(0 93%, 100% 0, 100% 100%, 0% 100%);
 				clip-path: polygon(0 93%, 100% 0, 100% 100%, 0% 100%);
 			}
@@ -64,6 +87,10 @@ section.gradient-wrap{
 			-webkit-clip-path: polygon(0 0, 100% 0%, 100% 93%, 0% 100%);
 			clip-path: polygon(0 0, 100% 0%, 100% 93%, 0% 100%);
 		}
+		@include media($h-iphone){
+			-webkit-clip-path: polygon(0 0, 100% 0%, 100% 93%, 0% 100%);
+			clip-path: polygon(0 0, 100% 0%, 100% 93%, 0% 100%);
+		}
 	}
 	div.absolute-top{
 		width:100%;
@@ -81,11 +108,14 @@ section.gradient-wrap{
 			@include media($sm-desktop){
 				width:70vw;
 			}
-			@include media($lg-mobile){
-				width:80vw;
+			@include media($xs-mobile){
+				width: 88vw;
 			}
 			@include media($v-iphone-6-plus){
-				width: 85vw;
+				width: 88vw;
+			}
+			@include media($h-iphone){
+				width: 88vw;
 			}
 
 			h2.article-title{
@@ -108,6 +138,16 @@ section.gradient-wrap{
 				height:1px;
 				background: $white;
 				margin: 30px 0;
+
+				@include media($xs-mobile){
+					width:20vw;
+				}
+				@include media($v-iphone-6-plus){
+					width:20vw;
+				}
+				@include media($h-iphone){
+					width:20vw;
+				}
 			}
 
 			p{

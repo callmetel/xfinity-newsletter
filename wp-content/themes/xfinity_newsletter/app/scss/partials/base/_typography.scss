@@ -45,6 +45,9 @@ a > span {
 	@include media($v-iphone-6-plus){
 		font: $sm-span;
 	}
+	@include media($h-iphone){
+		font: $sm-span;
+	}
 }
 
 h2 {
@@ -77,6 +80,9 @@ h2 {
 		font: $sm-h2;
 	}
 	@include media($v-iphone-6-plus){
+		font: $sm-h2;
+	}
+	@include media($h-iphone){
 		font: $sm-h2;
 	}
 }
@@ -113,40 +119,46 @@ h3 {
 	@include media($v-iphone-6-plus){
 		font: $sm-h3;
 	}
+	@include media($h-iphone){
+		font: $sm-h3;
+	}
 }
 
 h4 {
-	font: $h4;
-	// @include media($short-lg-desktop){
-	// 	font: $rg-heading!important;
-	// }
-	// @include media($xl-desktop){
-	// 	font: $lg-heading;
-	// }
-	// @include media($lg-desktop){
-	// 	font: $lg-heading;
-	// }
-	// @include media($md-desktop){
-	// 	font: $rg-heading;
-	// }
-	// @include media($lg-mobile){
-	// 	font: $rg-heading;
-	// }
-	// @include media($md-mobile){
-	// 	font: $md-heading;
-	// }
-	// @include media($mobile){
-	// 	font: $sm-heading;
-	// }
-	// @include media($sm-mobile){
-	// 	font: $md-heading;
-	// }
-	// @include media($xs-mobile){
-	// 	font: $sm-heading;
-	// }
-	// @include media($v-iphone-6-plus){
-	// 	font: $sm-heading;
-	// }
+	font: $md-h4;
+	@include media($short-lg-desktop){
+		font: $h4!important;
+	}
+	@include media($xl-desktop){
+		font: $xl-h4;
+	}
+	@include media($lg-desktop){
+		font: $lg-h4;
+	}
+	@include media($md-desktop){
+		font: $h4;
+	}
+	@include media($lg-mobile){
+		font: $h4;
+	}
+	@include media($md-mobile){
+		font: $md-h4;
+	}
+	@include media($mobile){
+		font: $md-h4;
+	}
+	@include media($sm-mobile){
+		font: $md-h4;
+	}
+	@include media($xs-mobile){
+		font: $sm-h4;
+	}
+	@include media($v-iphone-6-plus){
+		font: $sm-h4;
+	}
+	@include media($h-iphone){
+		font: $sm-h4;
+	}
 	&.letter-heading{
 		font-family: $xfsansMedium!important;
 	}
@@ -154,36 +166,39 @@ h4 {
 
 h6 {
 	font: $h6;
-	// @include media($short-lg-desktop){
-	// 	font: $rg-heading!important;
-	// }
-	// @include media($xl-desktop){
-	// 	font: $lg-heading;
-	// }
-	// @include media($lg-desktop){
-	// 	font: $lg-heading;
-	// }
-	// @include media($md-desktop){
-	// 	font: $rg-heading;
-	// }
-	// @include media($lg-mobile){
-	// 	font: $rg-heading;
-	// }
-	// @include media($md-mobile){
-	// 	font: $md-heading;
-	// }
-	// @include media($mobile){
-	// 	font: $sm-heading;
-	// }
-	// @include media($sm-mobile){
-	// 	font: $md-heading;
-	// }
-	// @include media($xs-mobile){
-	// 	font: $sm-heading;
-	// }
-	// @include media($v-iphone-6-plus){
-	// 	font: $sm-heading;
-	// }
+	@include media($short-lg-desktop){
+		font: $h6!important;
+	}
+	@include media($xl-desktop){
+		font: $xl-h6;
+	}
+	@include media($lg-desktop){
+		font: $lg-h6;
+	}
+	@include media($md-desktop){
+		font: $h6;
+	}
+	@include media($lg-mobile){
+		font: $h6;
+	}
+	@include media($md-mobile){
+		font: $md-h6;
+	}
+	@include media($mobile){
+		font: $md-h6;
+	}
+	@include media($sm-mobile){
+		font: $md-h6;
+	}
+	@include media($xs-mobile){
+		font: $sm-h6;
+	}
+	@include media($v-iphone-6-plus){
+		font: $sm-h6;
+	}
+	@include media($h-iphone){
+		font: $sm-h6;
+	}
 }
 
 p {
@@ -216,6 +231,9 @@ p {
 		font: $sm-p;
 	}
 	@include media($v-iphone-6-plus){
+		font: $sm-p;
+	}
+	@include media($h-iphone){
 		font: $sm-p;
 	}
 }
@@ -252,6 +270,9 @@ a {
 	@include media($v-iphone-6-plus){
 		font: $sm-a;
 	}
+	@include media($h-iphone){
+		font: $sm-a;
+	}
 }
 
 nav a {
@@ -284,6 +305,9 @@ nav a {
 		font: $sm-nav-a;
 	}
 	@include media($v-iphone-6-plus){
+		font: $sm-nav-a;
+	}
+	@include media($h-iphone){
 		font: $sm-nav-a;
 	}
 }
@@ -320,23 +344,158 @@ nav a {
 	@include media($v-iphone-6-plus){
 		font: $sm-number;
 	}
+	@include media($h-iphone){
+		font: $sm-number;
+	}
 }
 
 .number{
-	font: $xl-number;
+	font: $number;
+	@include media($short-lg-desktop){
+		font: $number!important;
+	}
+	@include media($xl-desktop){
+		font: $xl-number;
+	}
+	@include media($lg-desktop){
+		font: $xl-number;
+	}
+	@include media($md-desktop){
+		font: $lg-number;
+	}
+	@include media($lg-mobile){
+		font: $lg-number;
+	}
+	@include media($md-mobile){
+		font: $number;
+	}
+	@include media($mobile){
+		font: $number;
+	}
+	@include media($sm-mobile){
+		font: $number;
+	}
+	@include media($xs-mobile){
+		font: $md-number;
+	}
+	@include media($v-iphone-6-plus){
+		font: $md-number;
+	}
+	@include media($h-iphone){
+		font: $md-number;
+	}
 }
 
 .big-quotation{
-	font: $quot;
+	font: $md-quot;
+	@include media($short-lg-desktop){
+		font: $quot!important;
+	}
+	@include media($xl-desktop){
+		font: $xl-quot;
+	}
+	@include media($lg-desktop){
+		font: $lg-quot;
+	}
+	@include media($md-desktop){
+		font: $quot;
+	}
+	@include media($lg-mobile){
+		font: $quot;
+	}
+	@include media($md-mobile){
+		font: $md-quot;
+	}
+	@include media($mobile){
+		font: $md-quot;
+	}
+	@include media($sm-mobile){
+		font: $md-quot;
+	}
+	@include media($xs-mobile){
+		font: $sm-quot;
+	}
+	@include media($v-iphone-6-plus){
+		font: $sm-quot;
+	}
+	@include media($h-iphone){
+		font: $sm-quot;
+	}
 }
 
-.footnote p{
+.footnotes p{
 	font: $footnote;
+	@include media($short-lg-desktop){
+		font: $footnote!important;
+	}
+	@include media($xl-desktop){
+		font: $xl-footnote;
+	}
+	@include media($lg-desktop){
+		font: $lg-footnote;
+	}
+	@include media($md-desktop){
+		font: $footnote;
+	}
+	@include media($lg-mobile){
+		font: $footnote;
+	}
+	@include media($md-mobile){
+		font: $md-footnote;
+	}
+	@include media($mobile){
+		font: $md-footnote;
+	}
+	@include media($sm-mobile){
+		font: $md-footnote;
+	}
+	@include media($xs-mobile){
+		font: $sm-footnote;
+	}
+	@include media($v-iphone-6-plus){
+		font: $sm-footnote;
+	}
+	@include media($h-iphone){
+		font: $sm-footnote;
+	}
 }
 
 ol{
 	li{
-		font: $span;
+		font: $md-span;
+		@include media($short-lg-desktop){
+			font: $span!important;
+		}
+		@include media($xl-desktop){
+			font: $xl-span;
+		}
+		@include media($lg-desktop){
+			font: $lg-span;
+		}
+		@include media($md-desktop){
+			font: $span;
+		}
+		@include media($lg-mobile){
+			font: $span;
+		}
+		@include media($md-mobile){
+			font: $md-span;
+		}
+		@include media($mobile){
+			font: $md-span;
+		}
+		@include media($sm-mobile){
+			font: $md-span;
+		}
+		@include media($xs-mobile){
+			font: $sm-span;
+		}
+		@include media($v-iphone-6-plus){
+			font: $sm-span;
+		}
+		@include media($h-iphone){
+			font: $sm-span;
+		}
 	}
 }
 
@@ -373,7 +532,12 @@ ol{
 	@include media($v-iphone-6-plus){
 		font: $sm-cta;
 	}
+	@include media($h-iphone){
+		font: $sm-cta;
+	}
 }
+
+
 
 .menu-title{
 	font: $md-title;
@@ -407,5 +571,15 @@ ol{
 	}
 	@include media($v-iphone-6-plus){
 		font: $sm-title;
+	}
+	@include media($h-iphone){
+		font: $sm-title;
+	}
+}
+
+.footnotes.caption{
+	margin-top:0;
+	p{
+		margin-top:0!important;
 	}
 }

@@ -1,16 +1,65 @@
 #footer{
 	height: 100vh;
 	margin-top: -10%;
+
+	@include media($xs-mobile){
+		margin-top: 0;
+		height: 85vh;
+	}
+	@include media($v-iphone-6-plus){
+		margin-top: 0;
+		height: 85vh;
+	}
+	@include media($h-iphone){
+		margin-top: 0;
+		height: 120vh;
+	}
+	@include media($v-iphone-5){
+		margin-top: 0;
+		height: 100vh;
+	}
+
 	.absolute-bottom{
 		width: 100%;
+		@include media($xs-mobile){
+			top:19.4%;
+		}
+		@include media($v-iphone-6-plus){
+			top:19.4%;
+		}
+		@include media($h-iphone){
+			top:19.4%;
+		}
 	}
 	.article{
 		width:100%;
 		padding-bottom: 8.25vh;
+
+		@include media($xs-mobile){
+			top:0;
+		}
+		@include media($v-iphone-6-plus){
+			top:0;
+		}
+		@include media($h-iphone){
+			top:0;
+		}
+
 		a.back-btn{
 			font-family: $xfsansMedium;
 			display: block;
 			margin-top: 10.75vh;
+			text-align: center;
+
+			@include media($xs-mobile){
+				display: none;
+			}
+			@include media($v-iphone-6-plus){
+				display: none;
+			}
+			@include media($h-iphone){
+				display: none;
+			}
 			img.up-arrow{
 				@include transform(rotate(180deg));
 				width: 2.9vw;
@@ -20,9 +69,6 @@
 			}
 		}	
 	}
-	.back-btn{
-		text-align: center;
-	}
 	.is-relative{
 		height: 100%;
 
@@ -30,6 +76,16 @@
 			display: block;
 			width: 95.32%;
 			margin: 0 auto;
+
+			@include media($xs-mobile){
+				display: none;
+			}
+			@include media($v-iphone-6-plus){
+				display: none;
+			}
+			@include media($h-iphone){
+				display: none;
+			}
 			
 			.left{
 				text-align: left;
@@ -37,6 +93,14 @@
 				width:60%;
 				vertical-align: bottom;
 
+				@include media($sm-desktop){
+					width:50%;
+				}
+				@include media($mobile){
+					display: block;
+					width: 100%;
+					text-align: center;
+				}
 				@include media($mobile){
 					display: block;
 					width: 100%;
@@ -89,6 +153,9 @@
 				width:39%;
 				vertical-align: bottom;
 				
+				@include media($sm-desktop){
+					width:49%;
+				}
 				@include media($mobile){
 					display: block;
 					width: 100%;
@@ -119,7 +186,80 @@
 				}
 			}
 		}
+
+		.mobile-footer{
+			h6{
+				text-align:left;
+				text-transform: uppercase;
+			}
+		}
 	}
 		
-	
+	.mobile-footer{
+		width: 90vw;
+		height: 100%;
+		margin: 0 auto;
+		display: none;
+
+		@include media($xs-mobile){
+			display: block;
+		}
+		@include media($v-iphone-6-plus){
+			display: block;
+		}
+		@include media($h-iphone){
+			display: block;
+		}
+		@include media($v-iphone-5){
+			display: block;
+		}
+		
+		.links{
+			text-align: left;
+			a{
+				margin-right: 5px;
+
+				&:after{
+					content:'';
+					display: inline-block;
+					width: 8px;
+					height: 8px;
+					background-image: url('../images/down-arrow.svg');
+					background-size: contain;
+					background-repeat: no-repeat;
+					@include transform(rotate(-90deg));
+					margin-left:5px;
+				}
+			}
+		}
+		div.divider{
+			width: 16%;
+			height: 1px;
+			margin: 25px 0 0 0;
+			background: $white;
+		}
+		.logo{
+			width: 27.9vw;
+			min-width: 80px;
+			@include position(absolute, null null 5vw 5vw);
+			@include transform(translateY(0));
+		}
+		.top-btn{
+			display: block;
+			@include position(absolute, null 5vw 5vw null);
+			vertical-align: bottom;
+			line-height: 0;
+
+			&:before{
+				content:'';
+				display: block;
+				margin:0 auto;
+				width: 4.4vw;
+				height: 2.7vh;
+				background-image: url('../images/up-arrow.svg');
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+		}
+	}
 }

@@ -11,6 +11,24 @@
 	background-repeat: no-repeat;
 	margin-top: -1px;
 
+	@include media($xs-mobile){
+		height: 110vh;
+	}
+	@include media($v-iphone-6-plus){
+		height: 110vh;
+	}
+	@include media($v-iphone-6){
+		-webkit-clip-path: none;
+		clip-path: none;
+		height:130vh;
+	}
+	@include media($h-iphone){
+		height: 200vh;
+	}
+	@include media($v-iphone-5){
+		height:180vh;
+	}
+
 	.xd-logo{
 		width: 20vw;
 		@include transition(all 1s $ease-in-out-quad);
@@ -19,6 +37,12 @@
 
 		@include media($xs-mobile) {
 			width: 40vw;
+		}
+		@include media($h-iphone) {
+			@include transform(translate(-50%, -90%)!important);
+		}
+		@include media($v-iphone-5) {
+			@include transform(translate(-50%, -90%)!important);
 		}
 
 		&.fade-up-in{

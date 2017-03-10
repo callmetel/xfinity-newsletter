@@ -7,6 +7,7 @@
     <meta name="keywords" content="xfinity Newsletter">
     <meta name="description" content="xfinity Newsletter">
     <meta name="author" content="Comcast">
+    
     <title>xfinity Newsletter</title>
 <!--     <style>
         @-webkit-keyframes fadeIn {0% {opacity: 0;} 50% {opacity: 0;} 100% {opacity: 1;}}
