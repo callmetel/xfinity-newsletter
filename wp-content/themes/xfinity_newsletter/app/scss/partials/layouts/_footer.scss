@@ -132,7 +132,7 @@
 				a{
 					margin-right: 30px;
 
-					&:nth-of-type(2), &:nth-of-type(3){
+					&:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4){
 						&:after{
 							content:'';
 							display: inline-block;
@@ -214,11 +214,11 @@
 			display: block;
 		}
 		
-		.links{
-			text-align: left;
-			a{
-				margin-right: 5px;
-
+		
+		a.print{
+			display: block;
+			
+			p{
 				&:after{
 					content:'';
 					display: inline-block;
@@ -229,9 +229,11 @@
 					background-repeat: no-repeat;
 					@include transform(rotate(-90deg));
 					margin-left:5px;
-				}
+				}	
 			}
+			
 		}
+		
 		div.divider{
 			width: 16%;
 			height: 1px;

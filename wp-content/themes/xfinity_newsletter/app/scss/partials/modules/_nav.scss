@@ -1,34 +1,17 @@
-.midnightHeader, nav{
-    z-index:1000;
+nav{
     @include position(fixed, 10.375vh null null 2.34vw!important);
+	z-index: -1000;
+	opacity:0;
+	@include position(fixed, 0 null null 0!important);
+	width: 100vw;
+	height: 100vh;
+	background: $gray;
+	@include transition(all .65s ease-in-out);
+	display: block;
 
-    @include media($xs-mobile){
-    	z-index: -1000;
-    	opacity:0;
-		@include position(fixed, 0 null null 0!important);
-		width: 100vw;
-		height: 100vh;
-		background: $gray;
-		@include transition(all .65s ease-in-out);
-
-		&.is-active{
-			z-index: 1000;
-    		opacity: 1;
-		}
-	}
-	@include media($v-iphone-6-plus){
-		z-index: -1000;
-		opacity:0;
-		@include position(fixed, 0 null null 0!important);
-		width: 100vw;
-		height: 100vh;
-		@include transition(all .65s ease-in-out);
-		background: $gray;
-
-		&.is-active{
-			z-index: 1000;
-    		opacity: 1;
-		}
+	&.is-active{
+		z-index: 1000;
+		opacity: 1;
 	}
 
 	@include media($h-iphone){
@@ -45,106 +28,92 @@
     		opacity: 1;
 		}
 	}
+	.is-relative {
+		width: 100%;
+		height: 7.375vh;	
+		
 
-    .desktop-nav{
-    	a{
-	        display: block;
-	        cursor: pointer;
-	        margin-bottom: 10px;
-
-	        strong{
-	        	opacity: 0;
-	        	@include transition(all .5s ease-in-out);
-	        }
-
-	        &:hover{
-	        	strong{
-	    			opacity: 1!important;
-	    		}
-	    	}
-	    }
-    	@include media($xs-mobile){
-    		display: none;
-    	}
-    	@include media($v-iphone-6-plus){
-    		display: none;
-    	}
-    	@include media($h-iphone){
-    		display: none;
-    	}
-    }
-
-    .mobile-nav{
-		display: none;
-
-		@include media($xs-mobile){
-			display: block;
-		}
-		@include media($v-iphone-6-plus){
-			display: block;
-		}
-		@include media($h-iphone){
-			display: block;
-		}
-
-    	.is-relative {
-			width: 100%;
-			height: 7.375vh;
-
-			#close{
+		#close{
+			
+			width: 1.9vw;
+			height: 1.9vw;
+			right: 2.34vw;
+			background-image: url('../images/icon-close.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
+			
+			@include media($xs-mobile){
 				width: 5.5vw;
 				height: 5.5vw;
-				left: 5vw;
-				background-image: url('../images/icon-close.svg');
-				background-size: contain;
-				background-repeat: no-repeat;
-				@include media($h-iphone){
-					width: 2vw;
-					height: 2vw;
-				}
-			}
-
-			.logo{
-				display: block;
-				width: 27.9vw;
-				min-width: 80px;
 				right: 5vw;
-
-				img{
-					display:block;
-				}
-
-				@include media($h-iphone){
-					width: 15.9vw;
-				}
+			}
+			@include media($v-iphone-6-plus){
+				width: 5.5vw;
+				height: 5.5vw;
+				right: 5vw;
+			}
+			@include media($h-iphone){
+				width: 2vw;
+				height: 2vw;
 			}
 		}
-    	a{
-    		text-align: center;
-    		span.number{
-    			display: block;
-    			font: $sm-number;
-    		}
-    		p{
-    			margin-bottom: 5vh;
-    			&:after{
-					content:'';
-					display: inline-block;
-					width: 10px;
-					height: 10px;
-					background-image: url('../images/right-arrow-white.svg');
-					background-size: contain;
-					background-repeat: no-repeat;
-					margin-left: 5px;
-				}
-    		}
-    	}
-    	.absolute-center{
-    		@include media($h-iphone){
-    			@include transform(translate(-50%,-85%));
-    		}
-    	}
-    }
+	}
+	a{
+		text-align: center;
+		cursor: pointer;
+		@include transition(all .35s ease-in-out);
+
+		span.number{
+			display: block;
+			font: $sm-number;
+			@include transition(all .35s ease-in-out);
+		}
+		p{
+			margin-bottom: 5vh;
+			@include transition(all .35s ease-in-out);
+		}
+
+		&:hover{
+			span{
+				color:$green;
+			}
+			p{
+				color:$green;
+			}
+		}
+	}
+	.absolute-center{
+		@include media($h-iphone){
+			@include transform(translate(-50%,-85%));
+		}
+	}
+	.print{
+		display: block;
+		@include position(absolute, null 2.34vw 2.34vw null);
+
+		@include media($xs-mobile){
+			right: 5vw;
+		}
+		@include media($v-iphone-6-plus){
+			right: 5vw;
+		}
+		@include media($h-iphone){
+			right: 5vw;
+		}
+
+		span{
+			display:inline-block;
+			vertical-align: middle;
+			margin-right:10px;
+		}
+		img{
+			display:inline-block;
+			vertical-align: middle;
+			width: 1.5vw;
+			min-width: 20px;
+		}
+	}
+    
 }
 
 .midnightHeader.white {

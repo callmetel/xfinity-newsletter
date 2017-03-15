@@ -29,20 +29,14 @@ header{
 			}
 		}
 
-		.print{
+		#burger{
 			display: block;
 			right: 2.34vw;
-
-			span{
-				display:inline-block;
-				vertical-align: middle;
-				margin-right:10px;
-			}
 			img{
 				display:inline-block;
 				vertical-align: middle;
-				width: 1.5vw;
-				min-width: 20px;
+				width: 1.9vw;
+				height:auto;
 			}
 		}
 	}
@@ -69,7 +63,7 @@ header{
 	#burger{
 		width: 5.5vw;
 		height: 4vw;
-		left: 5vw;
+		right: 5vw;
 		background-image: url('../images/icon-burger.svg');
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -84,7 +78,7 @@ header{
 		display: block;
 		width: 27.9vw;
 		min-width: 80px;
-		right: 5vw;
+		left: 5vw;
 
 		@include media($h-iphone){
 			width: 15.9vw;

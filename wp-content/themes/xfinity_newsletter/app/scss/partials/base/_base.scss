@@ -10,6 +10,15 @@ html,body{
 }
 body{
     position: relative;
+
+    &.firefox-in-use{
+        #footer,#article2-heading,#article3-heading,#article4-heading{
+            margin-top: 0!important;
+        }
+        #article1-heading{
+            margin-top: -15%!important;
+        }
+    }
 }
 * {
     margin: 0;

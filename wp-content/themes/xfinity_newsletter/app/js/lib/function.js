@@ -40,6 +40,7 @@ $(document).ready(function() {
 	      // other browser
 	      return false;
 	    };
+	    var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 
 	// Create isMobile Function
 
@@ -59,6 +60,14 @@ $(document).ready(function() {
         	$('#remote-on').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/new-remote-on.png');
         }
 
+        if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+		    $('.firefox-clip').addClass('is-active');
+		    $('body').addClass('firefox-in-use');
+		} else{
+			$('.firefox-clip').removeClass('is-active');
+		    $('body').removeClass('firefox-in-use');
+		};
+
         function printPDF()
 		{
 		  var pdfFrame = window.frames["pdf"];
@@ -70,6 +79,50 @@ $(document).ready(function() {
 			e.preventDefault();
 			console.log('clicked');
 			printPDF();
+		});
+
+		// $('#article1-heading .read-article-btn, #article2-heading .read-article-btn, #article3-heading .read-article-btn, #article4-heading .read-article-btn').on('click', function(e){
+		// 	e.preventDefault();
+		// 	TweenLite.to($window, 1, {scrollTo:'100vh'});
+		// });
+
+		var introHeight = $('#intro').height();
+		var headerHeight = $('header').height();
+		var introPinDuration = Math.round(introHeight/4);
+		var remoteDuration = Math.round($('#menu').height()/2);
+		var $window = $(window);
+
+		TweenLite.to($window, .2, {scrollTo:1});
+
+		var curScroll, article1, article2, article3, article4, article1Title, article2Title, article3Title, article4Title;
+
+		$(window).scroll(function(e){
+			curScroll = $(this).scrollTop();
+			article1 = parseInt($('#the-voice-of-research').offset().top) - curScroll;
+			article2 = parseInt($('#the-talk-at-ces').offset().top) - curScroll;
+			article3 = parseInt($('#our-digital-first-language').offset().top) - curScroll;
+			article4 = parseInt($('#the-word-on-voice').offset().top) - curScroll;
+			article1Title = parseInt($('#the-voice-of-research-title').offset().top) - curScroll;
+			article2Title = parseInt($('#the-talk-at-ces-title').offset().top) - curScroll;
+			article3Title = parseInt($('#our-first-digital-language-title').offset().top) - curScroll;
+			article4Title = parseInt($('#the-word-on-voice-title').offset().top) - curScroll;
+		});
+
+		$('#article1-heading .read-article-btn').on('click', function(e){
+			e.preventDefault();
+			TweenLite.to($window, 1, {scrollTo:curScroll + article1 - 20});
+		});
+		$('#article2-heading .read-article-btn').on('click', function(e){
+			e.preventDefault();
+			TweenLite.to($window, 1, {scrollTo:curScroll + article2 - 20});
+		});
+		$('#article3-heading .read-article-btn').on('click', function(e){
+			e.preventDefault();
+			TweenLite.to($window, 1, {scrollTo:curScroll + article3 - 20});
+		});
+		$('#article4-heading .read-article-btn').on('click', function(e){
+			e.preventDefault();
+			TweenLite.to($window, 1, {scrollTo:curScroll + article4 - 20});
 		});
 
 		// $('nav').midnight();
@@ -101,8 +154,6 @@ $(document).ready(function() {
 	 //    });
 	 //    
 	var elementOffset = Math.round($('#old-remote').offset().top *1.25);
-
-	var $window = $(window);
     var scrollTime = 1.2;
     var scrollDistance = 200;
 
@@ -118,18 +169,6 @@ $(document).ready(function() {
 				
 			};
 		});
-
-		var introHeight = $('#intro').height();
-		var headerHeight = $('header').height();
-		var introPinDuration = Math.round(introHeight/4);
-		var remoteDuration = Math.round($('#menu').height()/2);
-
-		var article1Location = Math.round($('#article1-heading').offset().top *1.25);
-		var article2Location = Math.round($('#article2-heading').offset().top *1.125);
-		var article3Location = Math.round($('#article3-heading').offset().top *1.09);
-		var article4Location = Math.round($('#article4-heading').offset().top *1.07);
-
-			
 			
 			//Begin ScrollMagic animation
 			
@@ -201,22 +240,40 @@ $(document).ready(function() {
 
 	// Nav Links
 
-		$('.nav-link:eq(0), #menu ul a:eq(0)').on('click', function(e){
+		$('.nav-link:eq(0)').on('click', function(e){
 			e.preventDefault();
-			TweenLite.to($window, 2, {scrollTo:article1Location + remoteDuration});
+			TweenLite.to($window, .5, {scrollTo:curScroll + article1Title - 20});
 		});
-		$('.nav-link:eq(1), #menu ul a:eq(1)').on('click', function(e){
+		$('.nav-link:eq(1)').on('click', function(e){
 			e.preventDefault();
-			TweenLite.to($window, 2, {scrollTo:article2Location + remoteDuration});
+			TweenLite.to($window, .5, {scrollTo:curScroll + article2Title - 20});
 		});
-		$('.nav-link:eq(2), #menu ul a:eq(2)').on('click', function(e){
+		$('.nav-link:eq(2)').on('click', function(e){
 			e.preventDefault();
-			TweenLite.to($window, 2, {scrollTo:article3Location + remoteDuration});
+			TweenLite.to($window, .5, {scrollTo:curScroll + article3Title - 20});
 		});
-		$('.nav-link:eq(3), #menu ul a:eq(3)').on('click', function(e){
+		$('.nav-link:eq(3)').on('click', function(e){
 			e.preventDefault();
-			TweenLite.to($window, 2, {scrollTo:article4Location + remoteDuration});
+			TweenLite.to($window, .5, {scrollTo:curScroll + article4Title - 20});
 		});
+
+		$('#menu ul a:eq(0)').on('click', function(e){
+			e.preventDefault();
+			TweenLite.to($window, 2, {scrollTo:curScroll + article1Title - 20});
+		});
+		$('#menu ul a:eq(1)').on('click', function(e){
+			e.preventDefault();
+			TweenLite.to($window, 2, {scrollTo:curScroll + article2Title - 20});
+		});
+		$('#menu ul a:eq(2)').on('click', function(e){
+			e.preventDefault();
+			TweenLite.to($window, 2, {scrollTo:curScroll + article3Title - 20});
+		});
+		$('#menu ul a:eq(3)').on('click', function(e){
+			e.preventDefault();
+			TweenLite.to($window, 2, {scrollTo:curScroll + article4Title - 20});
+		});
+
 		$('.back-btn').on('click', function(e){
 			e.preventDefault();
 			TweenLite.to($window, 2, {scrollTo:0});
@@ -224,7 +281,7 @@ $(document).ready(function() {
 
 	// Mobile Nav 
 		
-		$('#burger').on('click', function(){
+		$('#burger, #burger > img').on('click', function(){
 			$('nav').addClass('is-active');
 		});
 
@@ -232,48 +289,12 @@ $(document).ready(function() {
 			$('nav').removeClass('is-active');
 		});
 
-		$('.mobile-nav .nav-link').on('click', function(){
-			$('nav').removeClass('is-active');
+		$('.nav-link').on('click', function(){
+			setTimeout(function(){
+				$('nav').removeClass('is-active');
+			}, 700);
+			
 		});
-
-    $('.show-more-btn').on('click',function(){
-    	$(this).addClass('is-inactive');
-    	$(this).siblings('.show-less-btn').removeClass('is-inactive');
-    	$(this).siblings('.reveal').removeClass('reveal animate-reveal-back').addClass('animate-reveal');
-    });
-
-    $('.show-less-btn').on('click',function(){
-    	var animRev = $(this).siblings('.animate-reveal');
-    	var revHeight = $(this).siblings('.animate-reveal').height();
-
-    	$(this).addClass('is-inactive');
-    	$(this).siblings('.show-more-btn').removeClass('is-inactive');
-    	animRev.addClass('animate-reveal-back').removeClass('animate-reveal');
-
-    	// var article = $(this).closest('.article-gradient-wrap').offset().top;
-
-
-	    	$('html,body').animate({
-	        scrollTop: $(window).scrollTop() - revHeight},
-	        'slow');
-
-    	setTimeout(function(){
-    		animRev.addClass('reveal');
-    	},1200);
-    });
-
-    $('#menu li:eq(0)').on('click', function(){
-    	$('nav a:eq(0)').trigger('click');
-    });
-    $('#menu li:eq(1)').on('click', function(){
-    	$('nav a:eq(1)').trigger('click');
-    });
-    $('#menu li:eq(2)').on('click', function(){
-    	$('nav a:eq(2)').trigger('click');
-    });
-    $('#menu li:eq(3)').on('click', function(){
-    	$('nav a:eq(3)').trigger('click');
-    });
 
     // Change Nav link Color on Scroll
     

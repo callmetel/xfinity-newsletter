@@ -423,7 +423,7 @@ nav a {
 	}
 }
 
-.footnotes p{
+.footnotes p, .footnotes a{
 	font: $footnote;
 	@include media($short-lg-desktop){
 		font: $footnote!important;

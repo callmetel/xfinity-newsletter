@@ -9,25 +9,25 @@
 			<div class="menu-title absolute-left">ALL<br>ABOUT<br><b class="is-bolder">VOICE</b></div>
 			<ul class="absolute-right">
 				<li>
-					<a href="#article1-heading" class="no-decoration">
+					<a class="no-decoration">
 						<span class="number">01</span>
 						<p>The Voice of<br>Research</p>
 					</a>
 				</li>
 				<li>
-					<a href="#article2-heading" class="no-decoration">
+					<a class="no-decoration">
 						<span class="number">02</span>
 						<p>The Talk at CES</p>
 					</a>
 				</li>
 				<li>
-					<a href="#article3-heading" class="no-decoration">
+					<a class="no-decoration">
 						<span class="number">03</span>
 						<p>Our Digital<br>First Language</p>
 					</a>
 				</li>
 				<li>
-					<a href="#article4-heading" class="nav-link no-decoration">
+					<a class="nav-link no-decoration">
 						<span class="number">04</span>
 						<p>The Word on Voice</p>
 					</a>
