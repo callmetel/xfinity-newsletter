@@ -1,7 +1,7 @@
 <section id="menu" class="gradient-wrap is-relative section">
-	<img src="" alt="" id="old-remote" class="absolute-top" data-midnight="black">
+	<!-- <img src="" alt="" id="old-remote" class="absolute-top" data-midnight="black"> -->
 	<div id="new-remote" class="absolute-top">
-		<img src="" alt="" id="remote-off" class="absolute-top" data-midnight="black">
+		<!-- <img src="" alt="" id="remote-off" class="absolute-top" data-midnight="black"> -->
 		<img src="" alt="" id="remote-on" class="absolute-top">
 	</div>
 	<div class="absolute-top">
@@ -17,7 +17,7 @@
 				<li>
 					<a class="no-decoration">
 						<span class="number">02</span>
-						<p>The Talk at CES</p>
+						<p>Are You Talking to Me?</p>
 					</a>
 				</li>
 				<li>

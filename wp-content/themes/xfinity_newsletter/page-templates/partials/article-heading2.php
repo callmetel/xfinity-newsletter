@@ -4,7 +4,7 @@
 		<div class="is-relative">
 			<div id="the-talk-at-ces-title" class="article absolute-center">
 				<span class="number">02</span>
-				<h2 class="article-title">The Talk at CES</h2>
+				<h2 class="article-title">Are You Talking to Me?</h2>
 				<h3 class="article-author"><span class="name is-bolder">Steve Leardi,</span> Senior Director, Experience Design</h3>
 				<div class="underline"></div>
 				<p>Alexa integration, Google Home, voice, voice and more voice. It was all the rage this year at CES. It’s the exciting, shiny object that allows companies to check the box and say, "us too!" And everyone seems to be using it to different ends. At one point, I was led into a booth by an Alexa app that turned out to be a showcase for HD Radio? Wait…What?! Not the payoff I was expecting.</p>

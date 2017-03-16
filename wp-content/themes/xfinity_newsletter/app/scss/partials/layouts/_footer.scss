@@ -1,5 +1,5 @@
 #footer{
-	height: 100vh;
+	height: 110vh;
 	margin-top: -10%;
 
 	@include media($xs-mobile){
@@ -72,152 +72,191 @@
 	.is-relative{
 		height: 100%;
 
-		.row{
-			display: block;
-			width: 95.32%;
-			margin: 0 auto;
+		// .row{
+		// 	display: block;
+		// 	width: 95.32%;
+		// 	margin: 0 auto;
 
-			@include media($xs-mobile){
-				display: none;
-			}
-			@include media($v-iphone-6-plus){
-				display: none;
-			}
-			@include media($h-iphone){
-				display: none;
-			}
+		// 	@include media($xs-mobile){
+		// 		display: none;
+		// 	}
+		// 	@include media($v-iphone-6-plus){
+		// 		display: none;
+		// 	}
+		// 	@include media($h-iphone){
+		// 		display: none;
+		// 	}
 			
-			.left{
-				text-align: left;
-				display: inline-block;
-				width:60%;
-				vertical-align: bottom;
+		// 	.left{
+		// 		text-align: left;
+		// 		display: inline-block;
+		// 		width:60%;
+		// 		vertical-align: bottom;
 
-				@include media($sm-desktop){
-					width:50%;
-				}
-				@include media($mobile){
-					display: block;
-					width: 100%;
-					text-align: center;
-				}
-				@include media($mobile){
-					display: block;
-					width: 100%;
-					text-align: center;
-				}
+		// 		@include media($sm-desktop){
+		// 			width:50%;
+		// 		}
+		// 		@include media($mobile){
+		// 			display: block;
+		// 			width: 100%;
+		// 			text-align: center;
+		// 		}
+		// 		@include media($mobile){
+		// 			display: block;
+		// 			width: 100%;
+		// 			text-align: center;
+		// 		}
 
-				p{
-					text-align: left;
-					width: 100%;
-					&:last-of-type{
-						margin-top: 50px;
-					}
-				}
+		// 		p{
+		// 			text-align: left;
+		// 			width: 100%;
+		// 			&:last-of-type{
+		// 				margin-top: 50px;
+		// 			}
+		// 		}
 
-				.print{
+		// 		.print{
 
-					span{
-						display:inline-block;
-						vertical-align: middle;
-					}
-					img{
-						display:inline-block;
-						vertical-align: middle;
-						width: 1.5vw;
-						min-width: 20px;
-						margin-right:10px;
-					}
-				}
-				a{
-					margin-right: 30px;
+		// 			span{
+		// 				display:inline-block;
+		// 				vertical-align: middle;
+		// 			}
+		// 			img{
+		// 				display:inline-block;
+		// 				vertical-align: middle;
+		// 				width: 1.5vw;
+		// 				min-width: 20px;
+		// 				margin-right:10px;
+		// 			}
+		// 		}
+		// 		a{
+		// 			margin-right: 30px;
 
-					&:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4){
-						&:after{
-							content:'';
-							display: inline-block;
-							width: 12px;
-							height: 12px;
-							background-image: url('../images/down-arrow.svg');
-							background-size: contain;
-							background-repeat: no-repeat;
-							@include transform(rotate(-90deg));
-							margin-left:10px;
-						}
-					}
-				}
-			}
-			.right{
-				text-align: right;
-				display: inline-block;
-				width:39%;
-				vertical-align: bottom;
+		// 			&:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4){
+		// 				&:after{
+		// 					content:'';
+		// 					display: inline-block;
+		// 					width: 12px;
+		// 					height: 12px;
+		// 					background-image: url('../images/down-arrow.svg');
+		// 					background-size: contain;
+		// 					background-repeat: no-repeat;
+		// 					@include transform(rotate(-90deg));
+		// 					margin-left:10px;
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// 	.right{
+		// 		text-align: right;
+		// 		display: inline-block;
+		// 		width:39%;
+		// 		vertical-align: bottom;
 				
-				@include media($sm-desktop){
-					width:49%;
-				}
-				@include media($mobile){
-					display: block;
-					width: 100%;
-					text-align: center;
+		// 		@include media($sm-desktop){
+		// 			width:49%;
+		// 		}
+		// 		@include media($mobile){
+		// 			display: block;
+		// 			width: 100%;
+		// 			text-align: center;
 
-					h6{
-						text-align: left!important;
-					}
-				}
+		// 			h6{
+		// 				text-align: left!important;
+		// 			}
+		// 		}
 
-				h6{
-					text-align: right;
-					text-transform: uppercase;
-				}
+		// 		h6{
+		// 			text-align: right;
+		// 			text-transform: uppercase;
+		// 		}
 
-				.logo{
-					display: block;
-					width: 11.9vw;
-					min-width: 80px;
-					text-align: right;
-					margin-right: 0;
-					margin-left: auto;
-					margin-top: 50px;
+		// 		.logo{
+		// 			display: block;
+		// 			width: 11.9vw;
+		// 			min-width: 80px;
+		// 			text-align: right;
+		// 			margin-right: 0;
+		// 			margin-left: auto;
+		// 			margin-top: 50px;
 
-					img{
-						display:block;
-					}
-				}
-			}
-		}
+		// 			img{
+		// 				display:block;
+		// 			}
+		// 		}
+		// 	}
+		// }
 
-		.mobile-footer{
-			h6{
-				text-align:left;
+		// .mobile-footer{
+			p:first-of-type{
+				text-align:center;
 				text-transform: uppercase;
+				margin-bottom:30px;
+				
 			}
-		}
+			p{
+				text-align: center;
+				
+
+				@include media($sm-mobile){
+					width: 88vw;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				@include media($xs-mobile){
+					width: 88vw;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				@include media($v-iphone-6-plus){
+					width: 88vw;
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+				a{
+					margin:0;
+					margin-bottom: 5px;
+					@include media($sm-mobile){
+						display: block;
+					}
+					@include media($xs-mobile){
+						display: block;
+					}
+					@include media($v-iphone-6-plus){
+						display: block;
+					}
+				}
+			}
+		// }
 	}
 		
-	.mobile-footer{
-		width: 90vw;
-		height: 100%;
-		margin: 0 auto;
-		display: none;
+	// .mobile-footer{
+		width: 100%;
 
-		@include media($xs-mobile){
-			display: block;
-		}
-		@include media($v-iphone-6-plus){
-			display: block;
-		}
-		@include media($h-iphone){
-			display: block;
-		}
-		@include media($v-iphone-5){
-			display: block;
-		}
+		margin: 0 auto;
+		// display: none;
+
+		// @include media($xs-mobile){
+		// 	display: block;
+		// }
+		// @include media($v-iphone-6-plus){
+		// 	display: block;
+		// }
+		// @include media($h-iphone){
+		// 	display: block;
+		// }
+		// @include media($v-iphone-5){
+		// 	display: block;
+		// }
 		
-		
+		p:last-of-type{
+			margin-top: 10vh;
+		}
 		a.print{
-			display: block;
-			
+
+			display: inline-block;
+			vertical-align: middle;
 			p{
 				&:after{
 					content:'';
@@ -234,6 +273,41 @@
 			
 		}
 		
+		.print-pdf{
+			@include position(absolute, null 1.9vw 1.9vw null);
+		}
+		.print{
+
+				span{
+					display:inline-block;
+					vertical-align: middle;
+				}
+				img{
+					display:inline-block;
+					vertical-align: middle;
+					width: 1.5vw;
+					min-width: 20px;
+					margin-right:10px;
+				}
+			}
+			a{
+				margin-right: 30px;
+
+				&:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4){
+					&:after{
+						content:'';
+						display: inline-block;
+						width: 12px;
+						height: 12px;
+						background-image: url('../images/down-arrow.svg');
+						background-size: contain;
+						background-repeat: no-repeat;
+						@include transform(rotate(-90deg));
+						margin-left:10px;
+					}
+				}
+			}
+		
 		div.divider{
 			width: 16%;
 			height: 1px;
@@ -243,8 +317,19 @@
 		.logo{
 			width: 27.9vw;
 			min-width: 80px;
-			@include position(absolute, null null 5vw 5vw);
-			@include transform(translateY(0));
+			margin: 0 auto;
+			margin-top: 10vh;
+			text-align: center;
+			display: block;
+
+			&:after{
+				display: none!important;
+			}
+
+			img{
+				width: 27.9vw;
+				min-width: 80px;
+			}
 		}
 		.top-btn{
 			display: block;
@@ -263,5 +348,5 @@
 				background-repeat: no-repeat;
 			}
 		}
-	}
+	// }
 }

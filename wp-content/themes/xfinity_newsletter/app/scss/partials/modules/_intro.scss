@@ -28,35 +28,39 @@
 	@include media($v-iphone-5){
 		height:180vh;
 	}
+	.absolute-top{
+		z-index:10;
+	
+		.xd-logo{
+			width: 20vw;
+			max-width: 40vh;
+			@include transition(all 1s $ease-in-out-quad);
+			opacity: 0;
+			@include transform(translate(-50%, -60%));
 
-	.xd-logo{
-		width: 20vw;
-		@include transition(all 1s $ease-in-out-quad);
-		opacity: 0;
-		@include transform(translate(-50%, -60%));
+			@include media($xs-mobile) {
+				width: 40vw;
+			}
+			@include media($h-iphone) {
+				@include transform(translate(-50%, -90%)!important);
+			}
+			@include media($v-iphone-5) {
+				@include transform(translate(-50%, -90%)!important);
+			}
 
-		@include media($xs-mobile) {
-			width: 40vw;
+			&.fade-up-in{
+				@include transition-delay(.75s);
+			}
 		}
-		@include media($h-iphone) {
-			@include transform(translate(-50%, -90%)!important);
-		}
-		@include media($v-iphone-5) {
-			@include transform(translate(-50%, -90%)!important);
-		}
+	
+		.article{
+			opacity: 0;
+			@include transform(translate(-50%, -60%));
+			@include transition(all 1s $ease-in-out-quad);
 
-		&.fade-up-in{
-			@include transition-delay(.75s);
-		}
-	}
-
-	.article{
-		opacity: 0;
-		@include transform(translate(-50%, -60%));
-		@include transition(all 1s $ease-in-out-quad);
-
-		&.fade-up-in{
-			@include transition-delay(.75s);
+			&.fade-up-in{
+				@include transition-delay(.75s);
+			}
 		}
 	}
 

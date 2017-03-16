@@ -1,5 +1,11 @@
 .fade-up-in{
 	opacity: 1!important;
+	@include media($xl-desktop){
+		@include transform(translate(-50%, -55%)!important);
+	}
+	@include media($v-iphone-6-plus){
+		@include transform(translate(-50%, -30%)!important);
+	}
 	@include transform(translate(-50%, -50%)!important);
 }
 

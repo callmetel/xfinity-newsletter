@@ -51,12 +51,23 @@ $(document).ready(function() {
         };
 
         if(isMobile.detectMobile()){
-        	$('#old-remote').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/mobile-old-remote.png');
-        	$('#remote-off').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/mobile-new-remote.png');
+        	// $('#old-remote').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/mobile-old-remote.png');
+        	// $('#remote-off').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/mobile-new-remote.png');
         	$('#remote-on').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/mobile-new-remote-on.png');
+        	var bodyTouched = 0;
+        	$('body').bind('touchend', function(e){
+        		if(bodyTouched == 1){
+        			console.log('already touched');
+        		} else {
+        			TweenLite.to($window, .2, {scrollTo:2});
+        			setTimeout(function(){
+        				bodyTouched = 1;
+        			},250)
+        		}
+        	});
         } else{
-        	$('#old-remote').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/old-remote.png');
-        	$('#remote-off').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/new-remote.png');
+        	// $('#old-remote').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/old-remote.png');
+        	// $('#remote-off').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/new-remote.png');
         	$('#remote-on').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/new-remote-on.png');
         }
 
@@ -88,7 +99,7 @@ $(document).ready(function() {
 
 		var introHeight = $('#intro').height();
 		var headerHeight = $('header').height();
-		var introPinDuration = Math.round(introHeight/4);
+		var introPinDuration = Math.round(introHeight/2);
 		var remoteDuration = Math.round($('#menu').height()/2);
 		var $window = $(window);
 
@@ -124,7 +135,6 @@ $(document).ready(function() {
 			e.preventDefault();
 			TweenLite.to($window, 1, {scrollTo:curScroll + article4 - 20});
 		});
-
 		// $('nav').midnight();
 
 	
@@ -153,22 +163,22 @@ $(document).ready(function() {
 		// 	$('*').removeClass('no-focus');
 	 //    });
 	 //    
-	var elementOffset = Math.round($('#old-remote').offset().top *1.25);
+	// var elementOffset = Math.round($('#old-remote').offset().top *1.25);
     var scrollTime = 1.2;
     var scrollDistance = 200;
 
-    TweenMax.set('#remote-on', {alpha:0});
+    // TweenMax.set('#remote-on', {alpha:0});
 
 	//Page Function after the down button on a slide is pressed
 
-		$(window).resize(function (e) {
-			if(!isMobile.detectMobile()){
-				setTimeout(function(){
-					location.reload();	
-				}, 2000);
+		// $(window).resize(function (e) {
+		// 	if(!isMobile.detectMobile()){
+		// 		setTimeout(function(){
+		// 			location.reload();	
+		// 		}, 2000);
 				
-			};
-		});
+		// 	};
+		// });
 			
 			//Begin ScrollMagic animation
 			
@@ -197,44 +207,46 @@ $(document).ready(function() {
 						})
 						.setTween(tween1C);
 
+			var tween2A = TweenMax.set('.extra-burger', {className:'+=active'});
+
 			var scene2A = new ScrollMagic.Scene({
-							duration: remoteDuration,
-							offset: elementOffset /* offset the trigger 150px below #scene's top */
+							duration: 0,
+							offset: introPinDuration + 20 /* offset the trigger 150px below #scene's top */
 						})
-						.setPin("#menu");
+						.setTween(tween2A);
 
-			var tween2B = TweenMax.fromTo('#old-remote', 1, {y:'10%'}, {y:'-100%', alpha:0});
+			// var tween2B = TweenMax.fromTo('#old-remote', 1, {y:'10%'}, {y:'-100%', alpha:0});
 
-			var scene2B = new ScrollMagic.Scene({
-							duration: remoteDuration,
-							offset: elementOffset /* offset the trigger 150px below #scene's top */
-						})
-						.setTween(tween2B);
+			// var scene2B = new ScrollMagic.Scene({
+			// 				duration: remoteDuration,
+			// 				offset: elementOffset /* offset the trigger 150px below #scene's top */
+			// 			})
+			// 			.setTween(tween2B);
 
-			var tween2C = TweenMax.fromTo('#new-remote', 1, {y:'0', alpha:0}, {y:'-20%', alpha:1});
+			// var tween2C = TweenMax.fromTo('#new-remote', 1, {y:'0', alpha:0}, {y:'-20%', alpha:1});
 
-			var scene2C = new ScrollMagic.Scene({
-							duration: remoteDuration/2,
-							offset: elementOffset + 100 /* offset the trigger 150px below #scene's top */
-						})
-						.setTween(tween2C);
+			// var scene2C = new ScrollMagic.Scene({
+			// 				duration: remoteDuration/2,
+			// 				offset: elementOffset + 100 /* offset the trigger 150px below #scene's top */
+			// 			})
+			// 			.setTween(tween2C);
 
-			var tween2D = TweenMax.fromTo('#remote-on', 1, {alpha:0}, {alpha:1});
+			// var tween2D = TweenMax.fromTo('#remote-on', 1, {alpha:0}, {alpha:1});
 
-			var scene2D = new ScrollMagic.Scene({
-							duration: 50,
-							offset: elementOffset + remoteDuration/1.5 /* offset the trigger 150px below #scene's top */
-						})
-						.setTween(tween2D);
+			// var scene2D = new ScrollMagic.Scene({
+			// 				duration: 50,
+			// 				offset: elementOffset + remoteDuration/1.5 /* offset the trigger 150px below #scene's top */
+			// 			})
+			// 			.setTween(tween2D);
 
 			scrollMagicController.addScene([
 			  scene1A,
 			  scene1B,
 			  scene1C,
-			  scene2A,
-			  scene2B,
-			  scene2C,
-			  scene2D
+			  scene2A
+			  // scene2B,
+			  // scene2C,
+			  // scene2D
 			]);
 			
 
@@ -281,7 +293,7 @@ $(document).ready(function() {
 
 	// Mobile Nav 
 		
-		$('#burger, #burger > img').on('click', function(){
+		$('#burger, #burger > img, .extra-burger.active, .extra-burger.active > img').on('click', function(){
 			$('nav').addClass('is-active');
 		});
 

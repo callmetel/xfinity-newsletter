@@ -1,5 +1,6 @@
 <section id="article1-heading" class="article-gradient-wrap is-relative section" data-midnight="white">
 	<img src="http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/top-clip.svg" alt="" class="firefox-clip top-clip">
+	<div class="overlay"></div>
 	<div class="absolute-center">
 		<div class="is-relative">
 			<div id="the-voice-of-research-title" class="article absolute-center">

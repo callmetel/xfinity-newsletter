@@ -1,20 +1,9 @@
 <article id="article-1" class="article-container section" data-midnight="black">
 	<div class="container" id="the-voice-of-research">
-		<!-- <div class="question">
-			<h4 class="letter-heading">Q:</h4>
-			<h4>What opportunities can we explore with voice-enabled technology?</h4>	
-		</div>
-		<div class="answer">
-			<h4 class="letter-heading">A:</h4>
-			<h4>Our top 3 Opportunities:</h4>	
-			<h3 class="is-bold">Building Deeper Connections</h3>	
-			<p>Voice control allows our customers to do more than ever before. Similar to smartphone adoption, when features are used frequently, they provide a greater purpose beyond the original technology.</p>
-		</div> -->
-		<!-- <button class="is-bold show-more-btn">SHOW MORE</button> -->
 		<div class="reveal">
 			<h3 class="is-bold">As awareness increases, we’re seeing a rise in Voice Assistant use.</h3>
 			<div class="footnotes caption">
-				<p>Intelligent Voice Assistants User Adoption Survey, MindMeld, 2/2016</p>
+				<p>Intelligent Voice Assistants User Adoption Survey, MindMeld, February 2016</p>
 			</div>
 			<img src="http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/graph1.png" alt="graph 1" class="graph">
 
@@ -39,23 +28,7 @@
 				<p><span class="is-bold is-purple">Can it pull content out of an episode? If I know something I want to see–<i>Seinfeld</i> with the dentist. I’d have to Google or IMDb to find an episode otherwise.<img src="http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/end-quotation.png" alt="" class="end-quotation"></span><span>Louis, XR-18 Prototype Evaluation and Voice Control Discovery Research, November 2016, K.&nbsp;Holmes</span></p>
 			</div>
 			<div class="divider"></div>
-
-			<!-- <div class="question">
-				<h4 class="letter-heading">Q:</h4>
-				<h4>How often do you use voice search / commands?</h4>	
-				<h3 class="is-bold">Intelligent Voice Assistants User Adoption Survey, MindMeld, 2/2016</h3>
-			</div>
-
-			<div class="question">
-				<h4 class="letter-heading">Q:</h4>
-				<h4>Why haven’t you tried voice assistants?<br>Check all that apply.</h4>	
-			</div> -->
 			
-			<!-- <h4>Our top 3 Challenges:</h4> -->
-			<!-- <h3 class="is-bold">Starting the Conversation</h3>
-			<p>Voice control is still an emerging technology and new to many of our customers. The good news? It’s gaining ground quickly. In a 2014 usability study, the concept of a “wake-up word” wasn’t familiar compared to a more recent study in which all participants expected to use a “wake-up word” to get the device to “listen.”<sup>2</sup></p> -->
-			
-
 			<div class="answer">
 				<h4>Our Top 3 Challenges:</h4>	
 				<h3 class="is-bold large-margin">Starting the Conversation</h3>	
@@ -79,7 +52,7 @@
 
 			<h3 class="is-bold large-margin">To gain full adoption, customers must fully understand the value proposition.</h3>
 			<div class="footnotes caption">
-				<p>Intelligent Voice Assistants User Adoption Survey, MindMeld, 2/2016</p>
+				<p>Intelligent Voice Assistants User Adoption Survey, MindMeld, February 2016</p>
 			</div>
 			<img src="http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/graph2.png" alt="graph 2" class="graph">
 			<div class="divider"></div>

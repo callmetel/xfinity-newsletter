@@ -21,3 +21,31 @@ button{
 a{
     cursor: pointer!important; 
 }
+
+.extra-burger{
+    display: none;
+    @include position(fixed, 1.34vw 2.34vw null null);
+    z-index: 999;
+    cursor: pointer;
+    img{
+        display:inline-block;
+        vertical-align: middle;
+        width: 1.9vw;
+        min-width: 20px;
+        max-width: 30px;
+        height:auto;
+    }
+
+    @include media($xs-mobile){
+        display: none;
+    }
+    @include media($v-iphone-6-plus){
+        display: none;
+    }
+    @include media($h-iphone){
+        display: none;
+    }
+    &.active{
+        display: block!important; 
+    }
+}
