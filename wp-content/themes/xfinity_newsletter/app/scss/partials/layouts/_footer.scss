@@ -2,9 +2,17 @@
 	height: 110vh;
 	margin-top: -10%;
 
+	@include media($macbook-pro-13){
+		margin-top: -10%;
+		height: 125vh;
+	}
+	@include media($sm-mobile){
+		margin-top: -10%;
+		height: 166vh;
+	}
 	@include media($xs-mobile){
-		margin-top: 0;
-		height: 85vh;
+		margin-top: -10%;
+		height: 146vh;
 	}
 	@include media($v-iphone-6-plus){
 		margin-top: 0;

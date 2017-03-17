@@ -13,10 +13,25 @@ section.gradient-wrap{
 		-webkit-clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%);
 		clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%);
 	}
+	@include media($macbook-pro-13){
+		height:206vh;
+		-webkit-clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%);
+		clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%);
+	}
+	@include media($sm-desktop){
+		height:206vh;
+		-webkit-clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%);
+		clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%);
+	}
+	@include media($sm-mobile){
+		height:166vh;
+		-webkit-clip-path: polygon(0 0%, 100% 0%, 100% 88%, 0% 100%);
+		clip-path: polygon(0 0%, 100% 0%, 100% 88%, 0% 100%);
+	}
 	@include media($xs-mobile){
-		-webkit-clip-path: none;
-		clip-path: none;
-		height: 125vh;
+		height:166vh;
+		-webkit-clip-path: polygon(0 0%, 100% 0%, 100% 88%, 0% 100%);
+		clip-path: polygon(0 0%, 100% 0%, 100% 88%, 0% 100%);
 	}
 	@include media($v-iphone-6-plus){
 		-webkit-clip-path: none;
@@ -123,6 +138,9 @@ section.gradient-wrap{
 
 			@include media($sm-desktop){
 				width:70vw;
+			}
+			@include media($sm-mobile){
+				width: 88vw;
 			}
 			@include media($xs-mobile){
 				width: 88vw;

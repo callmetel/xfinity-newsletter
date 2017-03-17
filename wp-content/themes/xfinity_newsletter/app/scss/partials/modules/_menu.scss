@@ -20,6 +20,9 @@
 		list-style: none;
 		@include transform(translateY(-80%));
 
+		@include media($macbook-pro-13){
+			@include transform(translateY(-100%));
+		}
 		@include media($sm-desktop){
 			@include transform(translateY(-65%));
 		}
@@ -28,6 +31,11 @@
 		}
 		@include media($v-ipad-max-screen){
 			@include transform(translateY(-100%));
+		}
+		@include media($sm-mobile){
+			right: 8vw;
+			top: 10%;
+			@include transform(translateX(0));
 		}
 		@include media($xs-mobile){
 			right: 8vw;
@@ -84,6 +92,11 @@
 			bottom: 60%;
 		}
 
+		@include media($sm-mobile){
+			left: 5vw;
+			bottom: 0;
+			@include transform(translateY(30%));
+		}
 		@include media($xs-mobile){
 			left: 5vw;
 			bottom: 0;
@@ -102,6 +115,12 @@
 
 	#new-remote{
 		top: 0;
+		@include media($macbook-pro-13){
+			top:-2%;
+		}
+		@include media($sm-desktop){
+			top:-2%;
+		}
 		@include media($sm-desktop){
 			top:5%;
 		}

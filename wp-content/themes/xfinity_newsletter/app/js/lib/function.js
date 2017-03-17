@@ -42,6 +42,30 @@ $(document).ready(function() {
 	    };
 	    var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 
+		var introHeight = $('#intro').height();
+		var headerHeight = $('header').height();
+		var introPinDuration = Math.round(introHeight/2);
+		var remoteDuration = Math.round($('#menu').height()/2);
+		var $window = $(window);
+		var body = $('html, body');
+
+		TweenLite.to($window, .2, {scrollTo:1});
+
+		var curScroll, article1, article2, article3, article4, article1Title, article2Title, article3Title, article4Title, headingScrollPos;
+
+		$(window).scroll(function(e){
+			curScroll = $(this).scrollTop();
+			article1 = parseInt($('#the-voice-of-research').offset().top) - curScroll;
+			article2 = parseInt($('#the-talk-at-ces').offset().top) - curScroll;
+			article3 = parseInt($('#our-digital-first-language').offset().top) - curScroll;
+			article4 = parseInt($('#the-word-on-voice').offset().top) - curScroll;
+			article1Title = parseInt($('#the-voice-of-research-title').offset().top) - curScroll;
+			article2Title = parseInt($('#the-talk-at-ces-title').offset().top) - curScroll;
+			article3Title = parseInt($('#our-first-digital-language-title').offset().top) - curScroll;
+			article4Title = parseInt($('#the-word-on-voice-title').offset().top) - curScroll;
+		});
+
+
 	// Create isMobile Function
 
 		var isMobile = {
@@ -52,91 +76,19 @@ $(document).ready(function() {
 
         if(isMobile.detectMobile()){
         	$('#remote-on').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/mobile-new-remote-on.png');
-        	$('.mobile-header').before('<div class="touch"></div>');
-        	var bodyTouched = 0;
-        	$('.touch').bind('touchend', function(){
-    			TweenLite.to('body', .2, {scrollTo:2});
-    			console.log('touched');
-    			setTimeout(function(){
-    				$('.touch').remove();
-    			},250)
-        	});
-        	$('.nav-link:eq(0)').on('click', function(e){
-				e.preventDefault();
-				TweenLite.to('body', .5, {scrollTo:curScroll + article1Title - 40});
-				TweenLite.to('body', .25, {scrollTo:curScroll + article1Title - 40, delay:.25});	
-				
-				setTimeout(function(){
-					$('nav').removeClass('is-active');
-				}, 700);
-			});
-			$('.nav-link:eq(1)').on('click', function(e){
-				e.preventDefault();
-				TweenLite.to('body', .5, {scrollTo:curScroll + article2Title - 40});
-				TweenLite.to('body', .25, {scrollTo:curScroll + article2Title - 40, delay:.25});
-				setTimeout(function(){
-					$('nav').removeClass('is-active');
-				}, 700);
-			});
-			$('.nav-link:eq(2)').on('click', function(e){
-				e.preventDefault();
-				TweenLite.to('body', .5, {scrollTo:curScroll + article3Title - 40});
-				TweenLite.to('body', .25, {scrollTo:curScroll + article3Title - 40, delay:.25});
-				setTimeout(function(){
-					$('nav').removeClass('is-active');
-				}, 700);
-			});
-			$('.nav-link:eq(3)').on('click', function(e){
-				e.preventDefault();
-				TweenLite.to('body', .25, {scrollTo:curScroll + article4Title - 40});
-				TweenLite.to('body', .25, {scrollTo:curScroll + article4Title - 40, delay:.25});
-				setTimeout(function(){
-					$('nav').removeClass('is-active');
-				}, 700);
-			});
-
-			$(window).scrollTop(0);
-
+        	headingScrollPos = 90;
         } else{
-        	TweenLite.to('body', .25, {scrollTo:2, delay:.25});
-        	$('#remote-on').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/new-remote-on.png');
-        	$('.nav-link:eq(0)').on('click', function(e){
-				e.preventDefault();
-				TweenLite.to('body', .5, {scrollTo:curScroll + article1Title - 20});
-				
-				setTimeout(function(){
-					$('nav').removeClass('is-active');
-				}, 700);
-			});
-			$('.nav-link:eq(1)').on('click', function(e){
-				e.preventDefault();
-				TweenLite.to('body', .5, {scrollTo:curScroll + article2Title - 20});
-				setTimeout(function(){
-					$('nav').removeClass('is-active');
-				}, 700);
-			});
-			$('.nav-link:eq(2)').on('click', function(e){
-				e.preventDefault();
-				TweenLite.to('body', .5, {scrollTo:curScroll + article3Title - 20});
-				setTimeout(function(){
-					$('nav').removeClass('is-active');
-				}, 700);
-			});
-			$('.nav-link:eq(3)').on('click', function(e){
-				e.preventDefault();
-				TweenLite.to('body', .25, {scrollTo:curScroll + article4Title - 20});
-				setTimeout(function(){
-					$('nav').removeClass('is-active');
-				}, 700);
-			});
-
-			$('.back-btn').on('click', function(e){
-				e.preventDefault();
-				TweenLite.to('body', 1, {scrollTo:0});
-				TweenLite.to('body', 1, {scrollTo:0, delay:1});
-			});
+        	headingScrollPos = 30;
 
         }
+
+        $(window).resize(function(){
+        	if($(window).width() > 768){
+        		$('#remote-on').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/new-remote-on.png');	
+        	} else {
+        		$('#remote-on').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/mobile-new-remote-on.png');
+        	}
+        }).resize();
 
         if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
 		    $('.firefox-clip').addClass('is-active');
@@ -159,44 +111,80 @@ $(document).ready(function() {
 			printPDF();
 		});
 
-		var introHeight = $('#intro').height();
-		var headerHeight = $('header').height();
-		var introPinDuration = Math.round(introHeight/2);
-		var remoteDuration = Math.round($('#menu').height()/2);
-		var $window = $(window);
+		// Read More Scroll To Functions
 
-		TweenLite.to($window, .2, {scrollTo:1});
+			$('#article1-heading .read-article-btn').on('click', function(e){
+				e.preventDefault();
+				TweenLite.to($window, 1, {scrollTo:curScroll + article1 - 20});
+			});
+			$('#article2-heading .read-article-btn').on('click', function(e){
+				e.preventDefault();
+				TweenLite.to($window, 1, {scrollTo:curScroll + article2 - 20});
+			});
+			$('#article3-heading .read-article-btn').on('click', function(e){
+				e.preventDefault();
+				TweenLite.to($window, 1, {scrollTo:curScroll + article3 - 20});
+			});
+			$('#article4-heading .read-article-btn').on('click', function(e){
+				e.preventDefault();
+				TweenLite.to($window, 1, {scrollTo:curScroll + article4 - 20});
+			});
 
-		var curScroll, article1, article2, article3, article4, article1Title, article2Title, article3Title, article4Title;
-
-		$(window).scroll(function(e){
-			curScroll = $(this).scrollTop();
-			article1 = parseInt($('#the-voice-of-research').offset().top) - curScroll;
-			article2 = parseInt($('#the-talk-at-ces').offset().top) - curScroll;
-			article3 = parseInt($('#our-digital-first-language').offset().top) - curScroll;
-			article4 = parseInt($('#the-word-on-voice').offset().top) - curScroll;
-			article1Title = parseInt($('#the-voice-of-research-title').offset().top) - curScroll;
-			article2Title = parseInt($('#the-talk-at-ces-title').offset().top) - curScroll;
-			article3Title = parseInt($('#our-first-digital-language-title').offset().top) - curScroll;
-			article4Title = parseInt($('#the-word-on-voice-title').offset().top) - curScroll;
+		$('.back-btn').on('click', function(e){
+			e.preventDefault();
+			body.animate({ scrollTop: 0 }, 2000, 'swing');
 		});
 
-		$('#article1-heading .read-article-btn').on('click', function(e){
-			e.preventDefault();
-			TweenLite.to($window, 1, {scrollTo:curScroll + article1 - 20});
-		});
-		$('#article2-heading .read-article-btn').on('click', function(e){
-			e.preventDefault();
-			TweenLite.to($window, 1, {scrollTo:curScroll + article2 - 20});
-		});
-		$('#article3-heading .read-article-btn').on('click', function(e){
-			e.preventDefault();
-			TweenLite.to($window, 1, {scrollTo:curScroll + article3 - 20});
-		});
-		$('#article4-heading .read-article-btn').on('click', function(e){
-			e.preventDefault();
-			TweenLite.to($window, 1, {scrollTo:curScroll + article4 - 20});
-		});
+		// Nav Scroll To Functions
+
+			$('.nav-link:eq(0)').on('click', function(e){
+				e.preventDefault();
+				body.animate({ scrollTop: curScroll + article1Title - headingScrollPos}, 2000, 'swing');
+				
+				setTimeout(function(){
+					$('nav').removeClass('is-active');
+				}, 700);
+			});
+			$('.nav-link:eq(1)').on('click', function(e){
+				e.preventDefault();
+				body.animate({ scrollTop: curScroll + article2Title - headingScrollPos}, 2000, 'swing');
+				setTimeout(function(){
+					$('nav').removeClass('is-active');
+				}, 700);
+			});
+			$('.nav-link:eq(2)').on('click', function(e){
+				e.preventDefault();
+				body.animate({ scrollTop: curScroll + article3Title - headingScrollPos}, 2000, 'swing');
+				setTimeout(function(){
+					$('nav').removeClass('is-active');
+				}, 700);
+			});
+			$('.nav-link:eq(3)').on('click', function(e){
+				e.preventDefault();
+				body.animate({ scrollTop: curScroll + article4Title - headingScrollPos}, 2000, 'swing');
+				setTimeout(function(){
+					$('nav').removeClass('is-active');
+				}, 700);
+			});
+
+		// Menu Scroll To Functions
+		
+			$('#menu ul a:eq(0)').on('click', function(e){
+				e.preventDefault();
+				body.animate({ scrollTop: curScroll + article1Title - headingScrollPos}, 2000, 'swing');
+			});
+			$('#menu ul a:eq(1)').on('click', function(e){
+				e.preventDefault();
+				body.animate({ scrollTop: curScroll + article2Title - headingScrollPos}, 2000, 'swing');
+			});
+			$('#menu ul a:eq(2)').on('click', function(e){
+				e.preventDefault();
+				body.animate({ scrollTop: curScroll + article3Title - headingScrollPos}, 2000, 'swing');
+			});
+			$('#menu ul a:eq(3)').on('click', function(e){
+				e.preventDefault();
+				body.animate({ scrollTop: curScroll + article4Title - headingScrollPos}, 2000, 'swing');
+			});
 
 	// Hide Pages from Aria
 		
@@ -247,59 +235,12 @@ $(document).ready(function() {
 							offset: introPinDuration + 20 /* offset the trigger 150px below #scene's top */
 						})
 						.setTween(tween2A);
-
-			// var tween2B = TweenMax.fromTo('#old-remote', 1, {y:'10%'}, {y:'-100%', alpha:0});
-
-			// var scene2B = new ScrollMagic.Scene({
-			// 				duration: remoteDuration,
-			// 				offset: elementOffset /* offset the trigger 150px below #scene's top */
-			// 			})
-			// 			.setTween(tween2B);
-
-			// var tween2C = TweenMax.fromTo('#new-remote', 1, {y:'0', alpha:0}, {y:'-20%', alpha:1});
-
-			// var scene2C = new ScrollMagic.Scene({
-			// 				duration: remoteDuration/2,
-			// 				offset: elementOffset + 100 /* offset the trigger 150px below #scene's top */
-			// 			})
-			// 			.setTween(tween2C);
-
-			// var tween2D = TweenMax.fromTo('#remote-on', 1, {alpha:0}, {alpha:1});
-
-			// var scene2D = new ScrollMagic.Scene({
-			// 				duration: 50,
-			// 				offset: elementOffset + remoteDuration/1.5 /* offset the trigger 150px below #scene's top */
-			// 			})
-			// 			.setTween(tween2D);
-
 			scrollMagicController.addScene([
 			  scene1A,
 			  scene1B,
 			  scene1C,
 			  scene2A
-			  // scene2B,
-			  // scene2C,
-			  // scene2D
 			]);
-			
-
-	
-		$('#menu ul a:eq(0)').on('click', function(e){
-			e.preventDefault();
-			TweenLite.to($window, 2, {scrollTo:curScroll + article1Title - 20});
-		});
-		$('#menu ul a:eq(1)').on('click', function(e){
-			e.preventDefault();
-			TweenLite.to($window, 2, {scrollTo:curScroll + article2Title - 20});
-		});
-		$('#menu ul a:eq(2)').on('click', function(e){
-			e.preventDefault();
-			TweenLite.to($window, 2, {scrollTo:curScroll + article3Title - 20});
-		});
-		$('#menu ul a:eq(3)').on('click', function(e){
-			e.preventDefault();
-			TweenLite.to($window, 2, {scrollTo:curScroll + article4Title - 20});
-		});
 
 	// Mobile Nav 
 		

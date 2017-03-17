@@ -11,8 +11,13 @@ section.article-gradient-wrap{
 	-webkit-clip-path: polygon(0 38%, 100% 0%, 100% 63%, 0% 100%);
 	clip-path: polygon(0 38%, 100% 0%, 100% 63%, 0% 100%);
 
+	@include media($macbook-pro-13){
+		height:176vh;
+		-webkit-clip-path: polygon(0 23%, 100% 0%, 100% 78%, 0% 100%);
+		clip-path: polygon(0 23%, 100% 0%, 100% 78%, 0% 100%);
+	}
 	@include media($sm-desktop){
-		height:206vh;
+		height:176vh;
 		-webkit-clip-path: polygon(0 23%, 100% 0%, 100% 78%, 0% 100%);
 		clip-path: polygon(0 23%, 100% 0%, 100% 78%, 0% 100%);
 	}
@@ -22,10 +27,15 @@ section.article-gradient-wrap{
 		-webkit-clip-path: polygon(0 23%, 100% 0%, 100% 78%, 0% 100%);
 		clip-path: polygon(0 23%, 100% 0%, 100% 78%, 0% 100%);
 	}
+	@include media($sm-mobile){
+		height:166vh;
+		-webkit-clip-path: polygon(0 13%, 100% 0%, 100% 88%, 0% 100%);
+		clip-path: polygon(0 13%, 100% 0%, 100% 88%, 0% 100%);
+	}
 	@include media($xs-mobile){
-		-webkit-clip-path: none;
-		clip-path: none;
-		height:110vh;
+		height:146vh;
+		-webkit-clip-path: polygon(0 13%, 100% 0%, 100% 88%, 0% 100%);
+		clip-path: polygon(0 13%, 100% 0%, 100% 88%, 0% 100%);
 	}
 	@include media($v-iphone-6-plus){
 		-webkit-clip-path: none;
@@ -114,8 +124,14 @@ section.article-gradient-wrap{
 			text-align: left;
 			width: 52vw;
 
+			@include media($macbook-pro-13){
+				width: 67vw;
+			}
 			@include media($sm-desktop){
 				width: 67vw;
+			}
+			@include media($sm-mobile){
+				width: 88vw;
 			}
 			@include media($xs-mobile){
 				width: 88vw;
@@ -183,6 +199,11 @@ section.article-gradient-wrap{
 			padding-top: 23%;
 			background-size: cover;
 		}
+		@include media($sm-mobile){
+			margin-top: -23%;
+			padding-top: 23%;
+			background-size: cover;
+		}
 		@include media($xs-mobile){
 			margin-top:0;
 			padding-top: 0;
@@ -211,8 +232,11 @@ section.article-gradient-wrap{
 			@include media($sm-desktop) {
 				@include transform(translate(-50%,-55%));
 			}
+			@include media($sm-mobile) {
+				@include transform(translate(-50%,-62%));
+			}
 			@include media($xs-mobile) {
-				@include transform(translate(-50%,-75%));
+				@include transform(translate(-50%,-62%));
 			}
 			@include media($v-iphone-6-plus) {
 				@include transform(translate(-50%,-75%));
@@ -232,6 +256,11 @@ section.article-gradient-wrap{
 			padding-top: 23%;
 			background-size: cover;
 		}
+		@include media($sm-mobile){
+			margin-top: -23%;
+			padding-top: 23%;
+			background-size: cover;
+		}
 		@include media($xs-mobile){
 			margin-top:0;
 			background-size: cover;
@@ -251,6 +280,12 @@ section.article-gradient-wrap{
 			}
 			@include media($v-ipad-max-screen){
 				@include transform(translate(-50%,-50%));
+			}
+			@include media($sm-mobile) {
+				@include transform(translate(-50%,-62%));
+			}
+			@include media($xs-mobile) {
+				@include transform(translate(-50%,-62%));
 			}
 		}
 	}
@@ -263,8 +298,14 @@ section.article-gradient-wrap{
 			padding-top: 23%;
 			background-size: cover;
 		}
+		@include media($sm-mobile){
+			margin-top: -13%;
+			padding-top: -13%;
+			background-size: cover;
+		}
 		@include media($xs-mobile){
-			margin-top:0;
+			margin-top: -13%;
+			padding-top: -13%;
 			background-size: cover;
 		}
 		@include media($v-iphone-6-plus){
@@ -283,6 +324,12 @@ section.article-gradient-wrap{
 			@include media($v-ipad-max-screen){
 				@include transform(translate(-50%,-50%));
 			}
+			@include media($sm-mobile) {
+				@include transform(translate(-50%,-55%));
+			}
+			@include media($xs-mobile) {
+				@include transform(translate(-50%,-55%));
+			}
 		}
 	}
 	&#article4-heading{
@@ -294,8 +341,14 @@ section.article-gradient-wrap{
 			padding-top: 23%;
 			background-size: cover;
 		}
+		@include media($sm-mobile){
+			margin-top: -13%;
+			padding-top: 13%;
+			background-size: cover;
+		}
 		@include media($xs-mobile){
-			margin-top:0;
+			margin-top:-13%;
+			padding-top: 13%;
 			background-size: cover;
 		}
 		@include media($v-iphone-6-plus){
@@ -315,6 +368,12 @@ section.article-gradient-wrap{
 			@include media($v-ipad-max-screen){
 				@include transform(translate(-50%,-40%));
 			}
+			@include media($sm-mobile) {
+				@include transform(translate(-50%,-52%));
+			}
+			@include media($xs-mobile) {
+				@include transform(translate(-50%,-52%));
+			}
 		}
 	}
 }
@@ -329,6 +388,10 @@ section.article-gradient-wrap{
 		@include media($sm-desktop) {
 			width: 67vw;
 			margin-bottom: 10vh;
+		}
+		@include media($sm-mobile) {
+			width: 88vw;
+			padding: 50px 0;
 		}
 		@include media($xs-mobile) {
 			width: 88vw;
