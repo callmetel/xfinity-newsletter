@@ -23,6 +23,9 @@ a{
 }
 
 .extra-burger{
+    &.active{
+        display: block; 
+    }
     display: none;
     @include position(fixed, 1.34vw 2.34vw null null);
     z-index: 999;
@@ -40,12 +43,9 @@ a{
         display: none;
     }
     @include media($v-iphone-6-plus){
-        display: none;
+        display: none!important;
     }
     @include media($h-iphone){
-        display: none;
-    }
-    &.active{
-        display: block!important; 
+        display: none!important;
     }
 }

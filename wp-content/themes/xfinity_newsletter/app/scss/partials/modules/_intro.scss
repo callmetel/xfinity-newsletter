@@ -1,12 +1,12 @@
 #trigger{
 	width: 100vw;
     height: 1px;
-    background: red;
-    // background: $gray;
+    // background: red;
+    background: $offwhite;
     @include position(absolute, 100vh 0 null 0);
 }
 #intro{
-	background-image: url('../images/home-bg.jpg');
+	background-image: url('../images/home-bg.jpg')!important;
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-top: -1px;

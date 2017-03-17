@@ -8,6 +8,11 @@ section.gradient-wrap{
 	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 63%, 0% 100%);
 	clip-path: polygon(0 0, 100% 0%, 100% 63%, 0% 100%);
 
+	@include media($v-ipad-max-screen){
+		height:100vh;
+		-webkit-clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%);
+		clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%);
+	}
 	@include media($xs-mobile){
 		-webkit-clip-path: none;
 		clip-path: none;
@@ -53,6 +58,7 @@ section.gradient-wrap{
 			clip-path: none;
 		}
 		@include media($v-iphone-6-plus){
+			height:80vh;
 			-webkit-clip-path: none;
 			clip-path: none;
 		}

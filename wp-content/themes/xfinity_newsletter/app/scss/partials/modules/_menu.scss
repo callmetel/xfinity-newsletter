@@ -1,4 +1,8 @@
 #menu{
+	@include media($v-iphone-6-plus){
+		margin-top:-23%!important;
+		height: 100vh;
+	}
 	margin-top: -10%!important;
 	overflow: hidden;
 
@@ -18,6 +22,12 @@
 
 		@include media($sm-desktop){
 			@include transform(translateY(-65%));
+		}
+		@include media($h-ipad-max-screen){
+			@include transform(translateY(-100%));
+		}
+		@include media($v-ipad-max-screen){
+			@include transform(translateY(-100%));
 		}
 		@include media($xs-mobile){
 			right: 8vw;
@@ -63,6 +73,15 @@
 
 		b{
 			color: $green;
+		}
+
+		@include media($h-ipad-max-screen){
+			left: 40vw;
+			bottom: 60%;
+		}
+		@include media($v-ipad-max-screen){
+			left: 40vw;
+			bottom: 60%;
 		}
 
 		@include media($xs-mobile){

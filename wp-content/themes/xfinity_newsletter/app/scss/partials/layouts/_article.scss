@@ -16,6 +16,12 @@ section.article-gradient-wrap{
 		-webkit-clip-path: polygon(0 23%, 100% 0%, 100% 78%, 0% 100%);
 		clip-path: polygon(0 23%, 100% 0%, 100% 78%, 0% 100%);
 	}
+
+	@include media($v-ipad-max-screen){
+		height:100vh;
+		-webkit-clip-path: polygon(0 23%, 100% 0%, 100% 78%, 0% 100%);
+		clip-path: polygon(0 23%, 100% 0%, 100% 78%, 0% 100%);
+	}
 	@include media($xs-mobile){
 		-webkit-clip-path: none;
 		clip-path: none;
@@ -162,11 +168,17 @@ section.article-gradient-wrap{
 	}
 
 	&#article1-heading{
-		background: #000000 url("../images/section-1-bg.jpg") no-repeat;
+		background: #000000 url("../images/section-1-bg.jpg") no-repeat!important;
 		margin-top: -38%;
 		padding-top: 38%;
-		background-size: cover;
+		background-size: cover!important;
+
 		@include media($sm-desktop){
+			margin-top: -23%;
+			padding-top: 23%;
+			background-size: cover;
+		}
+		@include media($v-ipad-max-screen){
 			margin-top: -23%;
 			padding-top: 23%;
 			background-size: cover;
@@ -193,6 +205,9 @@ section.article-gradient-wrap{
 		div.absolute-center{
 			@include transform(translate(-50%,-40%));
 			
+			@include media($v-ipad-max-screen){
+				@include transform(translate(-50%,-50%));
+			}
 			@include media($sm-desktop) {
 				@include transform(translate(-50%,-55%));
 			}
@@ -212,6 +227,11 @@ section.article-gradient-wrap{
 		background: #000000 url("../images/section-2-bg.jpg") no-repeat;
 		margin-top: -10%;
 		background-size: cover;
+		@include media($v-ipad-max-screen){
+			margin-top: -23%;
+			padding-top: 23%;
+			background-size: cover;
+		}
 		@include media($xs-mobile){
 			margin-top:0;
 			background-size: cover;
@@ -227,6 +247,9 @@ section.article-gradient-wrap{
 		div.absolute-center{
 			@include transform(translate(-50%,-40%));
 			@include media($sm-desktop){
+				@include transform(translate(-50%,-50%));
+			}
+			@include media($v-ipad-max-screen){
 				@include transform(translate(-50%,-50%));
 			}
 		}
@@ -235,6 +258,11 @@ section.article-gradient-wrap{
 		background: #000000 url("../images/section-3-bg.jpg") no-repeat;
 		margin-top: -10%;
 		background-size: cover;
+		@include media($v-ipad-max-screen){
+			margin-top: -23%;
+			padding-top: 23%;
+			background-size: cover;
+		}
 		@include media($xs-mobile){
 			margin-top:0;
 			background-size: cover;
@@ -252,12 +280,20 @@ section.article-gradient-wrap{
 			@include media($sm-desktop){
 				@include transform(translate(-50%,-50%));
 			}
+			@include media($v-ipad-max-screen){
+				@include transform(translate(-50%,-50%));
+			}
 		}
 	}
 	&#article4-heading{
 		background: #000000 url("../images/section-4-bg.jpg") no-repeat;
 		margin-top: -10%;
 		background-size: cover;
+		@include media($v-ipad-max-screen){
+			margin-top: -23%;
+			padding-top: 23%;
+			background-size: cover;
+		}
 		@include media($xs-mobile){
 			margin-top:0;
 			background-size: cover;
@@ -272,8 +308,12 @@ section.article-gradient-wrap{
 		}
 		div.absolute-center{
 			@include transform(translate(-50%,-40%));
+
 			@include media($sm-desktop){
 				@include transform(translate(-50%,-50%));
+			}
+			@include media($v-ipad-max-screen){
+				@include transform(translate(-50%,-40%));
 			}
 		}
 	}
@@ -426,7 +466,9 @@ section.article-gradient-wrap{
 				display: inline-block;
 				vertical-align: top;
 				margin-top: 0;
-
+				@include media($v-ipad-max-screen){
+					width:90%;
+				}
 				span{
 					color: $gray;
 

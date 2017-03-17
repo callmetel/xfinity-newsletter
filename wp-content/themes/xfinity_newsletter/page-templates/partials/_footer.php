@@ -4,24 +4,6 @@
 		<div class="is-relative">
 			<div class="article absolute-bottom">
 				<a href="#intro" class="back-btn no-decoration read-article-btn"><img src="http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/down-arrow.svg" alt="" class="up-arrow"> BACK TO TOP</a>
-				<!-- <div class="row">
-					<div class="left">
-						<p>Have questions or comments about this quarter’s&nbsp;newsletter?</p>
-						<p>Share your feedback at: <a href="mailto:xd_quarterly@comcast.com" class="no-decoration is-bolder">xd_quarterly@comcast.com</a></p>
-						<p>
-							<a href="#" class="print-pdf print no-decoration"><img src="http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/print-icon.png" alt="print icon" class="print-logo"><span class="is-bolder">Print</span></a>
-							<a href="http://design.comcast.com/" target="_blank" class="print no-decoration"><span class="is-bolder">Experience Design Team</span></a>
-							<a href="http://design.xfinity.com/#/design" target="_blank" class="print no-decoration"><span class="is-bolder">XFINITY Design Language</span></a>
-							<a href="https://research.xfinity.com/" target="_blank" class="print no-decoration"><span class="is-bolder">Research</span></a>
-						</p>
-					</div>
-					<div class="right">
-						<h6>Creating Powerful<br>Experiences for<br>Millions of People</h6>
-						<a href="http://xfinity.com/" target="_blank" class="logo no-decoration"><img src="http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/xfinity-logo.svg" alt="print icon" class="xfinity-logo"></a>
-					</div>	
-				</div>
-				<div class="mobile-footer"> -->
-
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.45082 32.53927" class="logo no-decoration">
 					  <title>xfinity-logo</title>
 					  <g id="da0eb711-9b48-427d-a7cf-ad984e1d1f4c" data-name="Layer 2">
