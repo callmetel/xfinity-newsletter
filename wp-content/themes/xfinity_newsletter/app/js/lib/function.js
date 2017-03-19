@@ -42,10 +42,7 @@ $(document).ready(function() {
 	    };
 	    var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 
-		var introHeight = $('#intro').height();
-		var headerHeight = $('header').height();
-		var introPinDuration = Math.round(introHeight/2);
-		var remoteDuration = Math.round($('#menu').height()/2);
+		var introHeight,headerHeight,introPinDuration,remoteDuration;
 		var $window = $(window);
 		var body = $('html, body');
 
@@ -87,7 +84,13 @@ $(document).ready(function() {
         		$('#remote-on').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/new-remote-on.png');	
         	} else {
         		$('#remote-on').attr('src','http://xfinity-newsletter/wp-content/themes/xfinity_newsletter/app/images/mobile-new-remote-on.png');
-        	}
+        	};
+        	introHeight = $('#intro').height();
+			headerHeight = $('header').height();
+			introPinDuration = Math.round(introHeight/2);
+			remoteDuration = Math.round($('#menu').height()/2);
+
+			$('.scrollmagic-pin-spacer').css('min-height', introHeight);
         }).resize();
 
         if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){

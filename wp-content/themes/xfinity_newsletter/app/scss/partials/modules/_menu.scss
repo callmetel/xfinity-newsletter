@@ -18,13 +18,22 @@
 	ul.absolute-right{
 		right: 14.6vw;
 		list-style: none;
-		@include transform(translateY(-80%));
+		@include transform(translateY(-100%));
 
 		@include media($macbook-pro-13){
 			@include transform(translateY(-100%));
 		}
 		@include media($sm-desktop){
 			@include transform(translateY(-65%));
+		}
+		@include media($lg-mobile){
+			@include transform(translateY(-70%));
+		}
+		@include media($mobile){
+			@include transform(translateY(-70%));
+		}
+		@include media($md-mobile){
+			@include transform(translateY(-75%));
 		}
 		@include media($h-ipad-max-screen){
 			@include transform(translateY(-100%));
@@ -87,11 +96,15 @@
 			left: 40vw;
 			bottom: 60%;
 		}
+		@include media($lg-mobile){
+			left: 5vw;
+			@include transform(translateY(50%));
+		}
 		@include media($v-ipad-max-screen){
 			left: 40vw;
 			bottom: 60%;
 		}
-
+	
 		@include media($sm-mobile){
 			left: 5vw;
 			bottom: 0;
@@ -114,15 +127,47 @@
 	}
 
 	#new-remote{
-		top: 0;
+		top: 50%;
+		@include transform(translate(-50%,-50%));
+
+		@include media($short-desktop){
+			@include transform(translate(-50%,-50%)!important);
+		}
 		@include media($macbook-pro-13){
-			top:-2%;
+			@include transform(translate(-50%,-50%));
 		}
 		@include media($sm-desktop){
-			top:-2%;
+			@include transform(translate(-50%,-50%));
 		}
-		@include media($sm-desktop){
-			top:5%;
+		@include media($lg-mobile){
+			@include transform(translate(-55%,-50%));
+		}
+		@include media($mobile){
+			@include transform(translate(-55%,-50%));
+		}
+		@include media($md-mobile){
+			@include transform(translate(-55%,-40%));
+		}
+		@include media($sm-mobile){
+			@include transform(translate(-50%,-50%));
+		}
+		#remote-on{
+			@include media($sm-desktop){
+				width:120vw;
+			}
+			@include media($lg-mobile){
+				width:150vw;
+			}
+			@include media($mobile){
+				width:150vw;
+			}
+			@include media($sm-mobile){
+				width:120vw;
+			}
+			@include media($xs-mobile){
+				width:120vw;
+			}
+
 		}
 	}
 }

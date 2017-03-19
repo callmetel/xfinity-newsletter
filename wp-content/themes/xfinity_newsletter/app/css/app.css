@@ -1648,7 +1648,7 @@ section.gradient-wrap {
   padding: 0;
   margin: 0;
   width: 100vw;
-  height: 166vh;
+  height: 146vh;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 63%, 0% 100%);
   clip-path: polygon(0 0, 100% 0%, 100% 63%, 0% 100%); }
   @media screen and (max-device-width: 1080px) and (orientation: portrait) {
@@ -1658,12 +1658,12 @@ section.gradient-wrap {
       clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%); } }
   @media screen and (min-width: 1280px) and (max-width: 1366px) {
     section.gradient-wrap {
-      height: 206vh;
+      height: 156vh;
       -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%);
       clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%); } }
   @media screen and (max-width: 1280px) {
     section.gradient-wrap {
-      height: 206vh;
+      height: 136vh;
       -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%);
       clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%); } }
   @media screen and (max-width: 768px) {
@@ -1832,6 +1832,34 @@ section.gradient-wrap {
       -ms-transform: translate(-50%, -55%) !important;
       -o-transform: translate(-50%, -55%) !important;
       transform: translate(-50%, -55%) !important; } }
+  @media screen and (max-width: 1280px) {
+    .fade-up-in {
+      -webkit-transform: translate(-50%, -95%) !important;
+      -moz-transform: translate(-50%, -95%) !important;
+      -ms-transform: translate(-50%, -95%) !important;
+      -o-transform: translate(-50%, -95%) !important;
+      transform: translate(-50%, -95%) !important; } }
+  @media screen and (max-width: 992px) {
+    .fade-up-in {
+      -webkit-transform: translate(-50%, -100%) !important;
+      -moz-transform: translate(-50%, -100%) !important;
+      -ms-transform: translate(-50%, -100%) !important;
+      -o-transform: translate(-50%, -100%) !important;
+      transform: translate(-50%, -100%) !important; } }
+  @media screen and (max-width: 768px) {
+    .fade-up-in {
+      -webkit-transform: translate(-50%, -80%) !important;
+      -moz-transform: translate(-50%, -80%) !important;
+      -ms-transform: translate(-50%, -80%) !important;
+      -o-transform: translate(-50%, -80%) !important;
+      transform: translate(-50%, -80%) !important; } }
+  @media screen and (max-width: 500px) {
+    .fade-up-in {
+      -webkit-transform: translate(-50%, -5%) !important;
+      -moz-transform: translate(-50%, -5%) !important;
+      -ms-transform: translate(-50%, -5%) !important;
+      -o-transform: translate(-50%, -5%) !important;
+      transform: translate(-50%, -5%) !important; } }
   @media screen and (max-device-width: 736px) and (orientation: portrait) {
     .fade-up-in {
       -webkit-transform: translate(-50%, -30%) !important;
@@ -2116,6 +2144,11 @@ section.gradient-wrap {
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: -1px; }
+  @media screen and (min-width: 1280px) and (max-width: 1366px) {
+    #intro {
+      height: 136vh !important;
+      -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%);
+      clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%); } }
   @media screen and (max-width: 500px) {
     #intro {
       height: 110vh; } }
@@ -2147,6 +2180,9 @@ section.gradient-wrap {
       -ms-transform: translate(-50%, -60%);
       -o-transform: translate(-50%, -60%);
       transform: translate(-50%, -60%); }
+      @media screen and (max-width: 992px) {
+        #intro .absolute-top .xd-logo {
+          width: 30vw; } }
       @media screen and (max-width: 500px) {
         #intro .absolute-top .xd-logo {
           width: 40vw; } }
@@ -2201,11 +2237,11 @@ section.gradient-wrap {
   #menu ul.absolute-right {
     right: 14.6vw;
     list-style: none;
-    -webkit-transform: translateY(-80%);
-    -moz-transform: translateY(-80%);
-    -ms-transform: translateY(-80%);
-    -o-transform: translateY(-80%);
-    transform: translateY(-80%); }
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%); }
     @media screen and (min-width: 1280px) and (max-width: 1366px) {
       #menu ul.absolute-right {
         -webkit-transform: translateY(-100%);
@@ -2220,6 +2256,27 @@ section.gradient-wrap {
         -ms-transform: translateY(-65%);
         -o-transform: translateY(-65%);
         transform: translateY(-65%); } }
+    @media screen and (max-width: 1024px) {
+      #menu ul.absolute-right {
+        -webkit-transform: translateY(-70%);
+        -moz-transform: translateY(-70%);
+        -ms-transform: translateY(-70%);
+        -o-transform: translateY(-70%);
+        transform: translateY(-70%); } }
+    @media screen and (max-width: 992px) {
+      #menu ul.absolute-right {
+        -webkit-transform: translateY(-70%);
+        -moz-transform: translateY(-70%);
+        -ms-transform: translateY(-70%);
+        -o-transform: translateY(-70%);
+        transform: translateY(-70%); } }
+    @media screen and (max-width: 880px) {
+      #menu ul.absolute-right {
+        -webkit-transform: translateY(-75%);
+        -moz-transform: translateY(-75%);
+        -ms-transform: translateY(-75%);
+        -o-transform: translateY(-75%);
+        transform: translateY(-75%); } }
     @media screen and (max-device-width: 1024px) and (orientation: landscape) {
       #menu ul.absolute-right {
         -webkit-transform: translateY(-100%);
@@ -2284,6 +2341,14 @@ section.gradient-wrap {
       #menu .menu-title {
         left: 40vw;
         bottom: 60%; } }
+    @media screen and (max-width: 1024px) {
+      #menu .menu-title {
+        left: 5vw;
+        -webkit-transform: translateY(50%);
+        -moz-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        -o-transform: translateY(50%);
+        transform: translateY(50%); } }
     @media screen and (max-device-width: 1080px) and (orientation: portrait) {
       #menu .menu-title {
         left: 40vw;
@@ -2317,16 +2382,76 @@ section.gradient-wrap {
   #menu #old-remote, #menu #new-remote, #menu #remote-on, #menu #remote-off {
     width: 100vw; }
   #menu #new-remote {
-    top: 0; }
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    @media screen and (min-width: 1280px) and (max-height: 650px) {
+      #menu #new-remote {
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        -o-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important; } }
     @media screen and (min-width: 1280px) and (max-width: 1366px) {
       #menu #new-remote {
-        top: -2%; } }
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); } }
     @media screen and (max-width: 1280px) {
       #menu #new-remote {
-        top: -2%; } }
-    @media screen and (max-width: 1280px) {
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); } }
+    @media screen and (max-width: 1024px) {
       #menu #new-remote {
-        top: 5%; } }
+        -webkit-transform: translate(-55%, -50%);
+        -moz-transform: translate(-55%, -50%);
+        -ms-transform: translate(-55%, -50%);
+        -o-transform: translate(-55%, -50%);
+        transform: translate(-55%, -50%); } }
+    @media screen and (max-width: 992px) {
+      #menu #new-remote {
+        -webkit-transform: translate(-55%, -50%);
+        -moz-transform: translate(-55%, -50%);
+        -ms-transform: translate(-55%, -50%);
+        -o-transform: translate(-55%, -50%);
+        transform: translate(-55%, -50%); } }
+    @media screen and (max-width: 880px) {
+      #menu #new-remote {
+        -webkit-transform: translate(-55%, -40%);
+        -moz-transform: translate(-55%, -40%);
+        -ms-transform: translate(-55%, -40%);
+        -o-transform: translate(-55%, -40%);
+        transform: translate(-55%, -40%); } }
+    @media screen and (max-width: 768px) {
+      #menu #new-remote {
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); } }
+    @media screen and (max-width: 1280px) {
+      #menu #new-remote #remote-on {
+        width: 120vw; } }
+    @media screen and (max-width: 1024px) {
+      #menu #new-remote #remote-on {
+        width: 150vw; } }
+    @media screen and (max-width: 992px) {
+      #menu #new-remote #remote-on {
+        width: 150vw; } }
+    @media screen and (max-width: 768px) {
+      #menu #new-remote #remote-on {
+        width: 120vw; } }
+    @media screen and (max-width: 500px) {
+      #menu #new-remote #remote-on {
+        width: 120vw; } }
 
 nav {
   position: fixed;

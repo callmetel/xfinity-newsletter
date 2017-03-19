@@ -11,6 +11,11 @@
 	background-repeat: no-repeat;
 	margin-top: -1px;
 
+	@include media($macbook-pro-13){
+		height:136vh!important;
+		-webkit-clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%);
+		clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%);
+	}
 	@include media($xs-mobile){
 		height: 110vh;
 	}
@@ -38,6 +43,9 @@
 			opacity: 0;
 			@include transform(translate(-50%, -60%));
 
+			@include media($mobile) {
+				width: 30vw;
+			}
 			@include media($xs-mobile) {
 				width: 40vw;
 			}

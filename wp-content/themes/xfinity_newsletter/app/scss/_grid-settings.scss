@@ -29,6 +29,7 @@ $macbook-pro-13: new-breakpoint(min-width 1280px max-width 1366px);
 $most-common-screen: new-breakpoint(min-width 1367px max-width 1440px);
 $macbook-pro-15: new-breakpoint(min-width 1441px);
 $md-desktop: new-breakpoint(min-width 1441px max-width 1599px);
+$short-desktop: new-breakpoint(min-width 1280px max-height 650px);
 $short-lg-desktop: new-breakpoint(min-width 1441px max-height 1125px);
 $lg-desktop: new-breakpoint(min-width 1600px max-width 2000px);
 $xl-desktop: new-breakpoint(min-width 2001px);

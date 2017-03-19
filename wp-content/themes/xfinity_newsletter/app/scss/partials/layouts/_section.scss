@@ -4,7 +4,7 @@ section.gradient-wrap{
 	padding: 0;
 	margin:0;
 	width:100vw;
-	height: 166vh;
+	height: 146vh;
 	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 63%, 0% 100%);
 	clip-path: polygon(0 0, 100% 0%, 100% 63%, 0% 100%);
 
@@ -14,12 +14,12 @@ section.gradient-wrap{
 		clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%);
 	}
 	@include media($macbook-pro-13){
-		height:206vh;
+		height:156vh;
 		-webkit-clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%);
 		clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%);
 	}
 	@include media($sm-desktop){
-		height:206vh;
+		height:136vh;
 		-webkit-clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%);
 		clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0% 100%);
 	}
