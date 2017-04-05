@@ -1,0 +1,13 @@
+.mail-icon{
+	width: 30px;
+	height: 19px;
+	background:transparent url("../images/mail-icon.png") no-repeat; 
+	background-size: contain;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -2px;
+
+	&.dark-icon{
+		background-image: url("../images/mail-icon-dark.png")!important; 
+	}
+}

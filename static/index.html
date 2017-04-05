@@ -1,0 +1,587 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="xfinity Newsletter">
+    <meta name="description" content="xfinity Newsletter">
+    <meta name="author" content="Comcast">
+    <link rel="stylesheet" href="app/css/app.css">
+    <title>xfinity Newsletter</title>
+    <style>
+        @-webkit-keyframes fadeIn {0% {opacity: 0;} 50% {opacity: 0;} 100% {opacity: 1;}}
+        @-moz-keyframes fadeIn {0% {opacity: 0;} 50% {opacity: 0;} 100% {opacity: 1;}}
+        @keyframes fadeIn {0% {opacity: 0;} 50% {opacity: 0;} 100% {opacity: 1;}}
+        body.fade-in{ -webkit-animation: fadeIn 2s ease-in-out; -o-animation: fadeIn 2s ease-in-out; animation: fadeIn 2s ease-in-out; }
+        .initial-hide {display: none; opacity: 0; z-index: -3000;}
+    </style>
+</head>
+
+<body class="fade-in">
+    
+    <!--================== SITE NAVIGATION =====================
+        ========================================================-->
+
+    <div class="mobile-header">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.45082 32.53927" class="logo absolute-left no-decoration">
+              <title>xfinity-logo</title>
+              <g id="da0eb711-9b48-427d-a7cf-ad984e1d1f4c" data-name="Layer 2">
+                <g id="4dc961dc-4ec8-47aa-a9ba-ba471dfdf282" data-name="Layer 1">
+                  <rect x="77.78476" y="12.49337" width="2" height="20.0459" fill="#fff"/>
+                        <g>
+                            <path d="M142.91468,1.33661a2.50809,2.50809,0,0,1-.217,2.24281l-2.79749,6.28228h0l-1.02494-6.35463a1.459,1.459,0,0,1,.95259-1.20581.26529.26529,0,0,0-.18087-.13264h-.94053A2.15839,2.15839,0,0,1,139.91221.26344a2.24281,2.24281,0,0,1,2.47192.24116,2.32724,2.32724,0,0,1,.615.82" fill="#fff"/>
+                            <path d="M137.76586,1.11957a2.25485,2.25485,0,0,1,.27734,1.43492l-1.13347,7.29517h0l-.28939-.59085-2.8819-6.35463a2.2187,2.2187,0,0,1,2.9663-2.71308,2.4116,2.4116,0,0,1,1.06111.91642" fill="#fff"/>
+                            <path d="M147.03856,4.19439A2.24281,2.24281,0,0,1,146.918,6.401a3.738,3.738,0,0,1-1.07317.91642L139.92426,11.381h0l.07235-.19293L143.13172,4.11a2.25487,2.25487,0,0,1,2.31516-1.13346,2.291,2.291,0,0,1,1.61578,1.20581" fill="#fff"/>
+                            <path d="M133.60581,4.15821l3.26775,7.23488h0l-6.58374-4.53386a2.17047,2.17047,0,0,1-.71143-2.26693,2.2187,2.2187,0,0,1,4.0877-.47027" fill="#fff"/>
+                            <path d="M148.76287,9.31909a2.24282,2.24282,0,0,1-.26528,2.23075,2.21869,2.21869,0,0,1-1.82078.85613H139.659l5.88436-4.08771a2.26693,2.26693,0,0,1,2.074-.13264,2.3031,2.3031,0,0,1,1.20581,1.13346" fill="#fff"/>
+                            <path d="M128.0229,9.31909a2.24282,2.24282,0,0,0,.26528,2.23075,2.21869,2.21869,0,0,0,1.82078.85613h7.01783l-5.87231-4.08771a2.26693,2.26693,0,0,0-2.074-.13264,2.3031,2.3031,0,0,0-1.20581,1.13346" fill="#fff"/>
+                            <path d="M115.84419,27.46657a4.82325,4.82325,0,1,1,4.82325-4.82325,4.82325,4.82325,0,0,1-4.82325,4.82325m0-10.93672a6.02906,6.02906,0,1,0,6.02906,6.02906,6.02907,6.02907,0,0,0-6.02906-6.02906" fill="#fff"/>
+                            <path d="M168.14029,22.6795,165.5478,21.341a1.91722,1.91722,0,0,1-1.35052-1.79666c0-1.10935.90436-1.82078,2.31516-1.82078a4.49769,4.49769,0,0,1,2.09812.627.615.615,0,0,0,.2894.07235.59712.59712,0,0,0,.24116-1.16964,5.73963,5.73963,0,0,0-2.67691-.78378c-2.06195,0-3.50892,1.20581-3.50892,3.01453a3.123,3.123,0,0,0,2.074,2.86983l2.59249,1.33845a2.00164,2.00164,0,0,1,1.20581,1.74843,2.11017,2.11017,0,0,1-2.22894,1.98431q-.04316-.00251-.08622-.00678a4.49767,4.49767,0,0,1-2.906-1.27816l-.09647-.08441-.88024.80789.10852.10852a5.66732,5.66732,0,0,0,3.78625,1.664,3.316,3.316,0,0,0,3.506-3.11435l.00287-.05693a3.19541,3.19541,0,0,0-1.89314-2.8216" fill="#fff"/>
+                            <path d="M103.4002,17.72361a4.82326,4.82326,0,0,1,3.44863,1.42286.627.627,0,0,0,.84407,0,.59085.59085,0,0,0,.00853-.83554l-.00853-.00853-.07235-.07235a6.02906,6.02906,0,1,0,.17419,8.5246q.03991-.04158.079-.08391l-.84407-.84407a4.82325,4.82325,0,1,1-3.61744-8.12718" fill="#fff"/>
+                            <path d="M144.53048,17.72361a4.82326,4.82326,0,0,1,3.44863,1.42286.627.627,0,0,0,.84407,0,.59085.59085,0,0,0,.00853-.83554l-.00853-.00853-.07235-.07235a6.02906,6.02906,0,1,0,.17419,8.5246q.03991-.04158.079-.08391l-.84407-.84407a4.82325,4.82325,0,1,1-3.61744-8.12718" fill="#fff"/>
+                            <path d="M134.24489,16.52985a.56674.56674,0,0,0-.49439.32557c-.09647.19293-3.61744,8.77832-3.61744,8.77832s-3.47274-8.58539-3.61744-8.77832a.53989.53989,0,0,0-1.02495.10852c-.07235.24116-2.02577,11.04524-2.02577,11.04524a.65165.65165,0,0,0,0,.10852.54262.54262,0,0,0,1.06111.10852l1.7002-9.24858s3.26775,8.07894,3.36422,8.27188a.54261.54261,0,0,0,1.00083,0c.09647-.19293,3.36422-8.27188,3.36422-8.27188l1.76049,9.6465h1.09729s-2.06194-11.38287-2.13428-11.63609a.56673.56673,0,0,0-.53056-.43409" fill="#fff"/>
+                            <path d="M154.00816,22.93272l1.80872-4.43739,1.80872,4.43739Zm1.80872-6.40287a.56673.56673,0,0,0-.50644.33763c-.09647.19293-4.49769,11.04525-4.49769,11.04525a.55482.55482,0,0,0,0,.205.54262.54262,0,0,0,1.037.19293l1.71225-4.19623h4.6062L159.989,28.588h1.20581s-4.67855-11.53963-4.82325-11.7205a.56673.56673,0,0,0-.49439-.33763" fill="#fff"/>
+                            <path d="M178.83585,16.6022h-6.75256a.60291.60291,0,0,0,0,1.20581H174.917V28.66033h1.09729V17.808h2.83367a.60291.60291,0,0,0,0-1.20581" fill="#fff"/>
+                        </g>
+                        <path d="M39.925,27.82247V16.93087h-2.52v11.541h2.52Zm-17.345,0V16.93087H20.071v11.541H22.58Zm8.084-11.123a3.66681,3.66681,0,0,0-2.891,1.27246v-1.041H25.264v11.541h2.509v-6.7373c0-1.87012.808-2.9043,2.28-2.9043,1.597,0,2.28.93652,2.28,3.124v6.51758h2.505V21.86642c0-3.38184-1.439-5.167-4.174-5.167m12.902,2.19336v6.45215c0,2.10254,1.145,3.35059,3.062,3.35059a6.21891,6.21891,0,0,0,1.748-.22363l.303-2.00293a5.17792,5.17792,0,0,1-1.134.16211c-1.044,0-1.474-.41895-1.474-1.459v-6.2793h2.887l-.751-1.96191H46.071v-4.167l-2.505,1.27246v2.89453H41.739v1.96191ZM13.349,16.93087H12.164l-1.372,1.96191h2.557v9.5791h2.51v-9.5791H18.42V16.93087H15.859V15.81466c0-.84473.352-1.18848,1.205-1.18848a5.48251,5.48251,0,0,1,1.356.19336V12.799a6.14461,6.14461,0,0,0-2.003-.30566c-1.923,0-3.068,1.25781-3.068,3.35742Zm48.036,0H58.676L54.65,24.28341l-2.754-7.35254H49.294l3.868,10.0625-2.993,5.54492h2.65ZM6.962,22.50118l3.924-5.57031H8.007L5.581,20.48263,3.156,16.93087H.276l3.921,5.57031L0,28.47189H2.88l2.701-3.95312,5.611,8.01953h2.764Z" fill="#fff"/>
+                    <path d="M57.8147,27.802V27.7961a1.3776,1.3776,0,0,1,1.377-1.374,1.36371,1.36371,0,0,1,1.371,1.36523v.00879a1.37825,1.37825,0,0,1-1.38,1.374,1.36429,1.36429,0,0,1-1.368-1.36816m2.604-.00586v-.00879a1.22952,1.22952,0,1,0-2.459.00879V27.802a1.21354,1.21354,0,0,0,1.223,1.23242,1.22624,1.22624,0,0,0,1.236-1.23828m-1.785-.75879h.642a.60271.60271,0,0,1,.438.15527.40439.40439,0,0,1,.116.30078v.00684a.427.427,0,0,1-.334.43164l.387.543h-.327l-.349-.49707h-.299v.49707h-.274Zm.631.7002c.179,0,.283-.08789.283-.22266V27.508c0-.14648-.104-.22363-.283-.22363h-.357v.45313Z" fill="#fff"/>
+                    
+                    <a href="http://xfinity.com" target="_blank" class="no-decoration"><rect width="76.33333" height="32.53927" fill="rgba(255,255,255,0)"/></rect></a>
+                    <a href="http://corporate.comcast.com" target="_blank" class="comcast no-decoration"><rect x="81.83413" width="97.63331" height="32.5383" fill="rgba(255,255,255,0)"/></rect></a>
+                </g>
+              </g>
+        </svg>
+        <a href="javascript:void(0)" id="burger" class="absolute-right no-decoration"></a>
+    </div>    
+    <nav>
+        <div class="is-relative">
+            <a href="javascript:void(0)" id="close" class="absolute-right no-decoration"></a>
+        </div>
+        <div class="absolute-center">
+
+            <!--===== Article Navigation Links ======-->
+
+            <!-- You can change the article names in the article.js files located in the app/js/ directory -->
+
+            <a href="#article1-title" class="nav-link no-decoration"><span class="number">01</span> <p data-title="1"><!-- Article 1 Title Goes Here --></p></a>
+
+            <a href="#article2-title" class="nav-link no-decoration"><span class="number">02</span> <p data-title="2"><!-- Article 2 Title Goes Here --></p></a>
+
+            <a href="#article3-title" class="nav-link no-decoration"><span class="number">03</span> <p data-title="3"><!-- Article 3 Title Goes Here --></p></a>
+
+            <a href="#article4-title" class="nav-link no-decoration"><span class="number">04</span> <p data-title="4"><!-- Article 4 Title Goes Here --></p></a>
+        
+        </div>
+        <a href="#" class="print-pdf print no-decoration" media="print"><span>Print</span><img src="app/images/print-icon.png" alt="print icon" class="print-logo"></a>  
+    </nav>
+
+    <div id="intro-container">
+        <header class="is-relative">
+            <div class="desktop-nav is-relative">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.45082 32.53927" class="logo absolute-left no-decoration">
+                  <title>xfinity-logo</title>
+                  <g id="da0eb711-9b48-427d-a7cf-ad984e1d1f4c" data-name="Layer 2">
+                    <g id="4dc961dc-4ec8-47aa-a9ba-ba471dfdf282" data-name="Layer 1">
+                      <rect x="77.78476" y="12.49337" width="2" height="20.0459" fill="#fff"/>
+                            <g>
+                                <path d="M142.91468,1.33661a2.50809,2.50809,0,0,1-.217,2.24281l-2.79749,6.28228h0l-1.02494-6.35463a1.459,1.459,0,0,1,.95259-1.20581.26529.26529,0,0,0-.18087-.13264h-.94053A2.15839,2.15839,0,0,1,139.91221.26344a2.24281,2.24281,0,0,1,2.47192.24116,2.32724,2.32724,0,0,1,.615.82" fill="#fff"/>
+                                <path d="M137.76586,1.11957a2.25485,2.25485,0,0,1,.27734,1.43492l-1.13347,7.29517h0l-.28939-.59085-2.8819-6.35463a2.2187,2.2187,0,0,1,2.9663-2.71308,2.4116,2.4116,0,0,1,1.06111.91642" fill="#fff"/>
+                                <path d="M147.03856,4.19439A2.24281,2.24281,0,0,1,146.918,6.401a3.738,3.738,0,0,1-1.07317.91642L139.92426,11.381h0l.07235-.19293L143.13172,4.11a2.25487,2.25487,0,0,1,2.31516-1.13346,2.291,2.291,0,0,1,1.61578,1.20581" fill="#fff"/>
+                                <path d="M133.60581,4.15821l3.26775,7.23488h0l-6.58374-4.53386a2.17047,2.17047,0,0,1-.71143-2.26693,2.2187,2.2187,0,0,1,4.0877-.47027" fill="#fff"/>
+                                <path d="M148.76287,9.31909a2.24282,2.24282,0,0,1-.26528,2.23075,2.21869,2.21869,0,0,1-1.82078.85613H139.659l5.88436-4.08771a2.26693,2.26693,0,0,1,2.074-.13264,2.3031,2.3031,0,0,1,1.20581,1.13346" fill="#fff"/>
+                                <path d="M128.0229,9.31909a2.24282,2.24282,0,0,0,.26528,2.23075,2.21869,2.21869,0,0,0,1.82078.85613h7.01783l-5.87231-4.08771a2.26693,2.26693,0,0,0-2.074-.13264,2.3031,2.3031,0,0,0-1.20581,1.13346" fill="#fff"/>
+                                <path d="M115.84419,27.46657a4.82325,4.82325,0,1,1,4.82325-4.82325,4.82325,4.82325,0,0,1-4.82325,4.82325m0-10.93672a6.02906,6.02906,0,1,0,6.02906,6.02906,6.02907,6.02907,0,0,0-6.02906-6.02906" fill="#fff"/>
+                                <path d="M168.14029,22.6795,165.5478,21.341a1.91722,1.91722,0,0,1-1.35052-1.79666c0-1.10935.90436-1.82078,2.31516-1.82078a4.49769,4.49769,0,0,1,2.09812.627.615.615,0,0,0,.2894.07235.59712.59712,0,0,0,.24116-1.16964,5.73963,5.73963,0,0,0-2.67691-.78378c-2.06195,0-3.50892,1.20581-3.50892,3.01453a3.123,3.123,0,0,0,2.074,2.86983l2.59249,1.33845a2.00164,2.00164,0,0,1,1.20581,1.74843,2.11017,2.11017,0,0,1-2.22894,1.98431q-.04316-.00251-.08622-.00678a4.49767,4.49767,0,0,1-2.906-1.27816l-.09647-.08441-.88024.80789.10852.10852a5.66732,5.66732,0,0,0,3.78625,1.664,3.316,3.316,0,0,0,3.506-3.11435l.00287-.05693a3.19541,3.19541,0,0,0-1.89314-2.8216" fill="#fff"/>
+                                <path d="M103.4002,17.72361a4.82326,4.82326,0,0,1,3.44863,1.42286.627.627,0,0,0,.84407,0,.59085.59085,0,0,0,.00853-.83554l-.00853-.00853-.07235-.07235a6.02906,6.02906,0,1,0,.17419,8.5246q.03991-.04158.079-.08391l-.84407-.84407a4.82325,4.82325,0,1,1-3.61744-8.12718" fill="#fff"/>
+                                <path d="M144.53048,17.72361a4.82326,4.82326,0,0,1,3.44863,1.42286.627.627,0,0,0,.84407,0,.59085.59085,0,0,0,.00853-.83554l-.00853-.00853-.07235-.07235a6.02906,6.02906,0,1,0,.17419,8.5246q.03991-.04158.079-.08391l-.84407-.84407a4.82325,4.82325,0,1,1-3.61744-8.12718" fill="#fff"/>
+                                <path d="M134.24489,16.52985a.56674.56674,0,0,0-.49439.32557c-.09647.19293-3.61744,8.77832-3.61744,8.77832s-3.47274-8.58539-3.61744-8.77832a.53989.53989,0,0,0-1.02495.10852c-.07235.24116-2.02577,11.04524-2.02577,11.04524a.65165.65165,0,0,0,0,.10852.54262.54262,0,0,0,1.06111.10852l1.7002-9.24858s3.26775,8.07894,3.36422,8.27188a.54261.54261,0,0,0,1.00083,0c.09647-.19293,3.36422-8.27188,3.36422-8.27188l1.76049,9.6465h1.09729s-2.06194-11.38287-2.13428-11.63609a.56673.56673,0,0,0-.53056-.43409" fill="#fff"/>
+                                <path d="M154.00816,22.93272l1.80872-4.43739,1.80872,4.43739Zm1.80872-6.40287a.56673.56673,0,0,0-.50644.33763c-.09647.19293-4.49769,11.04525-4.49769,11.04525a.55482.55482,0,0,0,0,.205.54262.54262,0,0,0,1.037.19293l1.71225-4.19623h4.6062L159.989,28.588h1.20581s-4.67855-11.53963-4.82325-11.7205a.56673.56673,0,0,0-.49439-.33763" fill="#fff"/>
+                                <path d="M178.83585,16.6022h-6.75256a.60291.60291,0,0,0,0,1.20581H174.917V28.66033h1.09729V17.808h2.83367a.60291.60291,0,0,0,0-1.20581" fill="#fff"/>
+                            </g>
+                            <path d="M39.925,27.82247V16.93087h-2.52v11.541h2.52Zm-17.345,0V16.93087H20.071v11.541H22.58Zm8.084-11.123a3.66681,3.66681,0,0,0-2.891,1.27246v-1.041H25.264v11.541h2.509v-6.7373c0-1.87012.808-2.9043,2.28-2.9043,1.597,0,2.28.93652,2.28,3.124v6.51758h2.505V21.86642c0-3.38184-1.439-5.167-4.174-5.167m12.902,2.19336v6.45215c0,2.10254,1.145,3.35059,3.062,3.35059a6.21891,6.21891,0,0,0,1.748-.22363l.303-2.00293a5.17792,5.17792,0,0,1-1.134.16211c-1.044,0-1.474-.41895-1.474-1.459v-6.2793h2.887l-.751-1.96191H46.071v-4.167l-2.505,1.27246v2.89453H41.739v1.96191ZM13.349,16.93087H12.164l-1.372,1.96191h2.557v9.5791h2.51v-9.5791H18.42V16.93087H15.859V15.81466c0-.84473.352-1.18848,1.205-1.18848a5.48251,5.48251,0,0,1,1.356.19336V12.799a6.14461,6.14461,0,0,0-2.003-.30566c-1.923,0-3.068,1.25781-3.068,3.35742Zm48.036,0H58.676L54.65,24.28341l-2.754-7.35254H49.294l3.868,10.0625-2.993,5.54492h2.65ZM6.962,22.50118l3.924-5.57031H8.007L5.581,20.48263,3.156,16.93087H.276l3.921,5.57031L0,28.47189H2.88l2.701-3.95312,5.611,8.01953h2.764Z" fill="#fff"/>
+                        <path d="M57.8147,27.802V27.7961a1.3776,1.3776,0,0,1,1.377-1.374,1.36371,1.36371,0,0,1,1.371,1.36523v.00879a1.37825,1.37825,0,0,1-1.38,1.374,1.36429,1.36429,0,0,1-1.368-1.36816m2.604-.00586v-.00879a1.22952,1.22952,0,1,0-2.459.00879V27.802a1.21354,1.21354,0,0,0,1.223,1.23242,1.22624,1.22624,0,0,0,1.236-1.23828m-1.785-.75879h.642a.60271.60271,0,0,1,.438.15527.40439.40439,0,0,1,.116.30078v.00684a.427.427,0,0,1-.334.43164l.387.543h-.327l-.349-.49707h-.299v.49707h-.274Zm.631.7002c.179,0,.283-.08789.283-.22266V27.508c0-.14648-.104-.22363-.283-.22363h-.357v.45313Z" fill="#fff"/>
+                        
+                        <a href="http://xfinity.com" target="_blank" class="no-decoration"><rect width="76.33333" height="32.53927" fill="rgba(255,255,255,0)"/></rect></a>
+                        <a href="http://corporate.comcast.com" target="_blank" class="comcast no-decoration"><rect x="81.83413" width="97.63331" height="32.5383" fill="rgba(255,255,255,0)"/></rect></a>
+                    </g>
+                  </g>
+                </svg>
+                <a href="javascript:void(0)" id="burger" class="print absolute-right no-decoration" media="print"><img src="app/images/icon-burger.svg" alt="print icon" class="print-logo"></a>
+            </div>
+        </header>
+        <div class="extra-burger"><img src="app/images/icon-burger-gray.svg" alt="print icon" class="print-logo"></div>
+
+        <div id="trigger"></div>
+
+        <!--============== Introduction Article =============
+            =================================================-->
+
+        <section id="intro" class="gradient-wrap is-relative">
+            <div class="absolute-top">
+                <div class="is-relative">
+                    <img src="app/images/xd-heading.svg" alt="" class="xd-logo absolute-center fade-up-in">
+                    <div class="article absolute-center" id="intro-article">
+                        <h2 class="article-title"></h2>
+                        <div class="underline"></div>
+                        <h4 class="article-author"><span class="name is-bolder"></span><span> | </span> <span class="title"></h3>  
+                        <p></p>
+                        <a href="" class="email-link no-decoration read-article-btn"><div class="mail-icon"></div>&nbsp;&nbsp;<span class="is-bold all-caps">EMAIL&nbsp;</span><span class="email-name is-bold all-caps"><!-- Email Name --></span></a>
+
+                    </div>  
+                </div>  
+                <img src="app/images/bottom-clip.svg" alt="" class="firefox-clip bottom-clip">
+            </div>
+        </section>
+    </div>
+
+    <section id="menu" class="gradient-wrap is-relative section">
+        <div id="new-remote" class="absolute-top">
+            <img src="" alt="" id="remote-on" class="absolute-top">
+        </div>
+        <div class="absolute-top">
+            <div class="is-relative">
+                <div class="menu-title absolute-left">ALL<br>ABOUT<br><b class="is-bolder">VOICE</b></div>
+                <ul class="absolute-right">
+                    <li>
+                        <a class="no-decoration">
+                            <span class="number">01</span>
+                            <p data-title="1"><!-- Article 1 Title Goes Here --></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="no-decoration">
+                            <span class="number">02</span>
+                            <p data-title="2"><!-- Article 2 Title Goes Here --></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="no-decoration">
+                            <span class="number">03</span>
+                            <p data-title="3"><!-- Article 3 Title Goes Here --></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link no-decoration">
+                            <span class="number">04</span>
+                            <p data-title="4"><!-- Article 4 Title Goes Here --></p>
+                        </a>
+                    </li>
+                </ul>
+            </div>  
+        </div>
+    </section>
+
+    <!--============== Article 1 Introduction (with Background Image) =============
+        ===========================================================================-->
+
+    <section id="article1-heading" class="article-gradient-wrap is-relative section"4
+        <img src="app/images/top-clip.svg" alt="" class="firefox-clip top-clip">
+        <div class="overlay"></div>
+        <div class="absolute-center">
+            <div class="is-relative">
+                <div id="article1-title" class="article absolute-center">
+                    <span class="number">01</span>
+                    <h2 class="article-title"></h2>
+                    <h4 class="article-author"><span class="name is-bolder"></span><span>,</span> <span class="title"></h3>
+                    <div class="underline"></div>
+                    <p></p>
+                    <a class="read-article-btn no-decoration"><img src="app/images/down-arrow.svg" alt="" class="down-arrow pulse"> READ MORE</a>
+                </div>  
+            </div>  
+        </div>
+        <img src="app/images/bottom-clip.svg" alt="" class="firefox-clip bottom-clip">
+    </section>
+
+    <!--============== Article 1 =============
+        ======================================-->
+
+    <article id="article-1" class="article-container section" data-midnight="black">
+        <div class="container" id="article1">
+            <div class="reveal">
+                
+                <!-- This is where you will put the article. You will need to use the following 
+                     html elements in order style the article correctly. 
+
+                    LARGE HEADERS:
+
+                        Large headers should be wrapped in an h3 tag
+                        ex: <h3>Title 1</h3>
+
+
+                    SUBHEADERS:
+
+                        Subheaders should be wrapped in an h4 tag
+                        ex: <h4>Subtitle 1</h4>
+
+                     
+                    PARAGRAPHS:
+
+                        Paragraphs should be wrapped in a "p" tag
+                        ex: <p>Lorem ipsum dolor</p>
+
+
+                    CALLOUTS:
+
+                        Copy the code below and replace the copy that is in the parentheses
+
+                        <div class="callout">
+                            <img src="app/images/end-quotation.png" alt="" class="big-quotation">
+                            <p><span class="is-bold is-purple">(Replace this with the callout paragraph)<img src="app/images/end-quotation.png" alt="" class="end-quotation"></span><span>(Replace this with the callout caption)</span></p>
+                        </div>
+
+
+                    DIVIDERS: 
+                        
+                        To insert a divider copy the code below and place it in between the 
+                        2 elements you want to divide with a line
+
+                        <div class="divider"></div>
+
+
+                    IMAGES: 
+
+                        To insert an image copy the code below and replace the copy in between 
+                        the src quotation marks with the link to the image
+
+                        <img src="LINK-TO-IMAGE" alt="image description" class="image">
+
+                    
+                    CAPTIONS:
+
+                        Copy the code below and replace the copy that is between the "<p> </p>"
+
+                        <div class="footnotes caption">
+                            <p>Caption Text</p>
+                        </div>
+
+
+                    FOOTNOTES:
+
+                        Copy the code below and replace the copy that is between the "<li> </li>".
+                        To add more than one note just add another "<li> </li>" inside the ordered list (<ol></ol>).
+
+                        <div class="footnotes">
+                            <ol>
+                                <li>Footnote 1</li>
+                            </ol>
+                        </div>
+
+
+
+                    ======= CLASS STYLING =======
+
+                    The following items are classes that you can add to your code to further stylize the article.
+                    To add the class you must add a class attribute and specify the class names between the quotes 
+                    (see example below).
+
+                    ex: <p class="is-bold">BOLDED TEXT</p>
+
+                    ** To add multiple classes put a space in between each class you want to add. (see example below)
+                    
+                    ex: <p class="is-bold larger-margin">BOLDED TEXT</p>
+
+                    Classes:
+                    ========
+
+                    is-normal : Makes text the default font weight
+
+                    is-bold : Makes text bold
+
+                    is-bolder: Makes text bolder
+
+                    larger-margin: Adds more space above the text
+
+
+                -->
+
+
+
+                <h4 class="is-bold">As awareness increases, we’re seeing a rise in Voice Assistant use.</h4>
+                <div class="footnotes caption">
+                    <p>Intelligent Voice Assistants User Adoption Survey, MindMeld, February 2016</p>
+                </div>
+                <img src="app/images/graph1.png" alt="graph 1" class="graph">
+
+                <div class="divider"></div>
+
+                <div class="answer">
+                    <h3>Our Top 3 Opportunities:</h3>   
+                    <h4 class="is-bold large-margin">Building Deeper Connections</h4>   
+                    <p>Voice control allows our customers to do more than ever before. Similar to smartphone adoption, when features are used frequently, they provide a greater purpose beyond the original technology. If customers value staying connected, informed and entertained, and voice control makes it easier to do so, then voice will be a welcomed addition to their lives.<sup>1</sup></p> 
+                </div>
+
+                <h4 class="is-bold large-margin">Breaking Down Physical Barriers</h4>   
+                <p>Customers can interact more freely using their voice than with buttons and menus. Just as the remote control gave way to channel surfing, voice control will also encourage new behaviors and viewing styles that will enhance the user experience. Voice technology is also a means to empower people with visual, mobile and manual dexterity impairments, giving them greater independence and freedom from the challenges of a physical remote.</p>
+                <div class="callout">
+                    <img src="app/images/end-quotation.png" alt="" class="big-quotation">
+                    <p><span class="is-bold is-purple">The less I need them [caretakers] to do, they could be doing something else. They don't have to stop doing [their duties] just to change the channel.<img src="app/images/end-quotation.png" alt="" class="end-quotation"></span><span>Richard, Whole Home Accessibility, September 2015, J.&nbsp;Ackerman</span></p>
+                </div>
+                <h4 class="is-bold large-margin">Understanding True Intent</h4> 
+                <p>While most interfaces predetermine intent with onscreen menus, voice control and the use of natural language allow customers to guide the experience themselves. Even better, by recognizing high-volume voice patterns, we can anticipate needs, improve designs and personalize offerings.</p>
+                <div class="callout">
+                    <img src="app/images/quotation.png" alt="" class="big-quotation">
+                    <p><span class="is-bold is-purple">Can it pull content out of an episode? If I know something I want to see–<i>Seinfeld</i> with the dentist. I’d have to Google or IMDb to find an episode otherwise.<img src="app/images/end-quotation.png" alt="" class="end-quotation"></span><span>Louis, XR-18 Prototype Evaluation and Voice Control Discovery Research, November 2016, K.&nbsp;Holmes</span></p>
+                </div>
+                <div class="divider"></div>
+                
+                <div class="answer">
+                    <h3>Our Top 3 Challenges:</h3>    
+                    <h4 class="is-bold large-margin">Starting the Conversation</h4> 
+                    <p>Voice control is still an emerging technology and new to many of our customers. The good news? It’s gaining ground quickly. In a 2014 usability study, the concept of a “wake-up word” wasn’t familiar compared to a more recent study in which all participants expected to use a “wake-up word” to get the device to “listen.”<sup>2</sup></p> 
+                </div>
+
+                <h4 class="is-bold large-margin">Providing a Comfortable Experience</h4>
+                <p>Early adopters want to be sure their technology isn’t disruptive. The stress and frustration of miscommunication were found to be major deterrents to full voice integration. Those who are multilingual and/or have accents are also skeptical.</p>
+
+                <div class="callout">
+                    <img src="app/images/quotation.png" alt="" class="big-quotation">
+                    <p><span class="is-bold is-purple">If I type, I might have misspellings, but my accent leads to misunderstandings too. That annoys me even more than typing.<img src="app/images/end-quotation.png" alt="" class="end-quotation"></span><span>Boris, XR-18 Prototype Evaluation and Voice Control Discovery Research, November 2016, K.&nbsp;Holmes</span></p>
+                </div>
+
+                <h4 class="is-bold large-margin">Showing Long-Term Value</h4>
+                <p>Many customers admit that their use of voice control is high at first but drops off over time. Full adoption will take some time simply because customers are more comfortable with the same well-worn paths they’ve always used and found to be effective.</p>
+                <div class="callout">
+                    <img src="app/images/quotation.png" alt="" class="big-quotation">
+                    <p><span class="is-bold is-purple">Early-adopter Drew admits to buying his Amazon Echo on a whim when it first went on sale because he thought it 'looked kind of cool.' He now only occasionally uses it to set timers and play music while cooking.<img src="app/images/end-quotation.png" alt="" class="end-quotation"></span><span>Emotional Bond Exploratory Research, February 2016, E.&nbsp;Kell</span></p>
+                </div>
+
+                <h4 class="is-bold large-margin">To gain full adoption, customers must fully understand the value proposition.</h4>
+                <div class="footnotes caption">
+                    <p>Intelligent Voice Assistants User Adoption Survey, MindMeld, February 2016</p>
+                </div>
+                <img src="app/images/graph2.png" alt="graph 2" class="graph">
+                <div class="divider"></div>
+
+                <div class="footnotes">
+                    <p>Find more detailed reports on the new Design &amp; User Research website: <a href="http://research.xfinity.com" target="_blank">research.xfinity.com</a></p>
+                    <ol>
+                        <li>“Once the user is successfully trained, [voice control] will be used many times a day, and its connection to the user will be continuous, regardless of the underlying hardware or apps in use.”<br>The Future of Voice Control Goes Far Beyond Dictation; A Case Study In Digital Platform Power, Forrester Research, By James L. McQuivey with David M. Cooperstein, Alexandra Hayes April 14, 2014.</li>
+                        <li>“Voice Command Competitive Usability Testing, June 2014. XR-18 Prototype Evaluation and Voice Control Discovery Research, October 2016.</li>
+                    </ol>
+                </div>
+
+                <a href="" class="contact-link no-decoration read-article-btn"><div class="mail-icon dark-icon read-article-btn"></div>&nbsp;&nbsp;<span class="is-bold all-caps">EMAIL&nbsp;</span><span class="email-name is-bold all-caps"><!-- Email Name --></span></a>
+            </div>
+        </div>
+    </article>
+
+    <!--============== Article 2 Introduction (with Background Image) =============
+        ===========================================================================-->
+
+    <section id="article2-heading" class="article-gradient-wrap is-relative section">
+        <img src="app/images/top-clip.svg" alt="" class="firefox-clip top-clip">
+        <div class="absolute-center">
+            <div class="is-relative">
+                <div id="article2-title" class="article absolute-center">
+                    <span class="number">02</span>
+                    <h2 class="article-title"></h2>
+                    <h4 class="article-author"><span class="name is-bolder"></span><span>,</span> <span class="title"></h3>  
+                    <div class="underline"></div>
+                    <p></p>
+                    <a class="read-article-btn no-decoration"><img src="app/images/down-arrow.svg" alt="" class="down-arrow pulse"> READ MORE</a>
+                </div>  
+            </div>  
+        </div>
+        <img src="app/images/bottom-clip.svg" alt="" class="firefox-clip bottom-clip">
+    </section>
+
+    <!--============== Article 2 =============
+        ======================================-->
+
+    <article id="article-2" class="article-container section" data-midnight="black">
+        <div class="container" id="article2">
+            <div class="reveal">
+                <h3>While most people were drawn to the glitzy innovation of self-driving cars and the constantly evolving TV, I was trying to uncover how all this cool stuff was going to actually work in my house.</h3>  
+                <p>It’s the simplest thing that drives every customer crazy&mdash;connectivity.</p>
+                <p>I’ve sat through enough research meetings to know just how important this is. While it’s a pain point for customers, most learn to live with sub-par performance or missed connections. What’s different and what I’ve seen this past year, is that companies are actually trying to solve these connectivity issues. They’re starting to ask the right questions and deliver solutions that make sense. It’s an approach that not only solidifies the customer relationship but also creates a foothold in the digital home.</p>
+                <p>On our end, we announced the next level of hardware featuring a software platform that makes sense of network connections by humanizing the experience in a whole new way: The xFi Advanced Gateway. With this release, we’ve given customers a better understanding of their equipment and their network. Customers can set up and connect devices, identify and resolve issues on their own, quickly, without a tech call. The result? It’s already surpassed all other 3rd party routers on the market. </p>
+                <p class="highlight is-bold">The move to humanize this device, and personalize the experience, helps our customers grow more comfortable, gain confidence and be more likely to embrace new technology like voice controls.</p>
+                <p>They won’t just add hardware, but instead expand and improve connectivity throughout their entire home. By tackling the hardest problems, the most daunting technical and customer experience challenges, we have the opportunity to establish our own footprint in the emerging digital home.</p>
+
+                <a href="" class="contact-link no-decoration read-article-btn"><div class="mail-icon dark-icon read-article-btn"></div>&nbsp;&nbsp;<span class="is-bold all-caps">EMAIL&nbsp;</span><span class="email-name is-bold all-caps"><!-- Email Name --></span></a>
+            </div>
+        </div>
+    </article>
+
+    <!--============== Article 3 Introduction (with Background Image) =============
+        ===========================================================================-->
+
+    <section id="article3-heading" class="article-gradient-wrap is-relative section">
+        <img src="app/images/top-clip.svg" alt="" class="firefox-clip top-clip">
+        <div class="absolute-center">
+            <div class="is-relative">
+                <div id="article3-title" class="article absolute-center">
+                    <span class="number">03</span>
+                    <h2 class="article-title"></h2>
+                    <h4 class="article-author"><span class="name is-bolder"></span><span>,</span> <span class="title"></h3>  
+                    <div class="underline"></div>
+                    <p></p>
+                    <a class="read-article-btn no-decoration"><img src="app/images/down-arrow.svg" alt="" class="down-arrow pulse"> READ MORE</a>
+                </div>  
+            </div>  
+        </div>
+        <img src="app/images/bottom-clip.svg" alt="" class="firefox-clip bottom-clip">
+    </section>
+
+    <!--============== Article 3 =============
+        ======================================-->
+
+    <article id="article-3" class="article-container section" data-midnight="black">
+        <div class="container" id="article3">
+            <h3>This is what we work toward every day: new ways to use voice as a means to make homes smarter, safer, and easier to manage.</h3>  
+            <p>“Ok Google. Find a hotspot near me.”</p>
+            <p>To fully engage and optimize voice technology, our services have to dovetail each other and operate as a collective whole. Conversations with our customers have to be fluid and natural, across products and platforms, from device to device. The goal is to create a seamless integration of services, an effortless connectivity that makes life easier for millions of customers. So how are we doing it? Digital First.</p>
+
+            <div class="reveal">
+                <p>Digital First is a shift in how we think about both the customer and employee experience. It’s geared towards providing customers autonomy while eliminating the need for assisted support. This transformational journey is based on a conversational UI that taps into our distinct brand personality.</p>
+                
+                <p>Let’s look at our buy flow as an example. We’re reimagining the end-to-end experience to feature a “Help Me Decide” format that makes it easier to personalize packages. Customers will be guided through decisions, offered assistance at key moments and given the ability to skim or dig into more detailed information at any time. The customer drives the experience, engaging directly in a friendly, personal way. Internet with a side of TV? Yes, please!</p>  
+
+                <p>This conversational style instills trust in our customers by anticipating their needs and delivering on expectations without frustration. It’s this approach that’s given way to our emerging Virtual Assistant technology and a range of self-help features designed to educate, assist and resolve issues online in a manner that’s often more efficient than a direct call.</p>
+                <p>The result? A new normal. Our customers are digital first, so we have to be too. Their lives and requests can be unpredictable and we have to design for the unexpected. If we can start the conversation online, in text, the evolution to voice will be an effortless transition.</p>
+                <p>“Put on <i>Game of Thrones,</i> turn off the lights, and turn up the heat.”</p>
+                <p class="highlight is-bold">With voice technology, the possibilities are endless and as unique as the individuals we’re speaking to.</p>
+                <p>We imagine a time when we can serve dynamic ads to different users based on their voice ID. Why not show movie-buff Mom a new trailer instead of the computer that Junior’s been asking about? We’re prepping for the potential as well as the actual future of voice, one utterance at a time.</p>
+                <p>As we extend our Digital First efforts to more customer touch points&mdash;including call centers, tech and retail&mdash;we’re now, more than ever, committed to delivering a best-in-class experience you have to say to believe. </p>
+                <p>“Hey X1, show me more.”</p>
+                
+                <a href="" class="contact-link no-decoration read-article-btn"><div class="mail-icon dark-icon read-article-btn"></div>&nbsp;&nbsp;<span class="is-bold all-caps">EMAIL&nbsp;</span><span class="email-name is-bold all-caps"><!-- Email Name --></span></a>
+            </div>
+        </div>
+    </article>
+
+    <!--============== Article 4 Introduction (with Background Image) =============
+        ===========================================================================-->
+
+    <section id="article4-heading" class="article-gradient-wrap is-relative section">
+        <img src="app/images/top-clip.svg" alt="" class="firefox-clip top-clip">
+        <div class="absolute-center">
+            <div class="is-relative">
+                <div id="article4-title" class="article absolute-center">
+                    <span class="number">04</span>
+                    <h2 class="article-title"></h2>
+                    <h4 class="article-author"><span class="name is-bolder"></span><span>,</span> <span class="title"></h3>  
+                    <div class="underline"></div>
+                    <p></p>
+                    <a class="read-article-btn no-decoration"><img src="app/images/down-arrow.svg" alt="" class="down-arrow pulse"> READ MORE</a>
+                </div>  
+            </div>  
+        </div>
+        <img src="app/images/bottom-clip.svg" alt="" class="firefox-clip bottom-clip">
+    </section>
+
+
+    <!--============== Article 4 =============
+        ======================================-->
+
+    <article id="article-4" class="article-container section" data-midnight="black">
+        <div class="container" id="article4">
+            
+            <p><span class="is-bold is-purple">The End-to-End Assistant:</span> An assistant that can handle whatever you throw at it. From asking random questions, ordering a pizza, or playing music, it delivers. Think Amazon Alexa, Cortana before it, Google Home and Viv just after.</p>
+            
+            <p><span class="is-bold is-purple">The Bespoke Assistant:</span> This assistant speaks to an unmet niche of an audience. This might be an audio device that reads your children bedtime stories or a medical device that can assist with a diagnosis.</p>
+
+            <div class="reveal">
+                <p><span class="is-bold is-purple">The Integrated Device:</span> This experience serves the dumb device, the one with a minimal interface that strives to be “smart.” Rather than completely rebuild, this device integrates with an existing assistant. Take the Whirlpool washing machine for instance. Want to know if the wash is done? Just ask Alexa.</p>
+                <p>At Comcast, we’ve been focusing on voice technology for some time. From our first voice-enabled iOS app to the latest XR11. The question for us is what’s next?</p>
+                <p>For our platform with XR18, it’s the hands-free conversational aspect of the experience. Previously, even though you could ask a question and get a response, you’d have to use your remote control to complete the task. Now the aim is to lose the remote altogether. We can’t do this by simply adding voice to an existing experience; the entire experience needs to be reimagined from the ground up. Today’s X1 was designed for a remote while tomorrow’s UI must be designed for voice first.</p>
+                <p>Think about it. Today’s experiences are based on sound logic where users are guided through a pre-determined flow to get an expected result. Tomorrow’s interfaces will have to deal with the unpredictable. This is a conversation with our users that we haven’t had before, a conversation that’s no longer one-way in nature. What we learn from customer conversations will inform how we react, what we suggest and ultimately, how well we meet their expectations.</p>
+                <p>Our approach to every new experience can’t be waterfall process, where product makes a requirement, design gives a presentation, and dev builds something. Instead, we need to be nimble and reactive, building tangible and testable devices that improve and delight with each iteration. The only thing we can predict here is unpredictability.</p>
+                <p>It’s clear that voice integration is becoming table stakes of the future. And while no one is nearing the artificial intelligence of KITT from <i>Knight Rider</i>, our continued focus on how voice can best serve our customers will help us get there sooner.</p>
+                <a href="" class="contact-link no-decoration read-article-btn"><div class="mail-icon dark-icon read-article-btn"></div>&nbsp;&nbsp;<span class="is-bold all-caps">EMAIL&nbsp;</span><span class="email-name is-bold all-caps"><!-- Email Name --></span></a>
+            </div>
+
+            <div class="divider"></div>
+            <div class="callout">
+                <p><span class="is-bold is-purple">Volume 1, First Edition.</span></p>
+                <p><span class="is-purple">Next issue coming in Q2.</span></p>
+            </div>
+        </div>
+    </article>
+
+    <section id="footer" class="gradient-wrap is-relative" data-midnight="black">
+        <img src="app/images/top-clip.svg" alt="" class="firefox-clip top-clip">
+        <div class="absolute-bottom">
+            <div class="is-relative">
+                <div class="article absolute-bottom">
+                    <a href="#intro" class="back-btn no-decoration read-article-btn"><img src="app/images/down-arrow.svg" alt="" class="up-arrow"> BACK TO TOP</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.45082 32.53927" class="logo no-decoration">
+                          <title>xfinity-logo</title>
+                          <g id="da0eb711-9b48-427d-a7cf-ad984e1d1f4c" data-name="Layer 2">
+                            <g id="4dc961dc-4ec8-47aa-a9ba-ba471dfdf282" data-name="Layer 1">
+                              <rect x="77.78476" y="12.49337" width="2" height="20.0459" fill="#fff"/>
+                                    <g>
+                                        <path d="M142.91468,1.33661a2.50809,2.50809,0,0,1-.217,2.24281l-2.79749,6.28228h0l-1.02494-6.35463a1.459,1.459,0,0,1,.95259-1.20581.26529.26529,0,0,0-.18087-.13264h-.94053A2.15839,2.15839,0,0,1,139.91221.26344a2.24281,2.24281,0,0,1,2.47192.24116,2.32724,2.32724,0,0,1,.615.82" fill="#fff"/>
+                                        <path d="M137.76586,1.11957a2.25485,2.25485,0,0,1,.27734,1.43492l-1.13347,7.29517h0l-.28939-.59085-2.8819-6.35463a2.2187,2.2187,0,0,1,2.9663-2.71308,2.4116,2.4116,0,0,1,1.06111.91642" fill="#fff"/>
+                                        <path d="M147.03856,4.19439A2.24281,2.24281,0,0,1,146.918,6.401a3.738,3.738,0,0,1-1.07317.91642L139.92426,11.381h0l.07235-.19293L143.13172,4.11a2.25487,2.25487,0,0,1,2.31516-1.13346,2.291,2.291,0,0,1,1.61578,1.20581" fill="#fff"/>
+                                        <path d="M133.60581,4.15821l3.26775,7.23488h0l-6.58374-4.53386a2.17047,2.17047,0,0,1-.71143-2.26693,2.2187,2.2187,0,0,1,4.0877-.47027" fill="#fff"/>
+                                        <path d="M148.76287,9.31909a2.24282,2.24282,0,0,1-.26528,2.23075,2.21869,2.21869,0,0,1-1.82078.85613H139.659l5.88436-4.08771a2.26693,2.26693,0,0,1,2.074-.13264,2.3031,2.3031,0,0,1,1.20581,1.13346" fill="#fff"/>
+                                        <path d="M128.0229,9.31909a2.24282,2.24282,0,0,0,.26528,2.23075,2.21869,2.21869,0,0,0,1.82078.85613h7.01783l-5.87231-4.08771a2.26693,2.26693,0,0,0-2.074-.13264,2.3031,2.3031,0,0,0-1.20581,1.13346" fill="#fff"/>
+                                        <path d="M115.84419,27.46657a4.82325,4.82325,0,1,1,4.82325-4.82325,4.82325,4.82325,0,0,1-4.82325,4.82325m0-10.93672a6.02906,6.02906,0,1,0,6.02906,6.02906,6.02907,6.02907,0,0,0-6.02906-6.02906" fill="#fff"/>
+                                        <path d="M168.14029,22.6795,165.5478,21.341a1.91722,1.91722,0,0,1-1.35052-1.79666c0-1.10935.90436-1.82078,2.31516-1.82078a4.49769,4.49769,0,0,1,2.09812.627.615.615,0,0,0,.2894.07235.59712.59712,0,0,0,.24116-1.16964,5.73963,5.73963,0,0,0-2.67691-.78378c-2.06195,0-3.50892,1.20581-3.50892,3.01453a3.123,3.123,0,0,0,2.074,2.86983l2.59249,1.33845a2.00164,2.00164,0,0,1,1.20581,1.74843,2.11017,2.11017,0,0,1-2.22894,1.98431q-.04316-.00251-.08622-.00678a4.49767,4.49767,0,0,1-2.906-1.27816l-.09647-.08441-.88024.80789.10852.10852a5.66732,5.66732,0,0,0,3.78625,1.664,3.316,3.316,0,0,0,3.506-3.11435l.00287-.05693a3.19541,3.19541,0,0,0-1.89314-2.8216" fill="#fff"/>
+                                        <path d="M103.4002,17.72361a4.82326,4.82326,0,0,1,3.44863,1.42286.627.627,0,0,0,.84407,0,.59085.59085,0,0,0,.00853-.83554l-.00853-.00853-.07235-.07235a6.02906,6.02906,0,1,0,.17419,8.5246q.03991-.04158.079-.08391l-.84407-.84407a4.82325,4.82325,0,1,1-3.61744-8.12718" fill="#fff"/>
+                                        <path d="M144.53048,17.72361a4.82326,4.82326,0,0,1,3.44863,1.42286.627.627,0,0,0,.84407,0,.59085.59085,0,0,0,.00853-.83554l-.00853-.00853-.07235-.07235a6.02906,6.02906,0,1,0,.17419,8.5246q.03991-.04158.079-.08391l-.84407-.84407a4.82325,4.82325,0,1,1-3.61744-8.12718" fill="#fff"/>
+                                        <path d="M134.24489,16.52985a.56674.56674,0,0,0-.49439.32557c-.09647.19293-3.61744,8.77832-3.61744,8.77832s-3.47274-8.58539-3.61744-8.77832a.53989.53989,0,0,0-1.02495.10852c-.07235.24116-2.02577,11.04524-2.02577,11.04524a.65165.65165,0,0,0,0,.10852.54262.54262,0,0,0,1.06111.10852l1.7002-9.24858s3.26775,8.07894,3.36422,8.27188a.54261.54261,0,0,0,1.00083,0c.09647-.19293,3.36422-8.27188,3.36422-8.27188l1.76049,9.6465h1.09729s-2.06194-11.38287-2.13428-11.63609a.56673.56673,0,0,0-.53056-.43409" fill="#fff"/>
+                                        <path d="M154.00816,22.93272l1.80872-4.43739,1.80872,4.43739Zm1.80872-6.40287a.56673.56673,0,0,0-.50644.33763c-.09647.19293-4.49769,11.04525-4.49769,11.04525a.55482.55482,0,0,0,0,.205.54262.54262,0,0,0,1.037.19293l1.71225-4.19623h4.6062L159.989,28.588h1.20581s-4.67855-11.53963-4.82325-11.7205a.56673.56673,0,0,0-.49439-.33763" fill="#fff"/>
+                                        <path d="M178.83585,16.6022h-6.75256a.60291.60291,0,0,0,0,1.20581H174.917V28.66033h1.09729V17.808h2.83367a.60291.60291,0,0,0,0-1.20581" fill="#fff"/>
+                                    </g>
+                                    <path d="M39.925,27.82247V16.93087h-2.52v11.541h2.52Zm-17.345,0V16.93087H20.071v11.541H22.58Zm8.084-11.123a3.66681,3.66681,0,0,0-2.891,1.27246v-1.041H25.264v11.541h2.509v-6.7373c0-1.87012.808-2.9043,2.28-2.9043,1.597,0,2.28.93652,2.28,3.124v6.51758h2.505V21.86642c0-3.38184-1.439-5.167-4.174-5.167m12.902,2.19336v6.45215c0,2.10254,1.145,3.35059,3.062,3.35059a6.21891,6.21891,0,0,0,1.748-.22363l.303-2.00293a5.17792,5.17792,0,0,1-1.134.16211c-1.044,0-1.474-.41895-1.474-1.459v-6.2793h2.887l-.751-1.96191H46.071v-4.167l-2.505,1.27246v2.89453H41.739v1.96191ZM13.349,16.93087H12.164l-1.372,1.96191h2.557v9.5791h2.51v-9.5791H18.42V16.93087H15.859V15.81466c0-.84473.352-1.18848,1.205-1.18848a5.48251,5.48251,0,0,1,1.356.19336V12.799a6.14461,6.14461,0,0,0-2.003-.30566c-1.923,0-3.068,1.25781-3.068,3.35742Zm48.036,0H58.676L54.65,24.28341l-2.754-7.35254H49.294l3.868,10.0625-2.993,5.54492h2.65ZM6.962,22.50118l3.924-5.57031H8.007L5.581,20.48263,3.156,16.93087H.276l3.921,5.57031L0,28.47189H2.88l2.701-3.95312,5.611,8.01953h2.764Z" fill="#fff"/>
+                                <path d="M57.8147,27.802V27.7961a1.3776,1.3776,0,0,1,1.377-1.374,1.36371,1.36371,0,0,1,1.371,1.36523v.00879a1.37825,1.37825,0,0,1-1.38,1.374,1.36429,1.36429,0,0,1-1.368-1.36816m2.604-.00586v-.00879a1.22952,1.22952,0,1,0-2.459.00879V27.802a1.21354,1.21354,0,0,0,1.223,1.23242,1.22624,1.22624,0,0,0,1.236-1.23828m-1.785-.75879h.642a.60271.60271,0,0,1,.438.15527.40439.40439,0,0,1,.116.30078v.00684a.427.427,0,0,1-.334.43164l.387.543h-.327l-.349-.49707h-.299v.49707h-.274Zm.631.7002c.179,0,.283-.08789.283-.22266V27.508c0-.14648-.104-.22363-.283-.22363h-.357v.45313Z" fill="#fff"/>
+                                
+                                <a href="http://xfinity.com" target="_blank" class="no-decoration"><rect width="76.33333" height="32.53927" fill="rgba(255,255,255,0)"/></rect></a>
+                                <a href="http://corporate.comcast.com" target="_blank" class="comcast no-decoration"><rect x="81.83413" width="97.63331" height="32.5383" fill="rgba(255,255,255,0)"/></rect></a>
+                            </g>
+                          </g>
+                        </svg>
+                        <p class="is-bold">Creating Powerful Experiences for millions of&nbsp;PeoplE</p>
+
+                        <p>Have questions or comments about this quarter’s&nbsp;newsletter?</p>
+                        <p>Share your feedback at: <a href="mailto:xd_quarterly@comcast.com" class="no-decoration is-bolder">xd_quarterly@comcast.com</a></p>
+                            
+                        <p>
+                            <a href="#" class="print-pdf print no-decoration"><img src="app/images/print-icon.png" alt="print icon" class="print-logo"><span class="is-bolder">Print</span></a>
+                            <a href="http://design.comcast.com/" target="_blank" class="print no-decoration"><span class="is-bolder">Experience Design Team</span></a>
+                            <a href="http://design.xfinity.com/#/design" target="_blank" class="print no-decoration"><span class="is-bolder">XFINITY Design Language</span></a>
+                            <a href="https://research.xfinity.com/" target="_blank" class="print no-decoration"><span class="is-bolder">Research</span></a>
+                        </p>
+                    </div>
+                </div>      
+            </div>  
+        </div>
+    </section>
+
+    <iframe id="pdf" name="pdf" src="app/Comcast_XFINITY_UXDesignTeam_Newsletter_Print Version.pdf" class="is-inactive"></iframe>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $.getJSON('app/js/lib/article.json', function (data) {
+
+        // Iterate the groups first.
+        $.each(data.response.groups, function (index, value) {
+
+            // Get the items
+            var items = this.items; // Here 'this' points to a 'group' in 'groups'
+
+            // Iterate through items.
+            $.each(items, function () {
+                console.log(this.text); // Here 'this' points to an 'item' in 'items'
+            });
+        });
+    });
+    });
+</script>
+<script src="app/js/lib/article.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+<script src="app/js/lib/function.js"></script>
+
+<script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.14.0.js'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+</body>
+</html>

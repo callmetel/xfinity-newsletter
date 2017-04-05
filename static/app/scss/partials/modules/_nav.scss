@@ -1,0 +1,129 @@
+nav{
+    @include position(fixed, 10.375vh null null 2.34vw!important);
+	z-index: -1000;
+	opacity:0;
+	@include position(fixed, 0 null null 0!important);
+	width: 100vw;
+	height: 100vh;
+	background: $gray;
+	@include transition(all .65s ease-in-out);
+	display: block;
+
+	&.is-active{
+		z-index: 1000;
+		opacity: 1;
+	}
+
+	@include media($h-iphone){
+		z-index: -1000;
+		opacity:0;
+		@include position(fixed, 0 null null 0);
+		width: 100vw;
+		height: 100vh;
+		@include transition(all .65s ease-in-out);
+		background: $gray;
+
+		&.is-active{
+			z-index: 1000;
+    		opacity: 1;
+		}
+	}
+	.is-relative {
+		width: 100%;
+		height: 7.375vh;	
+		
+
+		#close{
+			
+			width: 1.9vw;
+			height: 1.9vw;
+			right: 2.34vw;
+			min-width: 20px;
+			max-width: 30px;
+			background-image: url('../images/icon-close.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
+			
+			@include media($xs-mobile){
+				width: 5.5vw;
+				height: 5.5vw;
+				right: 5vw;
+			}
+			@include media($v-iphone-6-plus){
+				width: 5.5vw;
+				height: 5.5vw;
+				right: 5vw;
+			}
+			@include media($h-iphone){
+				width: 2vw;
+				height: 2vw;
+			}
+		}
+	}
+	a{
+		text-align: center;
+		cursor: pointer;
+		@include transition(all .35s ease-in-out);
+
+		span.number{
+			display: block;
+			font: $sm-number;
+			@include transition(all .35s ease-in-out);
+		}
+		p{
+			margin-bottom: 5vh;
+			@include transition(all .35s ease-in-out);
+		}
+
+		&:hover{
+			span{
+				color:$green;
+			}
+			p{
+				color:$green;
+			}
+		}
+	}
+	.absolute-center{
+		@include media($h-iphone){
+			@include transform(translate(-50%,-85%));
+		}
+	}
+	.print{
+		display: block;
+		@include position(absolute, null 2.34vw 2.34vw null);
+
+		@include media($xs-mobile){
+			right: 5vw;
+		}
+		@include media($v-iphone-6-plus){
+			right: 5vw;
+		}
+		@include media($h-iphone){
+			right: 5vw;
+		}
+
+		span{
+			display:inline-block;
+			vertical-align: middle;
+			margin-right:10px;
+		}
+		img{
+			display:inline-block;
+			vertical-align: middle;
+			width: 1.5vw;
+			min-width: 20px;
+		}
+	}
+    
+}
+
+.midnightHeader.white {
+  color: white;
+}
+.midnightHeader.black {
+  color: black;
+  a{
+  	color: black!important;
+  }
+}

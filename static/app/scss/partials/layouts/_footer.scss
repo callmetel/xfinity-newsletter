@@ -1,0 +1,359 @@
+#footer{
+	height: 110vh;
+	margin-top: -10%;
+
+	@include media($macbook-pro-13){
+		margin-top: -10%;
+		height: 125vh;
+	}
+	@include media($sm-mobile){
+		margin-top: -10%;
+		height: 166vh;
+	}
+	@include media($xs-mobile){
+		margin-top: -10%;
+		height: 146vh;
+	}
+	@include media($v-iphone-6-plus){
+		margin-top: 0;
+		height: 85vh;
+	}
+	@include media($h-iphone){
+		margin-top: 0;
+		height: 120vh;
+	}
+	@include media($v-iphone-5){
+		margin-top: 0;
+		height: 100vh;
+	}
+
+	.absolute-bottom{
+		width: 100%;
+		@include media($xs-mobile){
+			top:0%;
+		}
+		@include media($v-iphone-6-plus){
+			top:0;
+		}
+		@include media($h-iphone){
+			top:19.4%;
+		}
+	}
+	.article{
+		width:100%;
+		padding-bottom: 8.25vh;
+
+		@include media($xs-mobile){
+			top:0;
+		}
+		@include media($v-iphone-6-plus){
+			top:0;
+		}
+		@include media($h-iphone){
+			top:0;
+		}
+
+		a.back-btn{
+			font-family: $xfsansMedium;
+			display: block;
+			margin-top: 10.75vh;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+
+			img.up-arrow{
+				@include transform(rotate(180deg));
+				width: 2.9vw;
+				display: block;
+				margin: 0 auto;
+				margin-top: 18px;
+			}
+		}	
+	}
+	.is-relative{
+		height: 100%;
+
+		// .row{
+		// 	display: block;
+		// 	width: 95.32%;
+		// 	margin: 0 auto;
+
+		// 	@include media($xs-mobile){
+		// 		display: none;
+		// 	}
+		// 	@include media($v-iphone-6-plus){
+		// 		display: none;
+		// 	}
+		// 	@include media($h-iphone){
+		// 		display: none;
+		// 	}
+			
+		// 	.left{
+		// 		text-align: left;
+		// 		display: inline-block;
+		// 		width:60%;
+		// 		vertical-align: bottom;
+
+		// 		@include media($sm-desktop){
+		// 			width:50%;
+		// 		}
+		// 		@include media($mobile){
+		// 			display: block;
+		// 			width: 100%;
+		// 			text-align: center;
+		// 		}
+		// 		@include media($mobile){
+		// 			display: block;
+		// 			width: 100%;
+		// 			text-align: center;
+		// 		}
+
+		// 		p{
+		// 			text-align: left;
+		// 			width: 100%;
+		// 			&:last-of-type{
+		// 				margin-top: 50px;
+		// 			}
+		// 		}
+
+		// 		.print{
+
+		// 			span{
+		// 				display:inline-block;
+		// 				vertical-align: middle;
+		// 			}
+		// 			img{
+		// 				display:inline-block;
+		// 				vertical-align: middle;
+		// 				width: 1.5vw;
+		// 				min-width: 20px;
+		// 				margin-right:10px;
+		// 			}
+		// 		}
+		// 		a{
+		// 			margin-right: 30px;
+
+		// 			&:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4){
+		// 				&:after{
+		// 					content:'';
+		// 					display: inline-block;
+		// 					width: 12px;
+		// 					height: 12px;
+		// 					background-image: url('../images/down-arrow.svg');
+		// 					background-size: contain;
+		// 					background-repeat: no-repeat;
+		// 					@include transform(rotate(-90deg));
+		// 					margin-left:10px;
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// 	.right{
+		// 		text-align: right;
+		// 		display: inline-block;
+		// 		width:39%;
+		// 		vertical-align: bottom;
+				
+		// 		@include media($sm-desktop){
+		// 			width:49%;
+		// 		}
+		// 		@include media($mobile){
+		// 			display: block;
+		// 			width: 100%;
+		// 			text-align: center;
+
+		// 			h6{
+		// 				text-align: left!important;
+		// 			}
+		// 		}
+
+		// 		h6{
+		// 			text-align: right;
+		// 			text-transform: uppercase;
+		// 		}
+
+		// 		.logo{
+		// 			display: block;
+		// 			width: 11.9vw;
+		// 			min-width: 80px;
+		// 			text-align: right;
+		// 			margin-right: 0;
+		// 			margin-left: auto;
+		// 			margin-top: 50px;
+
+		// 			img{
+		// 				display:block;
+		// 			}
+		// 		}
+		// 	}
+		// }
+
+		// .mobile-footer{
+			p:first-of-type{
+				text-align:center;
+				text-transform: uppercase;
+				margin-bottom:30px;
+				
+			}
+			p{
+				text-align: center;
+				
+
+				@include media($sm-mobile){
+					width: 88vw;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				@include media($xs-mobile){
+					width: 88vw;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				@include media($v-iphone-6-plus){
+					width: 88vw;
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+				a{
+					margin:0;
+					margin-bottom: 5px;
+					@include media($sm-mobile){
+						display: block;
+					}
+					@include media($xs-mobile){
+						display: block;
+					}
+					@include media($v-iphone-6-plus){
+						display: block;
+					}
+				}
+			}
+		// }
+	}
+		
+	// .mobile-footer{
+		width: 100%;
+
+		margin: 0 auto;
+		// display: none;
+
+		// @include media($xs-mobile){
+		// 	display: block;
+		// }
+		// @include media($v-iphone-6-plus){
+		// 	display: block;
+		// }
+		// @include media($h-iphone){
+		// 	display: block;
+		// }
+		// @include media($v-iphone-5){
+		// 	display: block;
+		// }
+		
+		p:last-of-type{
+			margin-top: 10vh;
+		}
+		a.print{
+
+			display: inline-block;
+			vertical-align: middle;
+			p{
+				&:after{
+					content:'';
+					display: inline-block;
+					width: 8px;
+					height: 8px;
+					background-image: url('../images/down-arrow.svg');
+					background-size: contain;
+					background-repeat: no-repeat;
+					@include transform(rotate(-90deg));
+					margin-left:5px;
+				}	
+			}
+			
+		}
+		
+		.print-pdf{
+			@include position(absolute, null 1.9vw 1.9vw null);
+		}
+		.print{
+
+				span{
+					display:inline-block;
+					vertical-align: middle;
+				}
+				img{
+					display:inline-block;
+					vertical-align: middle;
+					width: 1.5vw;
+					min-width: 20px;
+					margin-right:10px;
+				}
+			}
+			a{
+				margin-right: 30px;
+
+				&:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4){
+					&:after{
+						content:'';
+						display: inline-block;
+						width: 12px;
+						height: 12px;
+						background-image: url('../images/down-arrow.svg');
+						background-size: contain;
+						background-repeat: no-repeat;
+						@include transform(rotate(-90deg));
+						margin-left:10px;
+
+						@include media($v-iphone-6-plus){
+							margin-left: 5px;
+							width: 8px;
+							height: 8px;
+						}
+					}
+				}
+			}
+		
+		div.divider{
+			width: 16%;
+			height: 1px;
+			margin: 25px 0 0 0;
+			background: $white;
+		}
+		.logo{
+			width: 27.9vw;
+			min-width: 80px;
+			margin: 0 auto;
+			margin-top: 10vh;
+			text-align: center;
+			display: block;
+
+			&:after{
+				display: none!important;
+			}
+
+			img{
+				width: 27.9vw;
+				min-width: 80px;
+			}
+		}
+		.top-btn{
+			display: block;
+			@include position(absolute, null 5vw 5vw null);
+			vertical-align: bottom;
+			line-height: 0;
+
+			&:before{
+				content:'';
+				display: block;
+				margin:0 auto;
+				width: 4.4vw;
+				height: 2.7vh;
+				background-image: url('../images/up-arrow.svg');
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+		}
+	// }
+}

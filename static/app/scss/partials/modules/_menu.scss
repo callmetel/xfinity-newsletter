@@ -1,0 +1,173 @@
+#menu{
+	@include media($v-iphone-6-plus){
+		margin-top:-23%!important;
+		height: 100vh;
+	}
+	margin-top: -10%!important;
+	overflow: hidden;
+
+	@include media($xs-mobile){
+		margin-top:0!important;
+		height: 110vh;
+	}
+	@include media($v-iphone-6-plus){
+		margin-top:0!important;
+		height: 110vh;
+	}
+
+	ul.absolute-right{
+		right: 14.6vw;
+		list-style: none;
+		@include transform(translateY(-100%));
+
+		@include media($macbook-pro-13){
+			@include transform(translateY(-100%));
+		}
+		@include media($sm-desktop){
+			@include transform(translateY(-65%));
+		}
+		@include media($lg-mobile){
+			@include transform(translateY(-70%));
+		}
+		@include media($mobile){
+			@include transform(translateY(-70%));
+		}
+		@include media($md-mobile){
+			@include transform(translateY(-75%));
+		}
+		@include media($h-ipad-max-screen){
+			@include transform(translateY(-100%));
+		}
+		@include media($v-ipad-max-screen){
+			@include transform(translateY(-100%));
+		}
+		@include media($sm-mobile){
+			right: 8vw;
+			top: 10%;
+			@include transform(translateX(0));
+		}
+		@include media($xs-mobile){
+			right: 8vw;
+			top: 10%;
+			@include transform(translateX(0));
+		}
+
+		li{
+			cursor: pointer;
+			margin-bottom: 30px;
+
+			.number{
+				color: $green;
+
+				&:after{
+					content:'';
+					display: inline-block;
+					width: 30px;
+					height: 30px;
+					background-image: url('../images/right-arrow.svg');
+					background-size: contain;
+					background-repeat: no-repeat;
+					margin-left: 25px;
+				}
+			}
+
+			p{
+				color: $gray;
+			}
+		}
+	}
+
+	div.absolute-top{
+		.is-relative{
+			height: 100%;
+		}
+	}
+
+	.menu-title{
+		left: 14.6vw;
+		color: $gray;
+		@include transform(translateY(-50%));
+
+		b{
+			color: $green;
+		}
+
+		@include media($h-ipad-max-screen){
+			left: 40vw;
+			bottom: 60%;
+		}
+		@include media($lg-mobile){
+			left: 5vw;
+			@include transform(translateY(50%));
+		}
+		@include media($v-ipad-max-screen){
+			left: 40vw;
+			bottom: 60%;
+		}
+	
+		@include media($sm-mobile){
+			left: 5vw;
+			bottom: 0;
+			@include transform(translateY(30%));
+		}
+		@include media($xs-mobile){
+			left: 5vw;
+			bottom: 0;
+			@include transform(translateY(35%));
+		}
+
+		@include media($h-iphone){
+			left: 40vw!important;
+			@include transform(translateY(100%)!important);
+		}
+	}
+
+	#old-remote, #new-remote, #remote-on, #remote-off{
+		width:100vw;
+	}
+
+	#new-remote{
+		top: 50%;
+		@include transform(translate(-50%,-50%));
+
+		@include media($short-desktop){
+			@include transform(translate(-50%,-50%)!important);
+		}
+		@include media($macbook-pro-13){
+			@include transform(translate(-50%,-50%));
+		}
+		@include media($sm-desktop){
+			@include transform(translate(-50%,-50%));
+		}
+		@include media($lg-mobile){
+			@include transform(translate(-55%,-50%));
+		}
+		@include media($mobile){
+			@include transform(translate(-55%,-50%));
+		}
+		@include media($md-mobile){
+			@include transform(translate(-55%,-40%));
+		}
+		@include media($sm-mobile){
+			@include transform(translate(-50%,-50%));
+		}
+		#remote-on{
+			@include media($sm-desktop){
+				width:120vw;
+			}
+			@include media($lg-mobile){
+				width:150vw;
+			}
+			@include media($mobile){
+				width:150vw;
+			}
+			@include media($sm-mobile){
+				width:120vw;
+			}
+			@include media($xs-mobile){
+				width:120vw;
+			}
+
+		}
+	}
+}

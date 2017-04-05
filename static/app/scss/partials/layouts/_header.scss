@@ -1,0 +1,96 @@
+header{
+	width: 100vw;
+	height: 7.375vh;
+	max-height: 60px;
+	background: $gray;
+	display: block;
+
+	.desktop-nav{
+		width: 100%;
+		height: 100%;
+
+		@include media($xs-mobile){
+			display: none;
+		}
+		@include media($v-iphone-6-plus){
+			display: none;
+		}
+		@include media($h-iphone){
+			display: none;
+		}
+
+		.logo{
+			display: block;
+			width: 11.9vw;
+			min-width: 80px;
+			max-width: 200px;
+			left: 2.34vw;
+
+			svg{
+				display:block;
+			}
+
+		}
+
+		#burger{
+			display: block;
+			right: 2.34vw;
+			img{
+				display:inline-block;
+				vertical-align: middle;
+				width: 1.9vw;
+				min-width: 20px;
+				max-width: 30px;
+				height:auto;
+			}
+		}
+	}
+}
+
+.mobile-header{
+	display: none;
+	width: 100%;
+	height: 7.375vh;
+	@include position(fixed, 0 null null null);
+	z-index: 999;
+	background: $gray;
+
+	@include media($xs-mobile){
+		display: block;
+	}
+	@include media($v-iphone-6-plus){
+		display: block;
+	}
+	@include media($h-iphone){
+		display: block;
+	}
+
+	#burger{
+		width: 5.5vw;
+		height: 4vw;
+		right: 5vw;
+		background-image: url('../images/icon-burger.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		@include media($h-iphone){
+			width: 3.5vw;
+			height: 2vw;
+		}
+	}
+
+	.logo{
+		display: block;
+		width: 27.9vw;
+		min-width: 80px;
+		left: 5vw;
+
+		@include media($h-iphone){
+			width: 15.9vw;
+		}
+
+		img{
+			display:block;
+		}
+	}
+}

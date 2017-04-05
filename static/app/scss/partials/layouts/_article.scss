@@ -1,0 +1,629 @@
+section.article-gradient-wrap{
+	display: inline-block;
+	vertical-align: top;
+	padding: 0;
+	margin:0;
+	width:100vw;
+	height:186vh;
+	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-clip-path: polygon(0 38%, 100% 0%, 100% 63%, 0% 100%);
+	clip-path: polygon(0 38%, 100% 0%, 100% 63%, 0% 100%);
+
+	@include media($macbook-pro-13){
+		height:176vh;
+		-webkit-clip-path: polygon(0 23%, 100% 0%, 100% 78%, 0% 100%);
+		clip-path: polygon(0 23%, 100% 0%, 100% 78%, 0% 100%);
+	}
+	@include media($sm-desktop){
+		height:176vh;
+		-webkit-clip-path: polygon(0 23%, 100% 0%, 100% 78%, 0% 100%);
+		clip-path: polygon(0 23%, 100% 0%, 100% 78%, 0% 100%);
+	}
+
+	@include media($v-ipad-max-screen){
+		height:100vh;
+		-webkit-clip-path: polygon(0 23%, 100% 0%, 100% 78%, 0% 100%);
+		clip-path: polygon(0 23%, 100% 0%, 100% 78%, 0% 100%);
+	}
+	@include media($sm-mobile){
+		height:166vh;
+		-webkit-clip-path: polygon(0 13%, 100% 0%, 100% 88%, 0% 100%);
+		clip-path: polygon(0 13%, 100% 0%, 100% 88%, 0% 100%);
+	}
+	@include media($xs-mobile){
+		height:146vh;
+		-webkit-clip-path: polygon(0 13%, 100% 0%, 100% 88%, 0% 100%);
+		clip-path: polygon(0 13%, 100% 0%, 100% 88%, 0% 100%);
+	}
+	@include media($v-iphone-6-plus){
+		-webkit-clip-path: none;
+		clip-path: none;
+		height:110vh;
+	}
+	@include media($v-iphone-6){
+		-webkit-clip-path: none;
+		clip-path: none;
+		height:140vh;
+	}
+	@include media($h-iphone){
+		-webkit-clip-path: none;
+		clip-path: none;
+		height:200vh;
+	}
+	@include media($v-iphone-5){
+		-webkit-clip-path: none;
+		clip-path: none;
+		height:170vh;
+	}
+
+	&:before{
+		content:'';
+		display: block;
+		@include position(absolute, 0 null null 0);
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.3);
+		z-index: 1;
+	}
+
+	.bg-image{
+	  	width:100vw;
+	  	-webkit-clip-path: polygon(0 40%, 100% 0%, 100% 63%, 0% 100%);
+		clip-path: polygon(0 40%, 100% 0%, 100% 63%, 0% 100%);
+		opacity:0;
+
+		@include media($xs-mobile){
+			-webkit-clip-path: polygon(0 10%, 100% 0%, 100% 93%, 0% 100%);
+			clip-path: polygon(0 10%, 100% 0%, 100% 93%, 0% 100%);
+		}
+		@include media($v-iphone-6-plus){
+			-webkit-clip-path: polygon(0 10%, 100% 0%, 100% 93%, 0% 100%);
+			clip-path: polygon(0 10%, 100% 0%, 100% 93%, 0% 100%);
+		}
+		@include media($h-iphone){
+			-webkit-clip-path: polygon(0 10%, 100% 0%, 100% 93%, 0% 100%);
+			clip-path: polygon(0 10%, 100% 0%, 100% 93%, 0% 100%);
+		}
+	}
+	
+	div.absolute-center{
+		width:100%;
+		z-index:10;
+		@include transform(translate(-50%,-40%));
+		@include media($lg-desktop) {
+			@include transform(translate(-50%,-40%));
+		}
+		@include media($xs-mobile) {
+			@include transform(translate(-50%,-60%));
+		}
+		@include media($v-iphone-6-plus) {
+			@include transform(translate(-50%,-60%));
+		}
+		@include media($h-iphone) {
+			@include transform(translate(-50%,-60%));
+		}
+	}
+	div.is-relative{
+		// border: 1px solid red;
+	    display: block;
+	    height: 63%;
+
+	    @include media($xs-mobile) {
+			height: auto;
+		}
+		@include media($v-iphone-6-plus) {
+			height: auto;
+		}
+		@include media($h-iphone) {
+			height: auto;
+		}
+		
+		.article{
+			text-align: left;
+			width: 52vw;
+
+			@include media($macbook-pro-13){
+				width: 67vw;
+			}
+			@include media($sm-desktop){
+				width: 67vw;
+			}
+			@include media($sm-mobile){
+				width: 88vw;
+			}
+			@include media($xs-mobile){
+				width: 88vw;
+			}
+			@include media($v-iphone-6-plus){
+				width: 88vw;
+			}
+			@include media($h-iphone){
+				width: 88vw;
+			}
+
+			h2.article-title{
+				display: block;
+			}
+
+			div.underline{
+				display: block;
+				width: 6.25vw;
+				height:1px;
+				background: $white;
+				margin: 30px 0;
+			}
+
+			.article-author{
+				margin-top: 15px;
+			}
+
+			p{
+				width: 90%;
+				margin: 0;
+
+				&:first-of-type{
+					margin-top: 40px;
+				}
+			}
+
+			a.read-article-btn{
+				font-family: $xfsansMedium;
+				display: block;
+				margin-top: 8.5vh;
+				img.down-arrow{
+					width: 2.2vw;
+					display: inline-block;
+					margin: 0;
+					margin-right: 10px;
+				}
+			}
+		}
+
+	}
+
+	&#article1-heading{
+		// background: #000000 url("") no-repeat!important;
+		margin-top: -38%;
+		padding-top: 38%;
+		background-size: cover!important;
+
+		@include media($sm-desktop){
+			margin-top: -23%;
+			padding-top: 23%;
+			background-size: cover;
+		}
+		@include media($v-ipad-max-screen){
+			margin-top: -23%;
+			padding-top: 23%;
+			background-size: cover;
+		}
+		@include media($sm-mobile){
+			margin-top: -23%;
+			padding-top: 23%;
+			background-size: cover;
+		}
+		@include media($xs-mobile){
+			margin-top:0;
+			padding-top: 0;
+			background-size: cover;
+		}
+		@include media($v-iphone-6-plus){
+			margin-top:0;
+			padding-top: 0;
+			background-size: cover;
+		}
+		@include media($h-iphone){
+			margin-top:0;
+			padding-top: 0;
+			background-size: cover;
+		}
+
+		p{
+			margin-top:-4px!important;
+		}
+		div.absolute-center{
+			@include transform(translate(-50%,-40%));
+			
+			@include media($v-ipad-max-screen){
+				@include transform(translate(-50%,-50%));
+			}
+			@include media($sm-desktop) {
+				@include transform(translate(-50%,-55%));
+			}
+			@include media($sm-mobile) {
+				@include transform(translate(-50%,-62%));
+			}
+			@include media($xs-mobile) {
+				@include transform(translate(-50%,-62%));
+			}
+			@include media($v-iphone-6-plus) {
+				@include transform(translate(-50%,-75%));
+			}
+			@include media($h-iphone) {
+				@include transform(translate(-50%,-75%));
+			}
+		}
+	}
+
+	&#article2-heading{
+		// background: #000000 url("") no-repeat;
+		margin-top: -10%;
+		background-size: cover;
+		@include media($v-ipad-max-screen){
+			margin-top: -23%;
+			padding-top: 23%;
+			background-size: cover;
+		}
+		@include media($sm-mobile){
+			margin-top: -23%;
+			padding-top: 23%;
+			background-size: cover;
+		}
+		@include media($xs-mobile){
+			margin-top:0;
+			background-size: cover;
+		}
+		@include media($v-iphone-6-plus){
+			margin-top:0;
+			background-size: cover;
+		}
+		@include media($h-iphone){
+			margin-top:0;
+			background-size: cover;
+		}
+		div.absolute-center{
+			@include transform(translate(-50%,-40%));
+			@include media($sm-desktop){
+				@include transform(translate(-50%,-50%));
+			}
+			@include media($v-ipad-max-screen){
+				@include transform(translate(-50%,-50%));
+			}
+			@include media($sm-mobile) {
+				@include transform(translate(-50%,-62%));
+			}
+			@include media($xs-mobile) {
+				@include transform(translate(-50%,-62%));
+			}
+		}
+	}
+	&#article3-heading{
+		// background: #000000 url("") no-repeat;
+		margin-top: -10%;
+		background-size: cover;
+		@include media($v-ipad-max-screen){
+			margin-top: -23%;
+			padding-top: 23%;
+			background-size: cover;
+		}
+		@include media($sm-mobile){
+			margin-top: -13%;
+			padding-top: -13%;
+			background-size: cover;
+		}
+		@include media($xs-mobile){
+			margin-top: -13%;
+			padding-top: -13%;
+			background-size: cover;
+		}
+		@include media($v-iphone-6-plus){
+			margin-top:0;
+			background-size: cover;
+		}
+		@include media($h-iphone){
+			margin-top:0;
+			background-size: cover;
+		}
+		div.absolute-center{
+			@include transform(translate(-50%,-40%));
+			@include media($sm-desktop){
+				@include transform(translate(-50%,-50%));
+			}
+			@include media($v-ipad-max-screen){
+				@include transform(translate(-50%,-50%));
+			}
+			@include media($sm-mobile) {
+				@include transform(translate(-50%,-55%));
+			}
+			@include media($xs-mobile) {
+				@include transform(translate(-50%,-55%));
+			}
+		}
+	}
+	&#article4-heading{
+		// background: #000000 url("") no-repeat;
+		margin-top: -10%;
+		background-size: cover;
+		@include media($v-ipad-max-screen){
+			margin-top: -23%;
+			padding-top: 23%;
+			background-size: cover;
+		}
+		@include media($sm-mobile){
+			margin-top: -13%;
+			padding-top: 13%;
+			background-size: cover;
+		}
+		@include media($xs-mobile){
+			margin-top:-13%;
+			padding-top: 13%;
+			background-size: cover;
+		}
+		@include media($v-iphone-6-plus){
+			margin-top:0;
+			background-size: cover;
+		}
+		@include media($h-iphone){
+			margin-top:0;
+			background-size: cover;
+		}
+		div.absolute-center{
+			@include transform(translate(-50%,-40%));
+
+			@include media($sm-desktop){
+				@include transform(translate(-50%,-50%));
+			}
+			@include media($v-ipad-max-screen){
+				@include transform(translate(-50%,-40%));
+			}
+			@include media($sm-mobile) {
+				@include transform(translate(-50%,-52%));
+			}
+			@include media($xs-mobile) {
+				@include transform(translate(-50%,-52%));
+			}
+		}
+	}
+}
+
+.article-container{
+
+	.container{
+		width: 52vw;
+		margin: 0 auto;
+		height: auto;
+
+		@include media($sm-desktop) {
+			width: 67vw;
+			margin-bottom: 10vh;
+		}
+		@include media($sm-mobile) {
+			width: 88vw;
+			padding: 50px 0;
+		}
+		@include media($xs-mobile) {
+			width: 88vw;
+			padding: 50px 0;
+		}
+		@include media($v-iphone-6-plus) {
+			width: 88vw;
+			padding: 50px 0;
+		}
+		@include media($h-iphone) {
+			width: 88vw;
+			padding: 50px 0;
+		}
+
+		h4{
+			&.large-margin{
+				margin-top: 40px;
+			}
+			color: $gray;
+			margin: 20px 0;
+		}
+
+		h3{
+			color: $gray;
+
+			&.letter-heading{
+				width: 32px;
+				padding-bottom: 6px;
+				margin-bottom: 20px;
+				border-bottom: 4px solid $gray;
+			}
+		}
+
+		p{
+			color: $ltgray;
+			margin-top: 20px;
+			
+			&.highlight{
+				color: $purple;
+				border-left: 6px solid $purple;
+				padding-left: 30px;
+			}
+		}
+
+		a{
+			color: $gray;
+		}
+
+		ol{
+			margin-left: 14px;
+			li{
+				color: $ltgray;
+				margin-top: 20px;
+			}
+		}
+
+		.graph, .image{
+			width: 100%;
+			margin-top: 40px;
+			margin-bottom: 0px;
+			
+			@include media($sm-mobile){
+				width:100%;
+			}
+			@include media($xs-mobile){
+				width:100%;
+			}
+			@include media($v-iphone-6-plus){
+				width:100%;
+			}
+			@include media($h-iphone){
+				width:100%;
+			}
+		}
+
+		div.divider{
+			width: 100%;
+			height: 1px;
+			margin: 40px 0;
+			background: $BLUE;
+
+			&.caption{
+				margin-bottom: 20px;
+			}
+		}
+
+		.answer{
+			margin-top: 40px;
+		}
+		sup{
+			line-height: 0;
+		}
+
+		div.callout{
+			margin-top: 20px;
+			.big-quotation{
+				margin-right: 5px;
+				margin-left:10px;
+
+				@include media($sm-mobile){
+					margin-right: 5px;
+				}
+				@include media($xs-mobile){
+					margin-right: 5px;
+				}
+				@include media($v-iphone-6-plus){
+					margin-right: 5px;
+				}
+				@include media($h-iphone){
+					margin-right: 5px;
+				}
+			}
+			.end-quotation{
+				margin-left: 5px;
+				margin-right:0;
+
+				@include media($sm-mobile){
+					margin-left: 5px;
+				}
+				@include media($xs-mobile){
+					margin-left: 5px;
+				}
+				@include media($v-iphone-6-plus){
+					margin-left: 5px;
+				}
+				@include media($h-iphone){
+					margin-left: 5px;
+				}
+				
+
+			}
+			p{	
+				color: $gray;
+				width:85%;
+				display: inline-block;
+				vertical-align: top;
+				margin-top: 0;
+				@include media($v-ipad-max-screen){
+					width:90%;
+				}
+				span{
+					color: $gray;
+
+					&:last-of-type{
+						margin-top: 10px;
+						display: block;
+					}
+				}
+			}
+			.big-quotation, .end-quotation, .end:after{
+				display: inline-block;
+				vertical-align: top;
+				background-size: contain;
+				background-repeat: no-repeat;
+				margin-top: 5px;
+
+				height: 16px;
+				@include media($short-lg-desktop){
+					height: 18px!important;
+				}
+				@include media($xl-desktop){
+					height: 28px;
+				}
+				@include media($lg-desktop){
+					height: 24px;
+				}
+				@include media($md-desktop){
+					height: 20px;
+				}
+				@include media($lg-mobile){
+					height: 20px;
+				}
+				@include media($md-mobile){
+					height: 16px;
+				}
+				@include media($mobile){
+					height: 16px;
+				}
+				@include media($sm-mobile){
+					height: 16px;
+				}
+				@include media($xs-mobile){
+					height: 11px;
+				}
+				@include media($v-iphone-6-plus){
+					height: 11px;
+				}
+				@include media($h-iphone){
+					height: 11px;
+				}
+			}
+		}
+
+		a.contact-link{
+			margin-top: 40px;
+			display: block;
+		}
+
+		div.reveal{
+			// height:0;
+			// opacity:0;
+			@include transition(all 1s ease-in-out);
+			// p,div,h3,h4,a{
+			// 	display: none;
+			// }
+		}
+	}
+}
+
+.article-container:not(#article-1){
+	div.animate-reveal{
+		margin-top: 40px;
+	}
+}
+
+#article-3{
+	.question{
+		margin-top:30px;
+	}
+}
+
+.firefox-clip{
+	display: none;
+	&.is-active{
+		position: absolute;
+		width: 100%;
+		height: auto;
+	}
+	&.top-clip{
+		top:0;
+	}
+	&.bottom-clip{
+		bottom: 0;
+	}
+}

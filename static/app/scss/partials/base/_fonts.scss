@@ -1,0 +1,165 @@
+// Font face imports
+
+// @font-face {
+//     font-family: 'xfinityindicatorsregular';
+//     src: url('../fonts/xfinity-sans/xfinityindicators-webfont.woff2') format('woff2'),
+//          url('../fonts/xfinity-sans/xfinityindicators-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+@font-face {
+    font-family: 'xfinity_sans_regbold';
+    src: url('../fonts/xfinity-sans/xfinitysans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/xfinity-sans/xfinitysans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// @font-face {
+//     font-family: 'xfinity_sansbold_condensed';
+//     src: url('../fonts/xfinity-sans/xfinitysans-boldcond-webfont.woff2') format('woff2'),
+//          url('../fonts/xfinity-sans/xfinitysans-boldcond-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'xfinity_sansextra_light';
+//     src: url('../fonts/xfinity-sans/xfinitysans-exlgt-webfont.woff2') format('woff2'),
+//          url('../fonts/xfinity-sans/xfinitysans-exlgt-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+@font-face {
+    font-family: 'xfinity_sanslight';
+    src: url('../fonts/xfinity-sans/xfinitysans-lgt-webfont.woff2') format('woff2'),
+         url('../fonts/xfinity-sans/xfinitysans-lgt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'xfinity_sansmedium';
+    src: url('../fonts/xfinity-sans/xfinitysans-med-webfont.woff2') format('woff2'),
+         url('../fonts/xfinity-sans/xfinitysans-med-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// @font-face {
+//     font-family: 'xfinity_sansmedium_condensed';
+//     src: url('../fonts/xfinity-sans/xfinitysans-medcond-webfont.woff2') format('woff2'),
+//          url('../fonts/xfinity-sans/xfinitysans-medcond-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+@font-face {
+    font-family: 'xfinity_sans_regregular';
+    src: url('../fonts/xfinity-sans/xfinitysans-reg-webfont.woff2') format('woff2'),
+         url('../fonts/xfinity-sans/xfinitysans-reg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'xfinity_sansthin';
+    src: url('../fonts/xfinity-sans/xfinitysans-thin-webfont.woff2') format('woff2'),
+         url('../fonts/xfinity-sans/xfinitysans-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Declare Gotham font families
+
+$xfsansBold: 'xfinity_sans_regbold';
+// $xfsansConBo: 'xfinity_sansbold_condensed';
+// $xfsansExLight: 'xfinity_sansextra_light';
+$xfsansLight: 'xfinity_sanslight';
+$xfsansMedium: 'xfinity_sansmedium';
+// $xfsansConMed: 'xfinity_sansmedium_condensed';
+$xfsans: 'xfinity_sans_regregular';
+$xfsansThin: 'xfinity_sansthin';
+
+// Font Sizes
+
+$sm-span: normal normal 300 10.5px/12.6px $xfsansLight;
+$md-span: normal normal 300 14px/16.8px $xfsansLight;
+$span: normal normal 300 16.8px/20.16px $xfsansLight;
+$lg-span: normal normal 300 19.6px/23.52px $xfsansLight;
+$xl-span: normal normal 300 22.4px/26.88px $xfsansLight;
+
+$sm-h2: normal normal 300 37.5px/41.5px $xfsansLight;
+$md-h2: normal normal 300 50px/54px $xfsansLight;
+$h2: normal normal 300 60px/64px $xfsansLight;
+$lg-h2: normal normal 300 70px/74px $xfsansLight;
+$xl-h2: normal normal 300 80px/84px $xfsansLight;
+
+$sm-h3: normal normal 300 16.5px/19.8px $xfsansLight;
+$md-h3: normal normal 300 22px/26.4px $xfsansLight;
+$h3: normal normal 300 26.4px/31.68px $xfsansLight;
+$lg-h3: normal normal 300 30.8px/36.96px $xfsansLight;
+$xl-h3: normal normal 300 35.2px/42.24px $xfsansLight;
+
+$sm-h4: normal normal 300 24px/28.8px $xfsansThin;
+$md-h4: normal normal 300 32px/38.4px $xfsansThin;
+$h4: normal normal 300 38.4px/46.08px $xfsansThin;
+$lg-h4: normal normal 300 44.8px/53.76px $xfsansThin;
+$xl-h4: normal normal 300 51.2px/61.44px $xfsansThin;
+
+$sm-h6: normal normal 400 27px/29.5px $xfsans;
+$md-h6: normal normal 400 36px/34px $xfsans;
+$h6: normal normal 400 43.2px/44.8px $xfsans;
+$lg-h6: normal normal 400 50.4px/52.6px $xfsans;
+$xl-h6: normal normal 400 57.6px/69.4px $xfsans;
+
+$sm-p: normal normal 300 15px/21px $xfsans;
+$md-p: normal normal 300 20px/26px $xfsans;
+$p: normal normal 300 24px/30px $xfsans;
+$lg-p: normal normal 300 28px/34px $xfsans;
+$xl-p: normal normal 300 32px/38px $xfsans;
+
+$sm-a: normal normal 300 15px/21px $xfsans;
+$md-a: normal normal 300 20px/26px $xfsans;
+$a: normal normal 300 24px/30px $xfsans;
+$lg-a: normal normal 300 28px/34px $xfsans;
+$xl-a: normal normal 300 32px/38px $xfsans;
+
+$sm-nav-a: normal normal 300 11.25px/12.25px $xfsans;
+$md-nav-a: normal normal 300 15px/16px $xfsans;
+$nav-a: normal normal 300 18px/19px $xfsans;
+$lg-nav-a: normal normal 300 21px/22px $xfsans;
+$xl-nav-a: normal normal 300 24px/25px $xfsans;
+
+$sm-footnote: normal normal 400 11.25px/14.25px $xfsans;
+$md-footnote: normal normal 400 15px/18px $xfsans;
+$footnote: normal normal 400 18px/21px $xfsans;
+$lg-footnote: normal normal 400 21px/24px $xfsans;
+$xl-footnote: normal normal 400 24px/27px $xfsans;
+
+$xs-number: normal normal 700 24.2px/29.04px $xfsansMedium;
+$sm-number: normal normal 700 33px/39.6px $xfsansMedium;
+$md-number: normal normal 700 44px/52.8px $xfsansMedium;
+$number: normal normal 700 52.8px/63.36px $xfsansMedium;
+$lg-number: normal normal 700 61.6px/73.92px $xfsansMedium;
+$xl-number: normal normal 700 70.4px/84.48px $xfsansMedium;
+
+$sm-quot: normal normal 300 45px/35px $xfsansMedium;
+$md-quot: normal normal 300 60px/50px $xfsansMedium;
+$quot: normal normal 300 72px/62px $xfsansMedium;
+$lg-quot: normal normal 300 84px/74px $xfsansMedium;
+$xl-quot: normal normal 300 96px/86px $xfsansMedium;
+
+$sm-cta: normal normal 300 9.75px/32.75px $xfsansMedium;
+$md-cta: normal normal 300 13px/36px $xfsansMedium;
+$cta: normal normal 300 15.6px/38.6px $xfsansMedium;
+$lg-cta: normal normal 300 18.2px/41.2px $xfsansMedium;
+$xl-cta: normal normal 300 20.8px/43.8px $xfsansMedium;
+
+$sm-title: normal normal 300 52.5px/56.5px $xfsansThin;
+$md-title: normal normal 300 70px/74px $xfsansThin;
+$title: normal normal 300 84px/88px $xfsansThin;
+$lg-title: normal normal 300 98px/102px $xfsansThin;
+$xl-title: normal normal 300 112px/116px $xfsansThin;

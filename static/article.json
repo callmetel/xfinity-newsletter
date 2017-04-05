@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+    	"articleImage" : "app/images/home-bg.jpg", 
+    	"articleTitle" : "First Edition: Experience Design Newsletter", 
+    	"articleAuthorName" : "Tom Loretan", "articleAuthorTitle" : "Senior Vice President, Experience Design", 
+    	"articleIntroParagraph" : "As experience designers (XD), we approach every challenge as an opportunity, an occasion to connect with customers, make life easier and bring about more moments of pure delight. We’re a creative team of strategists, designers, writers and researchers who understand the potential behind every interaction and the impact of a first impression. Here’s a chance to get to know us better. Each quarter, this newsletter will spotlight the vision and passion of the people and projects that make up the Experience Design group. Today, we’re talking about voice technology and how we’re actually speaking with customers. We invite you to join the conversation, ask questions and let us know how we can partner with you in the future. It’s a new year packed with possibility. Welcome."
+    },{
+    	"articleImage" : "app/images/section-1-bg.jpg", 
+		"articleTitle" : "The Voice of Research", 
+		"articleAuthorName" : "Kyree Holmes", 
+		"articleAuthorTitle" : "Researcher, Experience Design", 
+		"articleIntroParagraph" : "Over the past few years, natural language processing has improved immensely, and as a result, people want to do more with voice control. Comcast has the distinct benefit of integrating voice with TV, a familiar device that’s already in most homes. It’s a natural fit, one that allows our customers to become more comfortable with voice technology while putting us in the position to lead and differentiate. Since our customers offer the most valuable insights, we turn to research to reveal viable opportunities and primary&nbsp;challenges."
+    },{
+    	"articleImage" : "app/images/section-2-bg.jpg", 
+		"articleTitle" : "Are You Talking to Me?", 
+		"articleAuthorName" : "Steve Leardi", 
+		"articleAuthorTitle" : "Senior Director, Experience Design", 
+		"articleIntroParagraph" : "Alexa integration, Google Home, voice, voice and more voice. It was all the rage this year at CES. It’s the exciting, shiny object that allows companies to check the box and say, &quot;us too!&quot; And everyone seems to be using it to different ends. At one point, I was led into a booth by an Alexa app that turned out to be a showcase for HD Radio? Wait…What?! Not the payoff I was expecting."
+    },{
+    	"articleImage" : "app/images/section-3-bg.jpg", 
+		"articleTitle" : "Our Digital First Language", 
+		"articleAuthorName" : "Heather Hollis", 
+		"articleAuthorTitle" : "Vice President, Experience Design", 
+		"articleIntroParagraph" : "Imagine a future where customers manage most of their XFINITY services by voice. Simply utter a request into an X1 Voice Remote, et voilà, you’ve purchased a movie, adjusted the lights, and discovered the best delivery service in town."
+    },{
+    	"articleImage" : "app/images/section-4-bg.jpg", 
+		"articleTitle" : "The Word on Voice", 
+		"articleAuthorName" : "Neil Epstein", 
+		"articleAuthorTitle" : "Vice President, Experience Design", 
+		"articleIntroParagraph" : "As the list of voice-enabled devices grows, the segmentation among them can be clearly defined into three types of experiences."
+    }
+  ]
+}

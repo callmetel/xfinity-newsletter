@@ -1,0 +1,69 @@
+@import "../components/variables";
+@import "fonts";
+
+html,body{
+	margin:0;
+	width:100%;
+	// height:100%;
+	// overflow-y:auto;
+	background: $offwhite;
+}
+body{
+    position: relative;
+
+    &.firefox-in-use{
+        #footer,#article2-heading,#article3-heading,#article4-heading{
+            margin-top: 0!important;
+        }
+        #article1-heading{
+            margin-top: -15%!important;
+        }
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+
+    &:focus{
+        outline: -webkit-focus-ring-color auto 5px;
+    }
+}
+
+.touch{
+    width:100vw;
+    height:100vh;
+    @include position(fixed, 0 null null 0);
+    z-index: 5000;
+    opacity:0;
+    display: block;
+}
+
+// .dark-link{
+//     &:focus{
+//         background: rgba(0,0,0,0.2)!important;
+//     }
+// }
+
+// .tab-index{
+//     &:focus{
+//         outline: -webkit-focus-ring-color auto 5px;
+//         background: #b4e7fd;
+//         border:#7090a5 2px solid;
+//     }
+// }
+
+button{
+    @include appearance(none!important);
+    background: none;
+    cursor: pointer;
+}
+
+
