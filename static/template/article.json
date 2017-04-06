@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+    	"articleImage" : " ",
+
+        "articleTitle" : " ", 
+
+        "articleAuthorName" : " ", 
+
+        "articleAuthorTitle" : " ", 
+
+        "articleIntroParagraph" : " ",
+       
+        "emailLink" : " ", 
+
+    	"emailName" : " "
+    },
+    {
+    	"articleImage" : " ",
+
+        "articleTitle" : " ",
+
+        "articleAuthorName" : " ", 
+
+        "articleAuthorTitle" : " ", 
+
+        "articleIntroParagraph" : " ",
+    	
+		"emailLink" : " ", 
+
+    	"emailName" : " "
+    },
+    {
+    	"articleImage" : " ", 
+		
+    	"articleTitle" : " ", 
+		
+		"articleAuthorName" : " ", 
+		
+		"articleAuthorTitle" : " ", 
+		
+		"articleIntroParagraph" : " ",
+    	
+		"emailLink" : " ", 
+    	
+        "emailName" : " "
+    },
+    {
+    	"articleImage" : " ", 
+
+    	"articleTitle" : " ", 
+
+		"articleAuthorName" : " ", 
+
+		"articleAuthorTitle" : " ", 
+
+		"articleIntroParagraph" : " ",
+    	
+		"emailLink" : " ", 
+    	
+        "emailName" : " "
+    },
+    {
+    	"articleImage" : " ",
+
+    	"articleTitle" : " ",
+
+		"articleAuthorName" : " ",
+
+		"articleAuthorTitle" : " ",
+
+		"articleIntroParagraph" : " ",
+    	
+		"emailLink" : " ", 
+    	
+        "emailName" : " "
+    }
+  ],
+  "links": [
+  	{
+    	"pdfLink" : " "
+    }
+  ]
+}
